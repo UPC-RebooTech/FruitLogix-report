@@ -53,7 +53,7 @@ El objetivo de la entrevista es comprender las necesidades, frustraciones y las 
 
 URL de todas las entrevistas del segmento: https://goo.su/Cffj7
 
-| Campo | ![Entrevista1](../assets/images/Entrevista%201.png) <br/>Entrevista 1 | ![Entrevista1](../assets/images/Entrevista%202.png) <br/>Entrevista 2 | ![Entrevista1](../assets/images/Entrevista%203.png) <br/>Entrevista 3 |
+| Campo | ![Entrevista1](../assets/entrevistas/Entrevista%201.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%202.png) <br/>Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%203.png) <br/>Entrevista 3 |
 |---|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
 | **Nombre** | Jorge Contreras Ballarta                                              | Paola Jiménez                                                         | Edwin Lozano                                                          |
 | **Edad** | 60 años                                                               | 25 años                                                               | 52 años                                                               |
@@ -78,7 +78,7 @@ La entrevista a Edwin Lozano, proveedor de plátanos de 52 años, permitió comp
 
 URL de todas las entrevistas del segmento: https://goo.su/Z7kcf
 
-| Campo | ![Entrevista1](../assets/images/Entrevista%204.png) <br/>Entrevista 1 | ![Entrevista1](../assets/images/Entrevista%206.png) <br/> Entrevista 2 | ![Entrevista1](../assets/images/Entrevista%205.png) <br/> Entrevista 3 |
+| Campo | ![Entrevista1](../assets/entrevistas/Entrevista%204.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%206.png) <br/> Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%205.png) <br/> Entrevista 3 |
 |---|-----------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
 | **Nombre** | Renato Navarro                                                        | Karen Forcelledo                                                       | Jessica                                                                |
 | **Edad** | 25 años                                                               | 37 años                                                                | 52 años                                                                |
@@ -103,7 +103,7 @@ La entrevista a Jessica, comerciante de 52 años residente en San Martín de Por
 
 URL de todas las entrevistas del segmento: https://goo.su/MrsO9
 
-| Campo | ![Entrevista1](../assets/images/Entrevista%207.png) <br/>Entrevista 1 | ![Entrevista1](../assets/images/Entrevista%209.png) <br/>Entrevista 2 | ![Entrevista1](../assets/images/Entrevista%208.png) <br/>Entrevista 3 |
+| Campo | ![Entrevista1](../assets/entrevistas/Entrevista%207.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%209.png) <br/>Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%208.png) <br/>Entrevista 3 |
 |---|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
 | **Nombre** | Bianzel Milagritos Noriega Donayre                                    | Luciana Breña                                                         | Rosa Arana Medina                                                     |
 | **Edad** | 22 años                                                               | 25 años                                                               | 43 años                                                               |
@@ -112,16 +112,15 @@ URL de todas las entrevistas del segmento: https://goo.su/MrsO9
 
 **Resumen – Bianzel Milagritos Noriega Donayre**
 
-La entrevista a Bianzel Noriega, de 22 años y parte del área de logística de la empresa Edge, permitió entender cómo los clientes comerciales gestionan la compra de frutas. El proceso combina órdenes de compra formales con comunicación directa por llamadas, correo o WhatsApp. Al seleccionar proveedores se consideran experiencia, confiabilidad, capacidad de abastecimiento y requisitos sanitarios estrictos. La verificación de calidad se realiza en recepción revisando frescura y estado. Los principales problemas son retrasos en entregas e inconsistencia en calidad. Trabajan con al menos tres proveedores para asegurar el abastecimiento y consideran la puntualidad un factor crítico para la operación diaria de los restaurantes.
+La entrevista a Bianzel Noriega, de 22 años, residente en el distrito de San Isidro y parte del área de logística de la empresa Edge, permitió entender cómo los clientes comerciales gestionan la compra de frutas. El proceso combina órdenes de compra formales con comunicación directa por llamadas, correo o WhatsApp. Al seleccionar proveedores se consideran experiencia, confiabilidad, capacidad de abastecimiento y requisitos sanitarios estrictos. La verificación de calidad se realiza en recepción revisando frescura y estado. Los principales problemas son retrasos en entregas e inconsistencia en calidad. Trabajan con al menos tres proveedores para asegurar el abastecimiento y consideran la puntualidad un factor crítico para la operación diaria de los restaurantes.
 
 **Resumen – Luciana Breña**
 
-La entrevista a Luciana Breña, de 25 años y encargada de logística en una juguería, mostró una gestión práctica y periódica: cada dos días revisa el inventario para identificar frutas por agotarse y realiza pedidos ajustados a la demanda. Coordina principalmente por WhatsApp. Prioriza calidad, frescura, precios accesibles y cumplimiento del proveedor. La verificación de calidad es visual y sensorial. Rechaza pedidos con fruta muy madura, dañada o que no coincide con lo solicitado. Los principales problemas son retrasos, inconsistencia en calidad y cambios de precio sin previo aviso. Considera la puntualidad un factor crítico ya que los retrasos impactan directamente la preparación de jugos y atención al cliente.
+La entrevista a Luciana Breña, de 25 años, residente en el distrito de San Juan de Miraflores y encargada de logística en una juguería, mostró una gestión práctica y periódica: cada dos días revisa el inventario para identificar frutas por agotarse y realiza pedidos ajustados a la demanda. Coordina principalmente por WhatsApp. Prioriza calidad, frescura, precios accesibles y cumplimiento del proveedor. La verificación de calidad es visual y sensorial. Rechaza pedidos con fruta muy madura, dañada o que no coincide con lo solicitado. Los principales problemas son retrasos, inconsistencia en calidad y cambios de precio sin previo aviso. Considera la puntualidad un factor crítico ya que los retrasos impactan directamente la preparación de jugos y atención al cliente.
 
 **Resumen – Rosa Arana Medina**
 
-La entrevista a Rosa Arana Medina, comerciante de 43 años en Cajamarca, mostró un proceso mayormente tradicional basado en experiencia y relaciones previas con proveedores. Adquiere productos en mercados mayoristas locales y mediante llamadas a distribuidores. Prioriza fruta selecta de primera categoría y verifica la calidad al momento de recibir el producto. Trabaja con varios distribuidores especializados en diferentes frutas para asegurar el abastecimiento. Aunque no siente urgencia por herramientas digitales, identifica oportunidades de mejora en la consistencia de calidad y reducción de daños durante el transporte.
-
+La entrevista a Rosa Arana Medina, comerciante de 43 años residente en Cajamarca, mostró un proceso mayormente tradicional basado en experiencia y relaciones previas con proveedores. Adquiere productos en mercados mayoristas locales y mediante llamadas a distribuidores. Prioriza fruta selecta de primera categoría y verifica la calidad al momento de recibir el producto. Trabaja con varios distribuidores especializados en diferentes frutas para asegurar el abastecimiento. Aunque no siente urgencia por herramientas digitales, identifica oportunidades de mejora en la consistencia de calidad y reducción de daños durante el transporte.
 
 #### 2.2.3. Análisis de entrevistas
 

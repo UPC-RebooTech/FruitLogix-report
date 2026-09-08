@@ -17,3 +17,41 @@ Alexandra Jiménez representa al segmento de productores agrícolas, construido 
 
 Juan Vega representa al segmento de distribuidores de frutas, construido a partir de los patrones identificados en las entrevistas realizadas a Jorge Contreras, Paola Jiménez y Edwin Lozano. Se definió como un hombre de 55 años, casado y ubicado en Lima, debido a que el perfil predominante en este segmento corresponde a personas con experiencia en el sector que operan de forma independiente abasteciendo a supermercados y clientes comerciales. Sus goals reflejan directamente lo expresado por los entrevistados: cumplir pedidos a tiempo, mantener estándares de calidad y reducir rechazos son las prioridades constantes en su operación diaria. Sus frustraciones surgen de la evidencia recogida, donde el 100% de los entrevistados mencionó problemas con la variabilidad del stock, la exigencia de calidad y la poca anticipación en los pedidos, mientras que el 66% destacó dificultades de coordinación con proveedores. Se eligieron Dole, Camposol y Fresh Plaza como marcas e influencias porque representan los estándares de calidad y las referencias del sector con las que Juan interactúa o aspira a alinearse. Sus canales de WhatsApp, llamadas, email y Excel responden al 100% de los entrevistados que usaban medios directos e informales, y al uso extendido de herramientas ofimáticas básicas para organizar su operación.
 
+
+#### 2.3.2. User Task Matrix
+
+Para diseñar una solución que optimice la cadena de suministro de frutas, se identificaron tres tipos de usuarios clave: los productores, que se encargan de la producción y selección del producto; los distribuidores, responsables de la logística y cumplimiento de los pedidos; y los clientes comerciales, que necesitan abastecer sus operaciones de manera constante. El diseño de la plataforma se enfoca en facilitar la interacción entre estos tres actores para asegurar calidad, disponibilidad y eficiencia en todo el proceso.
+
+## Tasks vs User Personas
+| Tasks | Productores (Frecuencia) | Productores (Importancia) | Distribuidores (Frecuencia) | Distribuidores (Importancia) |
+|---|---|---|---|---|
+| Producir / seleccionar fruta | Muy frecuente | Alta | Frecuente | Alta |
+| Buscar compradores / proveedores | Frecuente | Alta | Frecuente | Alta |
+| Evaluar demanda | Frecuente | Media | Frecuente | Alta |
+| Generar pedidos / ventas | Frecuente | Alta | Muy frecuente | Alta |
+| Coordinar entregas | Frecuente | Alta | Muy frecuente | Alta |
+| Comunicarse con otros actores | Frecuente | Media | Muy frecuente | Alta |
+| Verificar calidad del producto | Muy frecuente | Alta | Muy frecuente | Alta |
+| Cumplir estándares / requisitos | Muy frecuente | Alta | Muy frecuente | Alta |
+| Gestionar documentación | Ocasional | Media | Frecuente | Alta |
+| Resolver problemas (rechazos, retrasos) | Ocasional | Media | Frecuente | Alta |
+| Manejar devoluciones | Ocasional | Media | Frecuente | Alta |
+| Planificar producción / abastecimiento | Frecuente | Alta | Frecuente | Alta |
+
+| Tasks | Clientes Comerciales (Frecuencia) | Clientes Comerciales (Importancia) |
+|---|---|---|
+| Producir / seleccionar fruta | No aplica | No aplica |
+| Buscar compradores / proveedores | Frecuente | Alta |
+| Evaluar demanda | Frecuente | Alta |
+| Generar pedidos / ventas | Muy frecuente | Alta |
+| Coordinar entregas | Muy frecuente | Alta |
+| Comunicarse con otros actores | Muy frecuente | Alta |
+| Verificar calidad del producto | Muy frecuente | Alta |
+| Cumplir estándares / requisitos | Muy frecuente | Alta |
+| Gestionar documentación | Frecuente | Media |
+| Resolver problemas (rechazos, retrasos) | Frecuente | Alta |
+| Manejar devoluciones | Ocasional | Media |
+| Planificar producción / abastecimiento | Frecuente | Alta |
+---
+
+La tabla muestra que los tres segmentos coinciden en considerar de alta importancia tareas como la verificación de calidad, la coordinación de entregas y la comunicación entre actores, aunque los distribuidores y clientes comerciales las realizan con mayor frecuencia debido a su rol operativo diario. Asimismo, las tareas más relevantes para los productores están relacionadas con la producción y cumplimiento de estándares, mientras que los distribuidores se enfocan en la gestión logística y resolución de problemas, y los clientes comerciales en la planificación de la demanda y evaluación de proveedores. Estas diferencias reflejan sus roles dentro del sistema: el productor busca garantizar calidad desde el origen, el distribuidor asegurar la entrega eficiente y el cliente comercial mantener la continuidad de su operación mediante un abastecimiento confiable.

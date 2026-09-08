@@ -53,7 +53,7 @@ El objetivo de la entrevista es comprender las necesidades, frustraciones y las 
 
 URL de todas las entrevistas del segmento: https://goo.su/Cffj7
 
-| Campo | ![Entrevista1](../assets/images/Entrevista%201.png) <br/>Entrevista 1 | ![Entrevista1](../assets/images/Entrevista%202.png) <br/>Entrevista 2 | ![Entrevista1](../assets/images/Entrevista%203.png) <br/>Entrevista 3 |
+| Campo | ![Entrevista1](../assets/entrevistas/Entrevista%201.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%202.png) <br/>Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%203.png) <br/>Entrevista 3 |
 |---|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
 | **Nombre** | Jorge Contreras Ballarta                                              | Paola Jiménez                                                         | Edwin Lozano                                                          |
 | **Edad** | 60 años                                                               | 25 años                                                               | 52 años                                                               |
@@ -78,7 +78,7 @@ La entrevista a Edwin Lozano, proveedor de plátanos de 52 años, permitió comp
 
 URL de todas las entrevistas del segmento: https://goo.su/Z7kcf
 
-| Campo | ![Entrevista1](../assets/images/Entrevista%204.png) <br/>Entrevista 1 | ![Entrevista1](../assets/images/Entrevista%206.png) <br/> Entrevista 2 | ![Entrevista1](../assets/images/Entrevista%205.png) <br/> Entrevista 3 |
+| Campo | ![Entrevista1](../assets/entrevistas/Entrevista%204.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%206.png) <br/> Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%205.png) <br/> Entrevista 3 |
 |---|-----------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
 | **Nombre** | Renato Navarro                                                        | Karen Forcelledo                                                       | Jessica                                                                |
 | **Edad** | 25 años                                                               | 37 años                                                                | 52 años                                                                |
@@ -103,7 +103,7 @@ La entrevista a Jessica, comerciante de 52 años residente en San Martín de Por
 
 URL de todas las entrevistas del segmento: https://goo.su/MrsO9
 
-| Campo | ![Entrevista1](../assets/images/Entrevista%207.png) <br/>Entrevista 1 | ![Entrevista1](../assets/images/Entrevista%209.png) <br/>Entrevista 2 | ![Entrevista1](../assets/images/Entrevista%208.png) <br/>Entrevista 3 |
+| Campo | ![Entrevista1](../assets/entrevistas/Entrevista%207.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%209.png) <br/>Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%208.png) <br/>Entrevista 3 |
 |---|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
 | **Nombre** | Bianzel Milagritos Noriega Donayre                                    | Luciana Breña                                                         | Rosa Arana Medina                                                     |
 | **Edad** | 22 años                                                               | 25 años                                                               | 43 años                                                               |

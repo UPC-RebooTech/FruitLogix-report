@@ -33,7 +33,7 @@
   </h4>
   <p align = "center">Proyecto</p>
   <h4 align = "center">
-  GastroLogix
+  FruitLogix
   </h4>
 <h4 align = "center">
   Integrantes

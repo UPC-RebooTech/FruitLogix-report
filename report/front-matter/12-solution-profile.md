@@ -78,7 +78,7 @@ Sabremos que tenemos éxito cuando observemos una reducción del 30% en los erro
 
 - Creemos que un dashboard de KPIs operativos y financieros permitirá a los administradores identificar cuellos de botella en la flota y conciliar cuentas por cobrar/pagar en tiempo real.
 
-### Lean UX Hypotheses Statements
+### 1.2.2.3. Lean UX Hypotheses Statements
 
 - Hipótesis 1 (Módulo centralizado de gestión de pedidos)
 
@@ -130,7 +130,7 @@ Obtienen claridad visual sobre los cuellos de botella logísticos y la conciliac
 
 Con un dashboard interactivo de KPIs operativos y financieros integrado a la plataforma actualizados en tiempo real.
 
-#### 1.2.2.4. Lean UX Canvas
+### 1.2.2.4. Lean UX Canvas
 
 | 1. Business Problem | 5. Solution Ideas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 2. Business Outcomes |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|

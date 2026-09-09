@@ -40,13 +40,13 @@
 </h4>
 <div align = "center">
 
-|| Código | Apellidos y Nombres |
-  | :--- | :--- | :--- |
-|1| u202411402 | Bojórquez Bustinza, Renzo Alejandro |
-|2| u20241b761 | Chavez Bardales, Esteban Eduardo |
-|3| u202416320 | Cochachi Chagua, Sebastian Josue |
-|4| u202411937 | Marin Cueva, Cesar Fernando |
-|5| u202419547 | Otiniano Rosales, Camila Alizeé |
+|  | Código | Apellidos y Nombres |
+|:-| :--- | :--- |
+|  | u202411402 | Bojórquez Bustinza, Renzo Alejandro |
+|  | u20241b761 | Chavez Bardales, Esteban Eduardo |
+|  | u202416320 | Cochachi Chagua, Sebastian Josue |
+|  | u202411937 | Marin Cueva, Cesar Fernando |
+|  | u202419547 | Otiniano Rosales, Camila Alizeé |
 
 </div>
 <h4 align = "center">

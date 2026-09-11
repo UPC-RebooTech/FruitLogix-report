@@ -132,7 +132,134 @@ El Empathy Map de Alexandra Jiménez representa la experiencia de una productora
 
 El Empathy Map de Juan Vega representa la experiencia de un distribuidor encargado de recibir pedidos, verificar disponibilidad, coordinar con proveedores y gestionar entregas a clientes comerciales. Juan necesita responder a los requerimientos de sus clientes dentro de los tiempos acordados, asegurar la calidad de los productos y encontrar alternativas cuando el stock disponible no es suficiente. Para desarrollar estas actividades combina llamadas, WhatsApp, correo electrónico, registros manuales y otras herramientas básicas, manteniendo comunicación constante con proveedores y clientes. La variabilidad del stock, los pedidos con poca anticipación, la coordinación fragmentada y los posibles rechazos por problemas de calidad generan presión y dificultan la organización de su operación. Además, cuando se presenta un faltante, retraso o rechazo, debe coordinar una solución rápidamente para evitar pérdidas y mantener la relación comercial. Sus principales expectativas se relacionan con una mayor visibilidad de pedidos y disponibilidad, mejor coordinación con proveedores, cumplimiento más consistente de tiempos y calidad, reducción de rechazos y un mejor seguimiento de las incidencias.
 
-#### 2.3.5. Big Picture EventStorming
+#### 2.3.5. As-Is Scenario Mapping
+
+Las tablas As-Is Scenario Mapping describen la situación actual (antes de implementar la plataforma digital) identificando fases, acciones (Doing), pensamientos (Thinking) y sentimientos (Feeling) a partir de los User Personas, User Journey Maps y Empathy Maps.
+
+<table>
+  <thead>
+    <tr>
+      <th>Fase</th>
+      <th>1. Planificación de abastecimiento</th>
+      <th>2. Emisión del pedido</th>
+      <th>3. Coordinación de la entrega</th>
+      <th>4. Recepción y control de calidad</th>
+      <th>5. Resolución de incidencias</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Doing</strong></td>
+      <td>Revisa el inventario físico en cocina y analiza la demanda del día en hojas de cálculo o notas.</td>
+      <td>Envía órdenes de compra dispersas por WhatsApp, correo y llamadas telefónicas a varios proveedores.</td>
+      <td>Realiza llamadas o envía mensajes de texto al distribuidor preguntando por la hora estimada de llegada (ETA).</td>
+      <td>Inspecciona visual y sensorialmente cada caja (firmeza, madurez, peso y aspecto físico de la fruta).</td>
+      <td>Llama de urgencia al proveedor para solicitar reposición o contacta a proveedores alternativos.</td>
+    </tr>
+    <tr>
+      <td><strong>Thinking</strong></td>
+      <td>"Tengo que pedir lo exacto para no quedarme sin stock, pero evitando mermas en cocina".</td>
+      <td>"Ojalá el distribuidor haya anotado bien las cantidades y no me cambie los precios a última hora".</td>
+      <td>"No tengo forma de saber por dónde viene el camión; cualquier demora retrasará la preparación del menú".</td>
+      <td>"A simple vista parece bien, pero siempre hay cajas con fruta sobremadura o golpeada en el fondo".</td>
+      <td>"Resolver esto me quita demasiado tiempo operativo; necesito una respuesta inmediata del proveedor".</td>
+    </tr>
+    <tr>
+      <td><strong>Feeling</strong></td>
+      <td>Inseguridad y presión ante la falta de datos históricos consolidados de consumo diario.</td>
+      <td>Frustración y estrés por la fragmentación de la información entre chats y llamadas.</td>
+      <td>Incertidumbre y ansiedad debido a la ausencia de visibilidad y rastreo en tiempo real.</td>
+      <td>Alerta y desconfianza por la variabilidad en los estándares de calidad recibidos.</td>
+      <td>Agotamiento y molestia al tener que improvisar soluciones para no frenar la atención.</td>
+    </tr>
+  </tbody>
+</table>
+
+Este mapa describe el flujo actual de aprovisionamiento de frutas desde la perspectiva del cliente comercial en Lima. Refleja una dinámica reactiva donde la planificación depende de conteos físicos y estimaciones empíricas, la emisión de órdenes se fragmenta entre llamadas y mensajes de WhatsApp, y la espera del despacho transcurre sin visibilidad de rutas ni tiempos estimados de llegada. Asimismo, evidencia la tensión generada al momento de la descarga, donde el control de calidad se reduce a una inspección visual tardía sujeta a discrepancias con el proveedor y donde la resolución de retrasos o mermas exige improvisar soluciones inmediatas para no detener la operación diaria del negocio.
+
+<table>
+  <thead>
+    <tr>
+      <th>Fase</th>
+      <th>1. Planificación de cosecha</th>
+      <th>2. Recepción del encargo</th>
+      <th>3. Selección y empaque</th>
+      <th>4. Coordinación de despacho</th>
+      <th>5. Gestión de pérdidas y rechazos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Doing</strong></td>
+      <td>Inspecciona sus parcelas y proyecta el volumen recolectable basándose en experiencia empírica y cuadernos.</td>
+      <td>Contesta llamadas y mensajes de WhatsApp con solicitudes de última hora y anota pedidos a mano.</td>
+      <td>Clasifica la fruta bajo criterios propios de tamaño y color sin una ficha técnica digital estandarizada.</td>
+      <td>Entrega la carga al chofer en el centro de acopio sin comprobantes técnicos de salida ni control de frío.</td>
+      <td>Recibe reclamos verbales tardíos por lotes dañados en ruta y asume el costo económico de la merma.</td>
+    </tr>
+    <tr>
+      <td><strong>Thinking</strong></td>
+      <td>"El clima puede cambiar la madurez de la fruta y hacerme perder parte de la producción".</td>
+      <td>"Los pedidos llegan con muy poca anticipación; es difícil organizar la cuadrilla de corte tan rápido".</td>
+      <td>"Estoy seleccionando lo mejor posible, pero no sé si el cliente en Lima manejará el mismo criterio".</td>
+      <td>"Espero que el transporte no maltrate los cajones y que la fruta llegue en buen estado".</td>
+      <td>"Me descuentan dinero por fruta dañada, pero no tengo cómo comprobar si el daño fue en el viaje".</td>
+    </tr>
+    <tr>
+      <td><strong>Feeling</strong></td>
+      <td>Preocupación constante por factores climáticos y la falta de previsión de la demanda.</td>
+      <td>Presión y agobio operativo al recibir solicitudes sin suficiente tiempo de planificación.</td>
+      <td>Inseguridad ante la falta de especificaciones técnicas claras y homogéneas.</td>
+      <td>Desprotección e incertidumbre al perder el rastro del producto tras cargarlo al vehículo.</td>
+      <td>Impotencia y resignación ante las pérdidas económicas directas por rechazos injustificados.</td>
+    </tr>
+  </tbody>
+</table>
+
+Este mapa ilustra las dificultades operativas que enfrenta el sector de productores agrícolas en campo al gestionar sus cosechas bajo métodos tradicionales. Muestra cómo la planificación de la recolección se ve afectada por factores climáticos y por pedidos de última hora recibidos con escasa anticipación por intermediarios. La clasificación de los lotes se efectúa de forma manual bajo criterios subjetivos sin respaldo técnico digital, y el despacho se realiza sin mecanismos de seguimiento sobre el transporte o la cadena de frío. Finalmente, el mapa pone de manifiesto la vulnerabilidad económica del productor ante rechazos y descuentos tardíos en destino, los cuales no puede auditar ni prevenir por falta de retroalimentación en tiempo real.
+
+<table>
+  <thead>
+    <tr>
+      <th>Fase</th>
+      <th>1. Recepción y registro de órdenes</th>
+      <th>2. Verificación y abastecimiento</th>
+      <th>3. Coordinación con proveedores</th>
+      <th>4. Preparación y despacho</th>
+      <th>5. Gestión de rechazos y cobranza</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Doing</strong></td>
+      <td>Transcribe datos desde WhatsApp y notas de papel hacia hojas de cálculo de Excel en su laptop.</td>
+      <td>Revisa inventarios manuales y constata visualmente si el stock actual alcanza para cubrir las órdenes.</td>
+      <td>Llama a múltiples productores para consultar existencias y pactar entregas de emergencia.</td>
+      <td>Agrupa cajones, emite guías de remisión impresas y coordina la ruta del conductor telefónicamente.</td>
+      <td>Gestiona devoluciones físicas, negocia notas de crédito y cuadra pagos pendientes manualmente.</td>
+    </tr>
+    <tr>
+      <td><strong>Thinking</strong></td>
+      <td>"Debo evitar confusiones de digitación; un error en las cantidades me costará una penalidad".</td>
+      <td>"No tengo certeza del stock real de mis proveedores hasta que me responden las llamadas".</td>
+      <td>"Tardo demasiado tiempo coordinando productor por productor; la ventana de 48 horas se agota".</td>
+      <td>"Si el tráfico o la temperatura del furgón fallan, el supermercado me rechazará todo el lote".</td>
+      <td>"Los rechazos en recepción me dejan mercancía parada y generan desorden en mis cuentas por cobrar".</td>
+    </tr>
+    <tr>
+      <td><strong>Feeling</strong></td>
+      <td>Sobrecarga de trabajo y temor a perder información crítica entre tantos medios dispersos.</td>
+      <td>Ansiedad por la dependencia de registros estáticos y la falta de visibilidad del stock.</td>
+      <td>Frustración ante la lentitud de las comunicaciones informales con el campo.</td>
+      <td>Estrés y tensión continua por el cumplimiento de los estrictos horarios de entrega del cliente.</td>
+      <td>Desgaste físico y económico ante la resolución no estructurada de rechazos y mermas.</td>
+    </tr>
+  </tbody>
+</table>
+
+Este mapa detalla el proceso de intermediación logística que ejecuta el distribuidor para conectar la oferta rural con la demanda urbana en ventanas críticas de menos de 48 horas. Evidencia una sobrecarga de trabajo causada por la transcripción manual de datos entre notas de papel, chats y hojas de cálculo, sumada a la incertidumbre permanente sobre el stock disponible de sus proveedores agrícolas. La preparación y despacho de las unidades se gestiona bajo alta presión de tiempo para cumplir los estrictos horarios del retail, enfrentando riesgos de merma por variaciones térmicas durante el flete. Como resultado, los reclamos y lotes rechazados en recepción generan desorden financiero en la liquidación de cuentas y pérdidas operativas recurrentes.
+
+#### 2.3.6. Big Picture EventStorming
 
 ### Introducción y Proceso:
 
@@ -209,7 +336,7 @@ Estos Pain Points permiten hacer visibles situaciones críticas dentro de la cad
 
 <img alt="bigpicture" height="200%" src="../assets/miro/Big_Picture_Event_Storming_Paso3.jpg" width="550"/>
 
-#### 2.3.6. Ubiquitous Language
+#### 2.3.7. Ubiquitous Language
 
 El *Ubiquitous Language* define un conjunto de términos y conceptos compartidos entre los miembros del equipo y los stakeholders del dominio de negocio de FruitLogix. Su propósito es reducir ambigüedades y mantener una comunicación consistente al referirse a los actores, procesos y elementos que forman parte de la cadena de suministro de frutas.
 

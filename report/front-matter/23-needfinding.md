@@ -26,39 +26,69 @@ Juan Vega representa al segmento de distribuidores de frutas y fue construido a 
 El User Task Matrix permite comparar las principales tareas que realizan los User Personas de FruitLogix dentro de la cadena de suministro de frutas, independientemente de la existencia de la solución. Para este análisis se consideran Alexandra Jiménez, representante de los productores agrícolas; Juan Vega, representante de los distribuidores de frutas; y María Gómez, representante de los clientes comerciales. Para cada tarea se evalúa su frecuencia de realización y su importancia dentro de las actividades habituales de cada User Persona.
 
 ## Tasks vs User Personas
-| Tasks | Alexandra Jiménez (Frecuencia) | Alexandra Jiménez (Importancia) | Juan Vega (Frecuencia) | Juan Vega (Importancia) |
-|---|---|---|---|---|
-| Producir y preparar fruta | Muy frecuente | Alta | No aplica | No aplica |
-| Buscar compradores | Frecuente | Alta | Frecuente | Alta |
-| Buscar y evaluar proveedores | No aplica | No aplica | Frecuente | Alta |
-| Evaluar demanda | Frecuente | Media | Frecuente | Alta |
-| Gestionar pedidos de clientes | Frecuente | Alta | Muy frecuente | Alta |
-| Realizar pedidos a proveedores | No aplica | No aplica | Frecuente | Alta |
-| Coordinar entregas | Frecuente | Alta | Muy frecuente | Alta |
-| Comunicarse con otros actores de la cadena | Frecuente | Media | Muy frecuente | Alta |
-| Verificar la calidad del producto | Muy frecuente | Alta | Muy frecuente | Alta |
-| Cumplir o verificar estándares y requisitos | Muy frecuente | Alta | Muy frecuente | Alta |
-| Gestionar documentación | Ocasional | Media | Frecuente | Alta |
-| Resolver problemas de pedidos, rechazos o retrasos | Ocasional | Media | Frecuente | Alta |
-| Gestionar devoluciones | Ocasional | Media | Frecuente | Alta |
-| Planificar producción o abastecimiento | Frecuente | Alta | Frecuente | Alta |
 
-| Tasks | María Gómez (Frecuencia) | María Gómez (Importancia) |
-|---|---|---|
-| Producir y preparar fruta | No aplica | No aplica |
-| Buscar compradores | No aplica | No aplica |
-| Buscar y evaluar proveedores | Frecuente | Alta |
-| Evaluar demanda | Frecuente | Alta |
-| Gestionar pedidos de clientes | No aplica | No aplica |
-| Realizar pedidos a proveedores | Muy frecuente | Alta |
-| Coordinar entregas | Muy frecuente | Alta |
-| Comunicarse con otros actores de la cadena | Muy frecuente | Alta |
-| Verificar la calidad del producto | Muy frecuente | Alta |
-| Cumplir o verificar estándares y requisitos | Muy frecuente | Alta |
-| Gestionar documentación | Frecuente | Media |
-| Resolver problemas de pedidos, rechazos o retrasos | Frecuente | Alta |
-| Gestionar devoluciones | Ocasional | Media |
-| Planificar producción o abastecimiento | Frecuente | Alta |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Tasks</th>
+      <th colspan="2">Alexandra Jiménez</th>
+      <th colspan="2">Juan Vega</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Producir y preparar fruta</td><td>Muy frecuente</td><td>Alta</td><td>No aplica</td><td>No aplica</td></tr>
+    <tr><td>Buscar compradores</td><td>Frecuente</td><td>Alta</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Buscar y evaluar proveedores</td><td>No aplica</td><td>No aplica</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Evaluar demanda</td><td>Frecuente</td><td>Media</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Gestionar pedidos de clientes</td><td>Frecuente</td><td>Alta</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Realizar pedidos a proveedores</td><td>No aplica</td><td>No aplica</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Coordinar entregas</td><td>Frecuente</td><td>Alta</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Comunicarse con otros actores de la cadena</td><td>Frecuente</td><td>Media</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Verificar la calidad del producto</td><td>Muy frecuente</td><td>Alta</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Cumplir o verificar estándares y requisitos</td><td>Muy frecuente</td><td>Alta</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Gestionar documentación</td><td>Ocasional</td><td>Media</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Resolver problemas de pedidos, rechazos o retrasos</td><td>Ocasional</td><td>Media</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Gestionar devoluciones</td><td>Ocasional</td><td>Media</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Planificar producción o abastecimiento</td><td>Frecuente</td><td>Alta</td><td>Frecuente</td><td>Alta</td></tr>
+  </tbody>
+</table>
+
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Tasks</th>
+      <th colspan="2">María Gómez</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Producir y preparar fruta</td><td>No aplica</td><td>No aplica</td></tr>
+    <tr><td>Buscar compradores</td><td>No aplica</td><td>No aplica</td></tr>
+    <tr><td>Buscar y evaluar proveedores</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Evaluar demanda</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Gestionar pedidos de clientes</td><td>No aplica</td><td>No aplica</td></tr>
+    <tr><td>Realizar pedidos a proveedores</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Coordinar entregas</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Comunicarse con otros actores de la cadena</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Verificar la calidad del producto</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Cumplir o verificar estándares y requisitos</td><td>Muy frecuente</td><td>Alta</td></tr>
+    <tr><td>Gestionar documentación</td><td>Frecuente</td><td>Media</td></tr>
+    <tr><td>Resolver problemas de pedidos, rechazos o retrasos</td><td>Frecuente</td><td>Alta</td></tr>
+    <tr><td>Gestionar devoluciones</td><td>Ocasional</td><td>Media</td></tr>
+    <tr><td>Planificar producción o abastecimiento</td><td>Frecuente</td><td>Alta</td></tr>
+  </tbody>
+</table>
 
 La matriz evidencia que las tres User Personas coinciden en otorgar una alta importancia a la verificación de la calidad, la coordinación de entregas y el cumplimiento de estándares o requisitos. Sin embargo, la frecuencia de sus actividades varía según el rol que desempeñan dentro de la cadena de suministro. Alexandra Jiménez concentra sus tareas en la producción, preparación y control de calidad de la fruta, además de la planificación de la producción. Juan Vega presenta una mayor frecuencia en la gestión de pedidos, coordinación con proveedores y entregas, debido a su función como intermediario entre productores y clientes comerciales. Por su parte, María Gómez se enfoca principalmente en evaluar la demanda, realizar pedidos a proveedores, verificar la calidad de los productos recibidos y asegurar la continuidad del abastecimiento. Estas diferencias reflejan que, aunque los tres actores comparten objetivos relacionados con calidad y cumplimiento, cada uno participa en etapas distintas del proceso de abastecimiento.
 
@@ -108,9 +138,7 @@ El Empathy Map de Juan Vega representa la experiencia de un distribuidor encarga
 
 Como primera aproximación al dominio de negocio de FruitLogix, el equipo realizó una sesión de Big Picture EventStorming con el objetivo de comprender de manera visual y colaborativa los principales eventos que ocurren dentro de la cadena de suministro de frutas. Esta técnica permitió explorar procesos relacionados con el registro y participación de los distintos actores, la gestión de pedidos, el abastecimiento de productos, el control de calidad, la gestión de recursos logísticos y el proceso de entrega.
 
-Durante la sesión se trabajó inicialmente con eventos de dominio representados mediante notas naranjas. Posteriormente, estos eventos fueron organizados cronológicamente en líneas de tiempo y complementados con los actores involucrados en cada proceso. Finalmente, se incorporaron Hotspots para identificar dudas, riesgos y puntos críticos que requieren mayor análisis.
-
-
+Durante la sesión se trabajó inicialmente con eventos de dominio representados mediante notas naranjas. Posteriormente, estos eventos fueron organizados cronológicamente en líneas de tiempo y complementados con los actores involucrados en cada proceso. Finalmente, se incorporaron Pain Points para identificar problemas, riesgos y puntos críticos del dominio que requieren mayor análisis.
 
 ### Resultados y Hallazgos:
 
@@ -125,7 +153,7 @@ A través del Big Picture EventStorming se identificaron los siguientes elemento
 * **Flujos Principales:** La organización cronológica permitió distinguir procesos relacionados con el registro y configuración de usuarios y recursos logísticos, así como un flujo operativo principal que conecta la gestión del pedido con el abastecimiento, control de calidad, despacho y entrega.
 
 
-* **Hotspots (Rosado):** Se identificaron puntos que requieren mayor atención, como la disponibilidad insuficiente para completar pedidos, la consistencia de los criterios de calidad entre actores, la disponibilidad de recursos para realizar entregas, los retrasos o incidentes durante el transporte y los posibles rechazos del cliente al momento de recibir el producto.
+* **Pain Points (Rosado):** Se identificaron puntos de dolor que requieren mayor atención, como la disponibilidad insuficiente para completar pedidos, la consistencia de los criterios de calidad entre actores, la disponibilidad de recursos para realizar entregas, los retrasos o incidentes durante el transporte y los posibles rechazos del cliente al momento de recibir el producto.
 
 <img alt="bigpicture" height="200%" src="../assets/miro/Big_Picture_Event_Storming.jpg" width="550"/>
 
@@ -160,16 +188,16 @@ La incorporación de actores como `Commercial Client`, `Distributor`, `Producer`
 
 <img alt="bigpicture" height="200%" src="../assets/miro/Big_Picture_Event_Storming_Paso2.jpg" width="550"/>
 
-### Paso 3: Líneas de Tiempo con Puntos Críticos (Timelines with Hotspots)
+### Paso 3: Líneas de Tiempo con Puntos de Dolor (Timelines with Pain Points)
 
-El refinamiento final de la línea de tiempo incorpora **Hotspots** (representados en rosado), que identifican "puntos de dolor", riesgos o aspectos del dominio que requieren mayor análisis y discusión. Las observaciones clave incluyen:
+El refinamiento final de la línea de tiempo incorpora **Pain Points** (representados en rosado), que identifican problemas, riesgos o aspectos del dominio que requieren mayor análisis y discusión. Las observaciones clave incluyen:
 
 * **Cuellos de Botella en Verificación:** Se identifica que la validación manual de la documentación empresarial es actualmente demasiado lenta.
 * **Riesgos de Integridad de Datos:** Se señala la falta de una conexión API en tiempo real con bases de datos gubernamentales para la verificación de identidad y licencias.
 * **Fricción Operativa y de UX:** Se resalta la confusión durante la selección del rol (*User type chosen*) y la dificultad para resolver conflictos entre productores y distribuidores respecto a los tiempos de llegada debido a la falta de registros de auditoría.
 * **Limitaciones Técnicas:** Se aborda la falta de alertas automatizadas para las fichas técnicas de vehículos que vencen, lo que puede provocar eventos abruptos de revocación de asignación de vehículos (*Vehicle Assignment Revoked*).
 
-En los procesos de registro, perfiles y flota se conservaron puntos críticos relacionados con la selección de roles, validación de documentación, coordinación entre actores y disponibilidad de recursos. A estos hallazgos se añadieron Hotspots asociados al flujo principal de negocio:
+En los procesos de registro, perfiles y flota se conservaron puntos críticos relacionados con la selección de roles, validación de documentación, coordinación entre actores y disponibilidad de recursos. A estos hallazgos se añadieron Pain Points asociados al flujo principal de negocio:
 
 * **Disponibilidad de productos:** Se planteó qué ocurre cuando no existe suficiente stock para completar un pedido antes de asignarlo a un productor.
 * **Consistencia en la calidad:** Se identificó la necesidad de determinar cómo asegurar que los diferentes actores compartan criterios de calidad consistentes.
@@ -177,7 +205,7 @@ En los procesos de registro, perfiles y flota se conservaron puntos críticos re
 * **Incidentes durante el transporte:** Se consideró cómo deben gestionarse posibles retrasos o incidentes mientras el envío se encuentra en tránsito.
 * **Rechazos en la entrega:** Se planteó qué ocurre cuando el cliente comercial detecta problemas de calidad o decide rechazar la entrega.
 
-Estos Hotspots permiten hacer visibles situaciones críticas dentro de la cadena de suministro y constituyen puntos de discusión que podrán ser refinados en las siguientes etapas de análisis y diseño del dominio.
+Estos Pain Points permiten hacer visibles situaciones críticas dentro de la cadena de suministro y constituyen puntos de discusión que podrán ser refinados en las siguientes etapas de análisis y diseño del dominio.
 
 <img alt="bigpicture" height="200%" src="../assets/miro/Big_Picture_Event_Storming_Paso3.jpg" width="550"/>
 

@@ -104,7 +104,7 @@ Este escenario describe una gestión de compras ágil, transparente y automatiza
   </tbody>
 </table>
 
-Este mapa plasma la tecnificación y formalización de las labores de la productora rural dentro de la cadena. Gracias a FruitLogix, Alexandra programa sus jornadas con base en solicitudes estructuradas recibidas con antelación, eliminando la sobrecarga de los encargos de último minuto. El registro digital de inspecciones con fotos antes del despacho le brinda un respaldo técnico objetivo, garantizando que su fruta cumpla los estándares exigidos antes de salir del centro de acopio. Al integrarse con sensores IoT vehiculares, la plataforma delimita responsabilidades durante el transporte, protegiendo sus ingresos y consolidando una relación comercial transparente con el distribuidor.
+Este mapa plasma la tecnificación y formalización de las labores de la productora rural dentro de la cadena. Gracias a FruitLogix, Alexandra programaría sus jornadas con base en solicitudes estructuradas recibidas con antelación, eliminando la sobrecarga de los encargos de último minuto. El registro digital de inspecciones con fotos antes del despacho le brinda un respaldo técnico objetivo, garantizando que su fruta cumpla los estándares exigidos antes de salir del centro de acopio. Al integrarse con sensores IoT vehiculares, la plataforma delimita responsabilidades durante el transporte, protegiendo sus ingresos y consolidando una relación comercial transparente con el distribuidor.
 
 #### User Persona 3: Juan Vega
 
@@ -155,4 +155,56 @@ Este mapa plasma la tecnificación y formalización de las labores de la product
   </tbody>
 </table>
 
-Este escenario refleja la transformación del distribuidor en un operador logístico moderno y eficiente. Mediante FruitLogix, Juan automatiza la recepción y asignación de órdenes, reduciendo los tiempos de coordinación de horas a minutos. La plataforma le otorga control total del inventario regional, visibilidad de los reportes de calidad antes del embarque y supervisión telemática de la cadena de frío mediante sensores IoT en furgones. Al finalizar la entrega, la confirmación digital y la emisión automática de facturas minimizan los rechazos en destino, ordenan las cuentas por cobrar y fortalecen la competitividad de su negocio frente al retail.
+Este escenario refleja la transformación del distribuidor en un operador logístico moderno y eficiente. Mediante FruitLogix, Juan automatizaría la recepción y asignación de órdenes, reduciendo los tiempos de coordinación de horas a minutos. La plataforma le otorga control total del inventario regional, visibilidad de los reportes de calidad antes del embarque y supervisión telemática de la cadena de frío mediante sensores IoT en furgones. Al finalizar la entrega, la confirmación digital y la emisión automática de facturas minimizan los rechazos en destino, ordenan las cuentas por cobrar y fortalecen la competitividad de su negocio frente al retail.
+
+### 2.4.2 User Stories
+
+En esta sección se definen los requerimientos funcionales del sistema FruitLogix mediante Historias de Usuario, siguiendo un enfoque ágil centrado en el valor aportado a cada uno de los segmentos objetivo identificados. Cada historia de usuario articula una necesidad específica a través de la estructura estándar (Como... quiero... para...), garantizando trazabilidad con los objetivos de negocio y facilitando su descomposición en tareas técnicas.
+Asimismo, para asegurar un desarrollo verificable y preciso, cada historia incorpora criterios de aceptación redactados bajo el formato Gherkin (Given-When-Then), delimitando escenarios de éxito y manejo de casos excepcionales o restricciones de negocio.
+
+#### Epics
+
+A partir del análisis del dominio y los procesos clave de la cadena de suministro de frutas, se estructuran seis épicas principales, las cuales representan los grandes bloques funcionales que componen la arquitectura de la solución:
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th style="width: 12%; padding: 10px; text-align: center;">Epic ID</th>
+      <th style="width: 28%; padding: 10px;">Nombre</th>
+      <th style="width: 35%; padding: 10px;">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center; font-weight: bold;">EP01</td>
+      <td style="padding: 10px;"><strong>Gestión de Pedidos y Proveedores</strong></td>
+      <td style="padding: 10px;">Como usuario de la plataforma, quiero gestionar pedidos y productores de forma centralizada, para organizar la operación logística y reducir el uso de herramientas manuales.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center; font-weight: bold;">EP02</td>
+      <td style="padding: 10px;"><strong>Control de Calidad e Incidencias</strong></td>
+      <td style="padding: 10px;">Como usuario de la plataforma, quiero registrar y validar la calidad de los productos en cada etapa, para reducir rechazos y garantizar que los lotes cumplan los estándares antes del envío.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center; font-weight: bold;">EP03</td>
+      <td style="padding: 10px;"><strong>Trazabilidad, Entregas y Notificaciones</strong></td>
+      <td style="padding: 10px;">Como usuario de la plataforma, quiero tener visibilidad en tiempo real del estado de cada pedido, incluyendo rutas y actualizaciones de estado, para tomar decisiones oportunas y mantener informados a todos los actores involucrados en el proceso de entrega.</td>
+      </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center; font-weight: bold;">EP04</td>
+      <td style="padding: 10px;"><strong>Dashboard, Métricas y Reportes</strong></td>
+      <td style="padding: 10px;">Como usuario de la plataforma, quiero visualizar indicadores de desempeño y generar reportes, para evaluar la eficiencia logística y tomar decisiones basadas en datos.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center; font-weight: bold;">EP05</td>
+      <td style="padding: 10px;"><strong>Gestión de Usuarios, Seguridad y Comunicación</strong></td>
+      <td style="padding: 10px;">Como usuario de la plataforma, quiero gestionar mi perfil, roles y comunicarme con otros actores, para garantizar un acceso seguro y una colaboración ordenada dentro del sistema.</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center; font-weight: bold;">EP06</td>
+      <td style="padding: 10px;"><strong>Experiencia Digital y Servicios Web</strong></td>
+      <td style="padding: 10px;">Como equipo de desarrollo, queremos implementar la Landing Page, la interfaz responsive, la integración con servicios externos y los servicios web de la plataforma, para presentar FruitLogix a nuevos visitantes, permitir su registro y garantizar el correcto funcionamiento.</td>
+    </tr>
+  </tbody>
+</table>
+

@@ -166,45 +166,55 @@ Asimismo, para asegurar un desarrollo verificable y preciso, cada historia incor
 
 A partir del análisis del dominio y los procesos clave de la cadena de suministro de frutas, se estructuran seis épicas principales, las cuales representan los grandes bloques funcionales que componen la arquitectura de la solución:
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-  <thead>
-    <tr>
-      <th style="width: 12%; padding: 10px; text-align: center;">Epic ID</th>
-      <th style="width: 28%; padding: 10px;">Nombre</th>
-      <th style="width: 35%; padding: 10px;">Descripción</th>
-    </tr>
-  </thead>
+| Epic ID | Nombre | Descripción |
+| --- | --- | --- |
+| **EP01** | **Gestión de Pedidos y Proveedores** | Como usuario de la plataforma, quiero gestionar pedidos y productores de forma centralizada, para organizar la operación logística y reducir el uso de herramientas manuales.|
+| **EP02** | **Control de Calidad e Incidencias** | Como usuario de la plataforma, quiero registrar y validar la calidad de los productos en cada etapa, para reducir rechazos y garantizar que los lotes cumplan los estándares antes del envío.|
+| **EP03** | **Trazabilidad, Entregas y Notificaciones** | Como usuario de la plataforma, quiero tener visibilidad en tiempo real del estado de cada pedido, incluyendo rutas y actualizaciones de estado, para tomar decisiones oportunas y mantener informados a todos los actores involucrados en el proceso de entrega.|
+| **EP04** | **Dashboard, Métricas y Reportes** | Como usuario de la plataforma, quiero visualizar indicadores de desempeño y generar reportes, para evaluar la eficiencia logística y tomar decisiones basadas en datos.|
+| **EP05** | **Gestión de Usuarios, Seguridad y Comunicación** | Como usuario de la plataforma, quiero gestionar mi perfil, roles y comunicarme con otros actores, para garantizar un acceso seguro y una colaboración ordenada dentro del sistema.|
+| **EP06** | **Experiencia Digital y Servicios Web** | Como equipo de desarrollo, queremos implementar la Landing Page, la interfaz responsive, la integración con servicios externos y los servicios web de la plataforma, para presentar FruitLogix a nuevos visitantes, permitir su registro y garantizar el correcto funcionamiento.|
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
-      <td style="padding: 10px; text-align: center; font-weight: bold;">EP01</td>
-      <td style="padding: 10px;"><strong>Gestión de Pedidos y Proveedores</strong></td>
-      <td style="padding: 10px;">Como usuario de la plataforma, quiero gestionar pedidos y productores de forma centralizada, para organizar la operación logística y reducir el uso de herramientas manuales.</td>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
     </tr>
     <tr>
-      <td style="padding: 10px; text-align: center; font-weight: bold;">EP02</td>
-      <td style="padding: 10px;"><strong>Control de Calidad e Incidencias</strong></td>
-      <td style="padding: 10px;">Como usuario de la plataforma, quiero registrar y validar la calidad de los productos en cada etapa, para reducir rechazos y garantizar que los lotes cumplan los estándares antes del envío.</td>
+      <td style="padding: 8px;">US01</td>
+      <td style="padding: 8px;">Cliente Comercial</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
-      <td style="padding: 10px; text-align: center; font-weight: bold;">EP03</td>
-      <td style="padding: 10px;"><strong>Trazabilidad, Entregas y Notificaciones</strong></td>
-      <td style="padding: 10px;">Como usuario de la plataforma, quiero tener visibilidad en tiempo real del estado de cada pedido, incluyendo rutas y actualizaciones de estado, para tomar decisiones oportunas y mantener informados a todos los actores involucrados en el proceso de entrega.</td>
-      </tr>
-    <tr>
-      <td style="padding: 10px; text-align: center; font-weight: bold;">EP04</td>
-      <td style="padding: 10px;"><strong>Dashboard, Métricas y Reportes</strong></td>
-      <td style="padding: 10px;">Como usuario de la plataforma, quiero visualizar indicadores de desempeño y generar reportes, para evaluar la eficiencia logística y tomar decisiones basadas en datos.</td>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Registro de pedido comercial digital</td>
     </tr>
     <tr>
-      <td style="padding: 10px; text-align: center; font-weight: bold;">EP05</td>
-      <td style="padding: 10px;"><strong>Gestión de Usuarios, Seguridad y Comunicación</strong></td>
-      <td style="padding: 10px;">Como usuario de la plataforma, quiero gestionar mi perfil, roles y comunicarme con otros actores, para garantizar un acceso seguro y una colaboración ordenada dentro del sistema.</td>
+      <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
-      <td style="padding: 10px; text-align: center; font-weight: bold;">EP06</td>
-      <td style="padding: 10px;"><strong>Experiencia Digital y Servicios Web</strong></td>
-      <td style="padding: 10px;">Como equipo de desarrollo, queremos implementar la Landing Page, la interfaz responsive, la integración con servicios externos y los servicios web de la plataforma, para presentar FruitLogix a nuevos visitantes, permitir su registro y garantizar el correcto funcionamiento.</td>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como cliente comercial, quiero registrar un nuevo pedido seleccionando variedades de fruta, cantidades y fecha requerida desde el catálogo de la plataforma, para abastecer mi operación sin depender de mensajes dispersos por WhatsApp o llamadas telefónicas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Registro exitoso de pedido comercial</strong><br>
+        <strong>Given</strong> que el cliente comercial inició sesión en la plataforma,<br>
+        <strong>When</strong> ingresa los datos requeridos del producto y confirma la creación del pedido,<br>
+        <strong>Then</strong> se asigna un ID único y muestra un mensaje de confirmación.<br><br>
+        <strong>Escenario 2: Intento fallido registro de pedido</strong><br>
+        <strong>Given</strong> que el cliente comercial inició sesión en la plataforma,<br>
+        <strong>When</strong> intenta confirmar el pedido sin haber seleccionado al menos un tipo de fruta y cantidad válida,<br>
+        <strong>Then</strong> se bloquea el intento de envío y muestra los campos que hacen falta llenar.
+      </td>
     </tr>
   </tbody>
 </table>
-

@@ -2775,65 +2775,21 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
       <th style="width: 25%; padding: 8px;">Epic</th>
     </tr>
     <tr>
-      <td style="padding: 8px;">US??</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0?</td>
-    </tr>
-    <tr>
-      <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-----</td>
-    </tr>
-    <tr>
-      <th colspan="4" style="padding: 8px;">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
-  <tbody>
-    <tr>
-      <th style="width: 20%; padding: 8px;">Story ID</th>
-      <th style="width: 30%; padding: 8px;">User</th>
-      <th style="width: 25%; padding: 8px;">Priority</th>
-      <th style="width: 25%; padding: 8px;">Epic</th>
-    </tr>
-    <tr>
       <td style="padding: 8px;">TS01</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP06</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Configurar entorno de desarrollo</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero configurar mi entorno de desarrollo local siguiendo la guía del proyecto (dependencias, variables de entorno y conexión a base de datos), Para comenzar a trabajar correctamente sobre el repositorio sin bloqueos iniciales.
       </td>
     </tr>
     <tr>
@@ -2841,14 +2797,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Configuración exitosa</strong><br>
+        <strong>Given</strong> que el developer sigue paso a paso las instrucciones del README y clona el repositorio<br>
+        <strong>When</strong> instala las dependencias y ejecuta el proyecto localmente<br>
+        <strong>Then</strong> el entorno queda operativo y puede levantar la aplicación sin errores<br><br>
+        <strong>Escenario 2: Error de configuración</strong><br>
+        <strong>Given</strong> que el developer omite un paso obligatorio (ej. variables de entorno o versión de dependencia)<br>
+        <strong>When</strong> intenta ejecutar el proyecto<br>
+        <strong>Then</strong> el sistema muestra un mensaje de error específico indicando qué configuración falta
       </td>
     </tr>
   </tbody>
@@ -2864,20 +2820,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS02</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP05</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar autenticación de usuarios</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar el mecanismo de autenticación (login con emisión de token JWT), Para permitir acceso seguro a la plataforma a los distintos roles de usuario.
       </td>
     </tr>
     <tr>
@@ -2885,14 +2841,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Autenticación exitosa</strong><br>
+        <strong>Given</strong> que el usuario ingresa credenciales válidas registradas en el sistema<br>
+        <strong>When</strong> el servidor las valida<br>
+        <strong>Then</strong> retorna un token de acceso autorizado junto con los datos básicos del usuario<br><br>
+        <strong>Escenario 2: Autenticación fallida</strong><br>
+        <strong>Given</strong> que el usuario ingresa credenciales incorrectas o inexistentes<br>
+        <strong>When</strong> el servidor las valida<br>
+        <strong>Then</strong> retorna un error de autorización sin revelar si el correo o la contraseña fue el dato incorrecto
       </td>
     </tr>
   </tbody>
@@ -2908,20 +2864,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS03</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP05</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar registro de usuarios</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar el endpoint de registro de usuarios con validación de datos y encriptación de contraseña, Para permitir la creación segura de nuevas cuentas en la plataforma.
       </td>
     </tr>
     <tr>
@@ -2929,14 +2885,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Registro exitoso</strong><br>
+        <strong>Given</strong> que se envían datos válidos y un correo no registrado previamente<br>
+        <strong>When</strong> el sistema procesa la solicitud<br>
+        <strong>Then</strong> crea la cuenta correctamente con la contraseña encriptada y retorna un 201 Created<br><br>
+        <strong>Escenario 2: Registro duplicado</strong><br>
+        <strong>Given</strong> que el correo ingresado ya existe en la base de datos<br>
+        <strong>When</strong> el sistema valida la solicitud<br>
+        <strong>Then</strong> retorna un error de duplicidad sin crear una cuenta adicional
       </td>
     </tr>
   </tbody>
@@ -2952,20 +2908,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS04</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar registro de pedidos</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar la creación de pedidos en el API validando los datos obligatorios y asignando un ID único, Para registrar nuevas órdenes de forma consistente en el sistema.
       </td>
     </tr>
     <tr>
@@ -2973,14 +2929,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Registro exitoso</strong><br>
+        <strong>Given</strong> que se envían datos válidos y completos del pedido<br>
+        <strong>When</strong> el sistema procesa la solicitud<br>
+        <strong>Then</strong> registra el pedido correctamente y retorna el ID generado<br><br>
+        <strong>Escenario 2: Datos inválidos</strong><br>
+        <strong>Given</strong> que la solicitud llega con información incompleta o con formato incorrecto<br>
+        <strong>When</strong> el sistema valida los datos<br>
+        <strong>Then</strong> retorna un error 400 detallando los campos inválidos
       </td>
     </tr>
   </tbody>
@@ -2996,20 +2952,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS05</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar consulta de pedidos</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar el endpoint de consulta de pedidos respetando los permisos del rol autenticado, Para obtener la información registrada en el sistema de forma segura.
       </td>
     </tr>
     <tr>
@@ -3017,14 +2973,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Consulta exitosa</strong><br>
+        <strong>Given</strong> que un usuario autenticado con permisos válidos solicita la lista de pedidos<br>
+        <strong>When</strong> el sistema procesa la solicitud<br>
+        <strong>Then</strong> retorna la lista de pedidos correspondiente a su rol y alcance<br><br>
+        <strong>Escenario 2: Acceso no autorizado</strong><br>
+        <strong>Given</strong> que el usuario no cuenta con los permisos necesarios para ver esos pedidos<br>
+        <strong>When</strong> el sistema valida el token y el rol<br>
+        <strong>Then</strong> retorna un error de autorización (403) sin exponer datos
       </td>
     </tr>
   </tbody>
@@ -3040,20 +2996,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS06</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar actualización de estado de pedido</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar la actualización del estado de pedidos validando las transiciones permitidas, Para reflejar correctamente el progreso de la operación logística.
       </td>
     </tr>
     <tr>
@@ -3061,14 +3017,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Actualización exitosa</strong><br>
+        <strong>Given</strong> que el pedido se encuentra en un estado que permite avanzar al siguiente<br>
+        <strong>When</strong> el sistema valida la transición solicitada<br>
+        <strong>Then</strong> actualiza el estado correctamente y registra la fecha/hora del cambio<br><br>
+        <strong>Escenario 2: Transición inválida</strong><br>
+        <strong>Given</strong> que se solicita un cambio de estado no permitido según el flujo definido (ej. de "Finalizado" a "Pendiente")<br>
+        <strong>When</strong> el sistema valida la transición<br>
+        <strong>Then</strong> rechaza la operación y retorna un error indicando la transición no permitida
       </td>
     </tr>
   </tbody>
@@ -3084,20 +3040,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS07</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP02</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar registro de control de calidad</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar el registro de calidad de lotes validando que los valores estén dentro de rangos aceptables, Para almacenar resultados confiables del control de calidad.
       </td>
     </tr>
     <tr>
@@ -3105,14 +3061,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Registro exitoso</strong><br>
+        <strong>Given</strong> que se envían datos válidos de inspección de un lote<br>
+        <strong>When</strong> el sistema procesa la solicitud<br>
+        <strong>Then</strong> registra la información y la asocia correctamente al lote correspondiente<br><br>
+        <strong>Escenario 2: Valores fuera de rango</strong><br>
+        <strong>Given</strong> que los valores enviados (ej. temperatura o humedad) están fuera del rango permitido para el tipo de producto<br>
+        <strong>When</strong> el sistema valida los datos<br>
+        <strong>Then</strong> retorna un error indicando qué valor está fuera de rango
       </td>
     </tr>
   </tbody>
@@ -3128,20 +3084,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS08</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP06</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar conversión de tipos de datos en EF Core</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero configurar mapeadores de conversión de valores explícitos dentro del contexto de la base de datos (AppDbContext), Para garantizar que los tipos estrictos de C# como DateOnly? se traduzcan correctamente con los tipos nativos de almacenamiento de MySQL (DateTime).
       </td>
     </tr>
     <tr>
@@ -3149,14 +3105,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Conversión bidireccional exitosa</strong><br>
+        <strong>Given</strong> que una entidad requiere guardar o leer un campo de fecha opcional o un Enum en formato de cadena<br>
+        <strong>When</strong> Entity Framework Core ejecuta los comandos HasConversion<br>
+        <strong>Then</strong> el sistema mapea correctamente los valores nulos o existentes sin disparar excepciones de casteo inválido (InvalidCastException)<br><br>
+        <strong>Escenario 2: Normalización en Snake Case</strong><br>
+        <strong>Given</strong> que los modelos usan convenciones PascalCase<br>
+        <strong>When</strong> se genera la migración hacia MySQL<br>
+        <strong>Then</strong> la extensión de nombrado reestructura los campos automáticamente a minúsculas y guiones bajos (snake_case), manteniendo la homogeneidad operativa
       </td>
     </tr>
   </tbody>
@@ -3172,20 +3128,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS09</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar notificaciones</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar el envío de notificaciones a los usuarios cuando ocurren eventos relevantes del sistema, Para alertarlos oportunamente sobre cambios en pedidos, calidad o mensajes.
       </td>
     </tr>
     <tr>
@@ -3193,14 +3149,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Notificación enviada</strong><br>
+        <strong>Given</strong> que ocurre un evento válido asociado a un usuario destino existente<br>
+        <strong>When</strong> el sistema procesa el evento<br>
+        <strong>Then</strong> envía la notificación correspondiente y registra el envío<br><br>
+        <strong>Escenario 2: Falta de destinatario</strong><br>
+        <strong>Given</strong> que el evento no tiene un usuario destino asociado o el usuario fue eliminado<br>
+        <strong>When</strong> el sistema valida antes de enviar<br>
+        <strong>Then</strong> retorna un error y descarta el envío sin interrumpir el flujo principal
       </td>
     </tr>
   </tbody>
@@ -3216,20 +3172,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">TS10</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar generación de reportes</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        Como Developer, Quiero implementar la generación de reportes a partir de un rango de fechas y filtros seleccionados, Para analizar la información del sistema y apoyar la toma de decisiones.
       </td>
     </tr>
     <tr>
@@ -3237,14 +3193,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Generación exitosa</strong><br>
+        <strong>Given</strong> que se solicita un reporte con un rango de fechas válido<br>
+        <strong>When</strong> el sistema procesa la solicitud<br>
+        <strong>Then</strong> genera el reporte correctamente con la información correspondiente al rango<br><br>
+        <strong>Escenario 2: Sin datos disponibles</strong><br>
+        <strong>Given</strong> que no existen registros dentro del rango de fechas solicitado<br>
+        <strong>When</strong> el sistema genera el reporte<br>
+        <strong>Then</strong> retorna el reporte vacío junto con un mensaje indicando que no hay datos disponibles
       </td>
     </tr>
   </tbody>

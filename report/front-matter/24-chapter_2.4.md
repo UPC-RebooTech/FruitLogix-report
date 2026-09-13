@@ -2370,6 +2370,141 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
   </tbody>
 </table>
 
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US51</td>
+      <td style="padding: 8px;">Productor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Capturar fotografía de producto para el catálogo</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> productor, <strong>Quiero</strong> tomar una fotografía del producto directamente con la cámara del celular al momento de registrarlo, <strong>Para</strong> que el catálogo muestre imágenes reales y actualizadas sin depender de subir archivos desde una computadora.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Envío de inspección exitoso</strong><br>
+        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
+        <strong>When</strong> selecciona la opción de enviar;<br>
+        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
+        <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
+        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
+        <strong>When</strong> intenta enviar la inspección;<br>
+        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US52</td>
+      <td style="padding: 8px;">Productor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Enviar reporte de calidad al distribuidor</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> productor, <strong>Quiero</strong> enviar el reporte de calidad de un lote directamente al distribuidor con fotos adjuntas, <strong>Para</strong> formalizar la validación antes del despacho.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Envío de inspección exitoso</strong><br>
+        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
+        <strong>When</strong> selecciona la opción de enviar;<br>
+        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
+        <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
+        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
+        <strong>When</strong> intenta enviar la inspección;<br>
+        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US53</td>
+      <td style="padding: 8px;">Productor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Enviar reporte de calidad al distribuidor</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> productor, <strong>Quiero</strong> enviar el reporte de calidad de un lote directamente al distribuidor con fotos adjuntas, <strong>Para</strong> formalizar la validación antes del despacho.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Envío de inspección exitoso</strong><br>
+        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
+        <strong>When</strong> selecciona la opción de enviar;<br>
+        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
+        <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
+        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
+        <strong>When</strong> intenta enviar la inspección;<br>
+        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
@@ -2849,6 +2984,534 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
         <strong>Given</strong>-----<br>
         <strong>When</strong> -----<br>
         <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS11</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar sincronización de datos en modo offline</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar una cola local de registros pendientes con sincronización automática al recuperar conexión, Para que los datos capturados en campo sin internet no se pierdan.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Sincronización exitosa</strong><br>
+        <strong>Given</strong> que existen registros marcados como "Pendiente de sincronizar"<br>
+        <strong>When</strong> el dispositivo recupera conexión de red<br>
+        <strong>Then</strong> el sistema envía los registros al servidor y actualiza su estado a "Sincronizado"<br><br>
+        <strong>Escenario 2: Conflicto de sincronización</strong><br>
+        <strong>Given</strong> que un registro pendiente hace referencia a un pedido que fue eliminado en el servidor<br>
+        <strong>When</strong> se intenta sincronizar<br>
+        <strong>Then</strong> el sistema retorna un error de conflicto y marca el registro para revisión manual
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS12</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar servicio de generación y validación de códigos QR</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar un servicio que genere un código QR único por lote y lo valide al momento del escaneo, Para automatizar la recepción de mercadería sin ingreso manual de datos.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Validación exitosa</strong><br>
+        <strong>Given</strong> que se escanea un código QR de un lote existente<br>
+        <strong>When</strong> el sistema lo procesa<br>
+        <strong>Then</strong> retorna la información completa del lote y habilita la confirmación de recepción<br><br>
+        <strong>Escenario 2: Código inválido o expirado</strong><br>
+        <strong>Given</strong> que el código QR no corresponde a ningún lote registrado o ya fue utilizado<br>
+        <strong>When</strong> se procesa el escaneo<br>
+        <strong>Then</strong> el sistema retorna un error indicando que el código no es válido
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS13</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Configurar servicio de notificaciones push (FCM/APNs)</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero integrar el backend con Firebase Cloud Messaging y Apple Push Notification Service, Para enviar alertas en tiempo real a los dispositivos móviles de los usuarios.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Envío exitoso</strong><br>
+        <strong>Given</strong> que un evento del sistema requiere notificar a un usuario (retraso, calidad, mensaje, stock crítico)<br>
+        <strong>When</strong> se dispara el evento<br>
+        <strong>Then</strong> el servicio envía la notificación push al token de dispositivo registrado<br><br>
+        <strong>Escenario 2: Token inválido o expirado</strong><br>
+        <strong>Given</strong> que el token del dispositivo ya no es válido<br>
+        <strong>When</strong> se intenta enviar la notificación<br>
+        <strong>Then</strong> el sistema captura el error, elimina el token obsoleto y lo registra en el log de errores
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS14</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP05</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar registro y validación de sesión biométrica</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar el manejo de tokens de sesión persistente vinculados al desbloqueo biométrico del dispositivo, Para permitir accesos rápidos sin comprometer la seguridad de la cuenta.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Renovación exitosa</strong><br>
+        <strong>Given</strong> que el usuario se autenticó biométricamente en el dispositivo<br>
+        <strong>When</strong> la app solicita un nuevo token de sesión<br>
+        <strong>Then</strong> el backend lo emite sin requerir credenciales completas<br><br>
+        <strong>Escenario 2: Token comprometido o revocado</strong><br>
+        <strong>Given</strong> que el usuario cambió su contraseña o cerró sesión desde otro dispositivo<br>
+        <strong>When</strong> intenta usar el token biométrico anterior<br>
+        <strong>Then</strong> el sistema lo rechaza y exige reautenticación completa
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS15</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP02</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar carga de evidencia fotográfica con marca de agua</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar el endpoint de carga de imágenes que incorpore automáticamente fecha y hora como marca de agua, Para garantizar la trazabilidad de la evidencia fotográfica de incidencias de calidad.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Carga exitosa</strong><br>
+        <strong>Given</strong> que el cliente envía una imagen válida junto con el ticket de reclamo<br>
+        <strong>When</strong> el servidor la procesa<br>
+        <strong>Then</strong> almacena la imagen con el sello de fecha/hora incrustado y la vincula al reclamo<br><br>
+        <strong>Escenario 2: Formato o tamaño inválido</strong><br>
+        <strong>Given</strong> que el archivo enviado excede el tamaño permitido o no es un formato de imagen soportado<br>
+        <strong>When</strong> se intenta cargar<br>
+        <strong>Then</strong> el sistema rechaza el archivo y retorna un mensaje de error específico
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS16</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar almacenamiento y verificación de firma digital</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar el endpoint que reciba, almacene y valide el trazo de firma digital capturado en pantalla, Para dejar constancia legal de la conformidad de entrega.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Registro exitoso</strong><br>
+        <strong>Given</strong> que se envía un trazo de firma válido junto con el ID del pedido<br>
+        <strong>When</strong> el servidor lo procesa<br>
+        <strong>Then</strong> lo almacena como evidencia y cambia el estado del pedido a "Finalizado"<br><br>
+        <strong>Escenario 2: Firma vacía o corrupta</strong><br>
+        <strong>Given</strong> que el trazo recibido está vacío o con datos corruptos<br>
+        <strong>When</strong> se intenta guardar<br>
+        <strong>Then</strong> el sistema rechaza la operación y solicita repetir la captura
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS17</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP06</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Integrar SDK nativo de Stripe (Payment Sheet) y validación de webhook</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero integrar el Payment Sheet nativo de Stripe en el flujo de suscripción y validar la confirmación mediante webhook, Para procesar pagos dentro de la app sin redirigir a un navegador externo.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Pago confirmado</strong><br>
+        <strong>Given</strong> que la transacción se completa en el Payment Sheet<br>
+        <strong>When</strong> el webhook de Stripe notifica el evento "payment_intent.succeeded"<br>
+        <strong>Then</strong> el backend actualiza el plan del usuario a "Miembro Pro"<br><br>
+        <strong>Escenario 2: Pago fallido o webhook no verificado</strong><br>
+        <strong>Given</strong> que la firma del webhook no coincide con la clave secreta configurada<br>
+        <strong>When</strong> se recibe la notificación<br>
+        <strong>Then</strong> el sistema descarta el evento y lo registra como intento no verificado
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS18</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Baja</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar caché de imágenes optimizada para catálogo móvil</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero configurar un sistema de caché e imágenes redimensionadas (thumbnails) servidas desde CDN, Para reducir el consumo de datos móviles al navegar el catálogo.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Entrega optimizada</strong><br>
+        <strong>Given</strong> que un dispositivo móvil solicita las imágenes del catálogo<br>
+        <strong>When</strong> el servidor detecta el tipo de cliente<br>
+        <strong>Then</strong> entrega versiones comprimidas/redimensionadas desde el CDN<br><br>
+        <strong>Escenario 2: Imagen no disponible en CDN</strong><br>
+        <strong>Given</strong> que una imagen no se generó correctamente en el proceso de optimización<br>
+        <strong>When</strong> se solicita<br>
+        <strong>Then</strong> el sistema retorna la imagen placeholder por defecto sin generar error 500
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS19</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar exportación y compartición nativa de reportes</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar la generación de reportes en PDF/Excel accesibles vía una URL temporal firmada, Para que la app móvil los abra directamente en el Share Sheet nativo del sistema operativo.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Generación exitosa</strong><br>
+        <strong>Given</strong> que el usuario solicita exportar un reporte con filtros aplicados<br>
+        <strong>When</strong> el backend procesa la solicitud<br>
+        <strong>Then</strong> genera el archivo y retorna una URL de descarga válida por tiempo limitado<br><br>
+        <strong>Escenario 2: Filtros sin resultados</strong><br>
+        <strong>Given</strong> que los filtros aplicados no arrojan ningún dato<br>
+        <strong>When</strong> se solicita la exportación<br>
+        <strong>Then</strong> el sistema retorna un error indicando que no hay información para generar el reporte
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS20</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar registro y consulta de geolocalización en tiempo real</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar el endpoint que reciba actualizaciones periódicas de ubicación del distribuidor y las exponga para el monitoreo de flota, Para permitir el seguimiento en tiempo real de las entregas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Actualización exitosa</strong><br>
+        <strong>Given</strong> que la app móvil envía coordenadas GPS válidas cada cierto intervalo<br>
+        <strong>When</strong> el servidor las recibe<br>
+        <strong>Then</strong> actualiza la última posición conocida del distribuidor y la asocia al pedido en curso<br><br>
+        <strong>Escenario 2: Coordenadas inválidas o fuera de rango</strong><br>
+        <strong>Given</strong> que se envían valores de latitud/longitud fuera del rango geográfico permitido<br>
+        <strong>When</strong> se procesa la solicitud<br>
+        <strong>Then</strong> el sistema descarta la actualización y registra el evento como anómalo
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS21</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Baja</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementar manejo de deep links desde notificaciones push</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar el ruteo de deep links embebidos en el payload de las notificaciones push, Para que al presionar una notificación la app abra directamente la pantalla correspondiente.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Navegación exitosa</strong><br>
+        <strong>Given</strong> que el usuario presiona una notificación push con un deep link válido<br>
+        <strong>When</strong> la app se abre<br>
+        <strong>Then</strong> redirige automáticamente a la pantalla específica (ej. detalle del pedido o del lote)<br><br>
+        <strong>Escenario 2: Deep link roto o recurso eliminado</strong><br>
+        <strong>Given</strong> que el recurso referenciado en el deep link ya no existe<br>
+        <strong>When</strong> se intenta navegar<br>
+        <strong>Then</strong> la app muestra una pantalla de error amigable en lugar de fallar
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS22</td>
+      <td style="padding: 8px;">Developer</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Optimizar endpoints con paginación y payloads livianos para consumo móvil</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        Como Developer, Quiero implementar paginación, filtros por parámetros y respuestas comprimidas (gzip) en los endpoints de mayor consumo desde la app móvil, Para reducir el tiempo de carga y el consumo de datos en conexiones limitadas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Consulta paginada exitosa</strong><br>
+        <strong>Given</strong> que el cliente móvil solicita una lista con parámetros de página y tamaño<br>
+        <strong>When</strong> el servidor procesa la solicitud<br>
+        <strong>Then</strong> retorna únicamente el subconjunto solicitado junto con metadatos de paginación<br><br>
+        <strong>Escenario 2: Parámetros de paginación inválidos</strong><br>
+        <strong>Given</strong> que se envía un tamaño de página negativo o excesivo<br>
+        <strong>When</strong> se valida la solicitud<br>
+        <strong>Then</strong> el sistema aplica valores por defecto seguros en lugar de fallar
       </td>
     </tr>
   </tbody>

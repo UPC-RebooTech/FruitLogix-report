@@ -218,3 +218,2599 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
   </tbody>
 </table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US02</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US03</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US04</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US05</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US06</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US07</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US08</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US09</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US10</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US11</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US12</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US13</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US14</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US15</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US16</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US17</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US18</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US19</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US20</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US21</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US22</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US23</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US24</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US25</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US26</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US27</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US28</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US29</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US30</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US31</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US32</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US33</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US34</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US35</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US36</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US37</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US38</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US39</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US40</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US41</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US42</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US43</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US44</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US45</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US46</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US47</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US48</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US49</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US50</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS01</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS02</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS03</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS04</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS05</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS06</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS07</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS08</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS09</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">TS10</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">-----</td>
+      <td style="padding: 8px;">EP0-</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        -----
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: -----</strong><br>
+        <strong>Given</strong> -----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----<br><br>
+        <strong>Escenario 2: -----</strong><br>
+        <strong>Given</strong>-----<br>
+        <strong>When</strong> -----<br>
+        <strong>Then</strong> -----
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -2370,7 +2370,6 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
   </tbody>
 </table>
 
-
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
@@ -2402,19 +2401,18 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Envío de inspección exitoso</strong><br>
-        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
-        <strong>When</strong> selecciona la opción de enviar;<br>
-        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
-        <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
-        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
-        <strong>When</strong> intenta enviar la inspección;<br>
-        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
+        <strong>Escenario 1: Captura y asociación exitosa</strong><br>
+        <strong>Given</strong> que el productor está registrando o editando un producto en el formulario móvil;<br>
+        <strong>When</strong> toma la fotografía con la cámara nativa del dispositivo y confirma la captura;<br>
+        <strong>Then</strong> la app asocia la imagen al producto, la comprime para optimizar el peso y la muestra en la vista previa del catálogo.<br><br>
+        <strong>Escenario 2: Permiso de cámara denegado</strong><br>
+        <strong>Given</strong> que el productor no tiene permisos de cámara habilitados en el dispositivo;<br>
+        <strong>When</strong> intenta tomar la fotografía desde el formulario;<br>
+        <strong>Then</strong> la app bloquea la acción, muestra un mensaje explicando para qué se usará el permiso, y ofrece un acceso directo a los ajustes del sistema.
       </td>
     </tr>
   </tbody>
 </table>
-
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
@@ -2426,20 +2424,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US52</td>
-      <td style="padding: 8px;">Productor</td>
-      <td style="padding: 8px;">Media</td>
-      <td style="padding: 8px;">EP01</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">Enviar reporte de calidad al distribuidor</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Evidencia fotográfica en el punto de entrega</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Como</strong> productor, <strong>Quiero</strong> enviar el reporte de calidad de un lote directamente al distribuidor con fotos adjuntas, <strong>Para</strong> formalizar la validación antes del despacho.
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> fotografiar el paquete o pallet en el momento exacto de finalizar la entrega, <strong>Para</strong> dejar evidencia visual objetiva que respalde la firma digital o el escaneo QR en caso de disputa con el cliente.
       </td>
     </tr>
     <tr>
@@ -2447,19 +2445,18 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Envío de inspección exitoso</strong><br>
-        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
-        <strong>When</strong> selecciona la opción de enviar;<br>
-        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
-        <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
-        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
-        <strong>When</strong> intenta enviar la inspección;<br>
-        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
+        <strong>Escenario 1: Evidencia registrada junto a la confirmación de entrega</strong><br>
+        <strong>Given</strong> que el distribuidor completa la firma digital o el escaneo del código de recepción;<br>
+        <strong>When</strong> toma la fotografía del paquete entregado antes de cerrar el flujo;<br>
+        <strong>Then</strong> el sistema adjunta la imagen con sello de fecha, hora y geolocalización al registro del pedido y lo marca como "Finalizado con evidencia".<br><br>
+        <strong>Escenario 2: Intento de cierre sin evidencia fotográfica</strong><br>
+        <strong>Given</strong> que el distribuidor intenta finalizar la entrega;<br>
+        <strong>When</strong> no ha capturado ninguna fotografía del paquete;<br>
+        <strong>Then</strong> la app bloquea el cierre del pedido y muestra un mensaje indicando que la evidencia fotográfica es obligatoria para completar la entrega.
       </td>
     </tr>
   </tbody>
 </table>
-
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
@@ -2471,20 +2468,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US53</td>
-      <td style="padding: 8px;">Productor</td>
-      <td style="padding: 8px;">Media</td>
-      <td style="padding: 8px;">EP01</td>
+      <td style="padding: 8px;">Productor y Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP02</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">Enviar reporte de calidad al distribuidor</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Formulario de inspección de campo con soporte offline</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Como</strong> productor, <strong>Quiero</strong> enviar el reporte de calidad de un lote directamente al distribuidor con fotos adjuntas, <strong>Para</strong> formalizar la validación antes del despacho.
+        <strong>Como</strong> productor o distribuidor en campo, <strong>Quiero</strong> llenar un formulario estructurado de inspección (temperatura, humedad, estado visual, observaciones) directamente en el celular, <strong>Para</strong> estandarizar la información aunque no cuente con conexión a internet en ese momento.
       </td>
     </tr>
     <tr>
@@ -2492,14 +2489,278 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Envío de inspección exitoso</strong><br>
-        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
-        <strong>When</strong> selecciona la opción de enviar;<br>
-        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
-        <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
-        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
-        <strong>When</strong> intenta enviar la inspección;<br>
-        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
+        <strong>Escenario 1: Guardado exitoso sin conexión</strong><br>
+        <strong>Given</strong> que el usuario completa todos los campos obligatorios del formulario estando sin señal de red;<br>
+        <strong>When</strong> presiona "Guardar";<br>
+        <strong>Then</strong> el sistema valida el formulario localmente, lo almacena en el dispositivo y lo marca como "Pendiente de sincronización".<br><br>
+        <strong>Escenario 2: Valor fuera de rango permitido</strong><br>
+        <strong>Given</strong> que el usuario ingresa un valor numérico imposible (por ejemplo, temperatura negativa fuera del rango de conservación);<br>
+        <strong>When</strong> intenta guardar el formulario;<br>
+        <strong>Then</strong> la app resalta el campo en rojo, impide el guardado y muestra el rango válido esperado.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US54</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Escaneo de código QR/barras en recepción de lote</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> escanear el código QR o de barras de la caja o pallet al recibir un lote, <strong>Para</strong> validar automáticamente la cantidad y el producto contra el pedido registrado sin necesidad de digitarlo manualmente.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Escaneo exitoso y validación de coincidencia</strong><br>
+        <strong>Given</strong> que el distribuidor abre el módulo de recepción y apunta la cámara al código del lote;<br>
+        <strong>When</strong> el sistema lee el código correctamente;<br>
+        <strong>Then</strong> coteja automáticamente el producto y la cantidad contra el pedido original y muestra un mensaje de coincidencia confirmada.<br><br>
+        <strong>Escenario 2: Código no reconocido o dañado</strong><br>
+        <strong>Given</strong> que el código del lote está dañado, borroso o no corresponde a ningún pedido registrado;<br>
+        <strong>When</strong> el distribuidor intenta escanearlo;<br>
+        <strong>Then</strong> la app muestra un mensaje de error y ofrece la opción de ingresar el código manualmente como alternativa.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US55</td>
+      <td style="padding: 8px;">Cliente, productor y distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP06</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Sincronización automática de datos offline</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> usuario de la app móvil, <strong>Quiero</strong> que los registros guardados sin conexión se sincronicen automáticamente al recuperar internet, <strong>Para</strong> no perder información capturada en campo ni tener que reenviarla manualmente.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Sincronización exitosa al recuperar conexión</strong><br>
+        <strong>Given</strong> que existen registros pendientes almacenados localmente en el dispositivo;<br>
+        <strong>When</strong> el celular recupera conexión a internet;<br>
+        <strong>Then</strong> la app sincroniza automáticamente los registros en segundo plano y los marca como "Sincronizado" con confirmación visual.<br><br>
+        <strong>Escenario 2: Conflicto de datos durante la sincronización</strong><br>
+        <strong>Given</strong> que un registro pendiente entra en conflicto con datos ya actualizados en el servidor;<br>
+        <strong>When</strong> el sistema intenta sincronizarlo;<br>
+        <strong>Then</strong> la app detiene la sincronización de ese registro, lo marca como "Conflicto" y solicita al usuario revisar cuál versión conservar.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US56</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Geolocalización automática al marcar entrega o recogida</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> que la app capture automáticamente mi ubicación GPS al marcar una entrega o recogida como completada, <strong>Para</strong> garantizar que el registro corresponde al lugar real donde ocurrió la acción.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Ubicación capturada dentro del radio esperado</strong><br>
+        <strong>Given</strong> que el distribuidor marca el pedido como "Entregado" estando en la dirección del cliente;<br>
+        <strong>When</strong> la app obtiene las coordenadas GPS del dispositivo;<br>
+        <strong>Then</strong> registra la ubicación junto con la hora exacta y confirma la entrega sin advertencias.<br><br>
+        <strong>Escenario 2: Ubicación fuera del radio esperado</strong><br>
+        <strong>Given</strong> que el distribuidor intenta marcar el pedido como "Entregado" estando a una distancia significativa de la dirección registrada;<br>
+        <strong>When</strong> la app compara las coordenadas capturadas con la dirección del cliente;<br>
+        <strong>Then</strong> muestra una alerta de discrepancia de ubicación y solicita confirmación manual antes de completar la acción.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US57</td>
+      <td style="padding: 8px;">Productor y Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP02</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Nota de voz para reportar incidencias</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> productor o distribuidor en campo, <strong>Quiero</strong> grabar una nota de voz al reportar una incidencia, <strong>Para</strong> describir el problema rápidamente cuando tengo las manos ocupadas o no puedo escribir con comodidad.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Grabación y envío exitoso</strong><br>
+        <strong>Given</strong> que el usuario abre el formulario de reporte de incidencia;<br>
+        <strong>When</strong> graba una nota de voz y la adjunta antes de enviar;<br>
+        <strong>Then</strong> el sistema almacena el audio junto con el resto del reporte y lo asocia al lote o pedido correspondiente.<br><br>
+        <strong>Escenario 2: Grabación interrumpida o vacía</strong><br>
+        <strong>Given</strong> que el usuario intenta grabar una nota de voz;<br>
+        <strong>When</strong> la grabación dura menos de un segundo o se interrumpe por un error del dispositivo;<br>
+        <strong>Then</strong> la app descarta el audio, muestra un mensaje de error y permite intentar grabar nuevamente.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US58</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP05</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Aprobar o rechazar lote desde notificación push accionable</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> aprobar o rechazar un lote directamente desde los botones de la notificación push, <strong>Para</strong> agilizar decisiones urgentes sin necesidad de abrir la aplicación completa.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Aprobación exitosa desde la notificación</strong><br>
+        <strong>Given</strong> que el distribuidor recibe una notificación push de un lote pendiente de validación;<br>
+        <strong>When</strong> presiona el botón "Aprobar" directamente desde la notificación;<br>
+        <strong>Then</strong> el sistema actualiza el estado del lote a "Validado" sin necesidad de abrir la app.<br><br>
+        <strong>Escenario 2: Acción fallida por sesión expirada</strong><br>
+        <strong>Given</strong> que la sesión del distribuidor expiró en segundo plano;<br>
+        <strong>When</strong> intenta aprobar o rechazar el lote desde la notificación;<br>
+        <strong>Then</strong> la app abre la pantalla de inicio de sesión y conserva la acción pendiente para ejecutarla automáticamente tras reautenticarse.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US59</td>
+      <td style="padding: 8px;">Cliente, productor y distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP05</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Acceso mediante autenticación biométrica</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> usuario de la app móvil, <strong>Quiero</strong> iniciar sesión usando huella digital o reconocimiento facial, <strong>Para</strong> acceder de forma rápida y segura sin escribir mi contraseña, especialmente cuando tengo las manos sucias o con guantes en campo.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Ingreso exitoso con biometría</strong><br>
+        <strong>Given</strong> que el usuario activó previamente el acceso biométrico en su perfil;<br>
+        <strong>When</strong> intenta ingresar a la app y su huella o rostro es reconocido correctamente;<br>
+        <strong>Then</strong> el sistema lo autentica y lo redirige directamente a su pantalla principal.<br><br>
+        <strong>Escenario 2: Biometría no reconocida</strong><br>
+        <strong>Given</strong> que el usuario intenta ingresar con biometría;<br>
+        <strong>When</strong> el sistema no logra reconocer la huella o el rostro después de tres intentos;<br>
+        <strong>Then</strong> la app bloquea temporalmente el acceso biométrico y solicita el ingreso con contraseña como método alternativo.
       </td>
     </tr>
   </tbody>

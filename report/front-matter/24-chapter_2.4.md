@@ -2701,7 +2701,7 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Como</strong> distribuidor, <strong>Quiero</strong> aprobar o rechazar un lote directamente desde los botones de la notificación push, <strong>Para</strong> agilizar decisiones urgentes sin necesidad de abrir la aplicación completa.
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> aprobar o rechazar un lote directamente desde la notificación push, <strong>Para</strong> agilizar decisiones urgentes sin necesidad de abrir la aplicación completa.
       </td>
     </tr>
     <tr>
@@ -2711,12 +2711,12 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Aprobación exitosa desde la notificación</strong><br>
         <strong>Given</strong> que el distribuidor recibe una notificación push de un lote pendiente de validación;<br>
-        <strong>When</strong> presiona el botón "Aprobar" directamente desde la notificación;<br>
+        <strong>When</strong> elige la opción de aprobar directamente desde la notificación;<br>
         <strong>Then</strong> el sistema actualiza el estado del lote a "Validado" sin necesidad de abrir la app.<br><br>
         <strong>Escenario 2: Acción fallida por sesión expirada</strong><br>
         <strong>Given</strong> que la sesión del distribuidor expiró en segundo plano;<br>
         <strong>When</strong> intenta aprobar o rechazar el lote desde la notificación;<br>
-        <strong>Then</strong> la app abre la pantalla de inicio de sesión y conserva la acción pendiente para ejecutarla automáticamente tras reautenticarse.
+        <strong>Then</strong> la app solicita el inicio de sesión y conserva la acción pendiente para ejecutarla automáticamente tras reautenticarse.
       </td>
     </tr>
   </tbody>
@@ -3669,7 +3669,7 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        Como Developer, Quiero implementar el ruteo de deep links embebidos en el payload de las notificaciones push, Para que al presionar una notificación la app abra directamente la pantalla correspondiente.
+        Como Developer, Quiero implementar el ruteo de deep links embebidos en el payload de las notificaciones push, Para que al interactuar con una notificación la aplicación navegue directamente a la pantalla correspondiente.
       </td>
     </tr>
     <tr>
@@ -3678,13 +3678,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Navegación exitosa</strong><br>
-        <strong>Given</strong> que el usuario presiona una notificación push con un deep link válido<br>
-        <strong>When</strong> la app se abre<br>
-        <strong>Then</strong> redirige automáticamente a la pantalla específica (ej. detalle del pedido o del lote)<br><br>
+        <strong>Given</strong> que el usuario recibe una notificación push con un deep link válido<br>
+        <strong>When</strong> el usuario selecciona la notificación recibida<br>
+        <strong>Then</strong> la aplicación se abre y redirige automáticamente a la vista específica asociada al recurso (ej. detalle del pedido o del lote)<br><br>
         <strong>Escenario 2: Deep link roto o recurso eliminado</strong><br>
         <strong>Given</strong> que el recurso referenciado en el deep link ya no existe<br>
-        <strong>When</strong> se intenta navegar<br>
-        <strong>Then</strong> la app muestra una pantalla de error amigable en lugar de fallar
+        <strong>When</strong> el sistema intenta resolver la navegación<br>
+        <strong>Then</strong> la aplicación muestra un estado de error informativo en lugar de fallar
       </td>
     </tr>
   </tbody>

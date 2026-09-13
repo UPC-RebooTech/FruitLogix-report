@@ -449,7 +449,7 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US07</td>
-      <td style="padding: 8px;">Cliente, productor y distribuidor/td>
+      <td style="padding: 8px;">Cliente, productor y distribuidor</td>
       <td style="padding: 8px;">Media</td>
       <td style="padding: 8px;">EP01</td>
     </tr>
@@ -1258,7 +1258,7 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Envío y recepción simétrica de mensajes</strong><br>
-        <strong>Given</strong> que el productor envía un mensaje desde la orden activa asignada al ID del Distribuidor principal (ID = 1)<br>
+        <strong>Given</strong> que el productor envía un mensaje desde la orden activa asignada al ID del Distribuidor principal<br>
         <strong>When</strong> el distribuidor abre su Centro de Mensajes<br>
         <strong>Then</strong> visualiza la conversación sincronizada bajo el mismo identificador de canal sin duplicar canales.<br><br>
         <strong>Escenario 2: Vinculación directa desde pedidos</strong><br>
@@ -1324,20 +1324,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US27</td>
-      <td style="padding: 8px;">visitante</td>
+      <td style="padding: 8px;">Visitante</td>
       <td style="padding: 8px;">Alta</td>
       <td style="padding: 8px;">EP06</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">Redirigir desde Landing Page a registro</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Redirección a Descarga de la App</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Como</strong> visitante, <strong>Quiero</strong> acceder al registro desde el Landing Page, <strong>Para</strong> suscribirme a FruitLogix.
+        <strong>Como</strong> visitante del Landing Page web, <strong>Quiero</strong> encontrar enlaces directos a las tiendas de aplicaciones móviles (Google Play y App Store), <strong>Para</strong> descargar la app FruitLogix directamente en mi celular.
       </td>
     </tr>
     <tr>
@@ -1345,10 +1345,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Redirección exitosa</strong><br>
-        <strong>Then</strong> dirige al registro.<br><br>
-        <strong>Escenario 2: Navegación normal</strong><br>
-        <strong>Then</strong> mantiene exploración.
+        <strong>Escenario 1: Redirección exitosa a tienda móvil</strong><br>
+        <strong>Given</strong> Given que el visitante explora la sección Hero o el pie de página del Landing Page;<br>
+        <strong>When</strong> hace clic en el botón "Descargar para Android" o "Descargar para iOS";<br>
+        <strong>Then</strong> el navegador lo redirige automáticamente a la ficha oficial de la aplicación en Google Play Store o Apple App Store.<br><br>
+        <strong>Escenario 2: Detección inteligente de dispositivo</strong><br>
+        <strong>Given</strong> que el visitante accede al Landing Page ingresando desde su celular;<br>
+        <strong>When</strong> When carga la página inicial;<br>
+        <strong>Then</strong> Then la interfaz resalta como botón principal (Call to Action) la tienda correspondiente al sistema operativo detectado (Android o iOS).
       </td>
     </tr>
   </tbody>
@@ -1385,8 +1389,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Cambio exitoso de idioma</strong><br><br>
+        <strong>Escenario 1: Cambio exitoso de idioma</strong>
+        <strong>Given</strong> Given que el visitante se encuentra en la Landing Page;<br>
+        <strong>When</strong> selecciona la opción de cambiar idioma;<br>
+        <strong>Then</strong> la página cambia al nuevo idioma, traduciendo todos los textos.<br><br>
         <strong>Escenario 2: Retorno al idioma anterior sin recargar página</strong>
+        <strong>Given</strong> Given que el visitante se encuentra en la Landing Page, en otro idioma;<br>
+        <strong>When</strong> selecciona la opción de cambiar idioma;<br>
+        <strong>Then</strong> la página regresa al idioma original, revirtiendo todos los textos.<br><br>
       </td>
     </tr>
   </tbody>
@@ -1415,7 +1425,7 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Como</strong> Distribuidor, <strong>Quiero</strong> usar la aplicación desde celular, <strong>Para</strong> registrar entregas fuera de oficina.
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> usar la aplicación desde celular, <strong>Para</strong> registrar entregas fuera de oficina.
       </td>
     </tr>
     <tr>
@@ -1423,8 +1433,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Adaptación móvil correcta</strong><br><br>
-        <strong>Escenario 2: Adaptación en tablet</strong>
+        <strong>Escenario 1: Adaptación en Android correcta</strong>
+        <strong>Given</strong> Given que el visitante se encuentra en su celular Android;<br>
+        <strong>When</strong> ingresa a la aplicación;<br>
+        <strong>Then</strong> la aplicación se adapta a un tamaño pequeño, acorde a un celular Android.<br><br>
+        <strong>Escenario 2: Adaptación en iOS correcta</strong>
+        <strong>Given</strong> Given que el visitante se encuentra en su celular iOS;<br>
+        <strong>When</strong> ingresa a la aplicación;<br>
+        <strong>Then</strong> la aplicación se adapta a un tamaño pequeño, acorde a un celular.<br><br>
       </td>
     </tr>
   </tbody>
@@ -1440,20 +1456,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US30</td>
-      <td style="padding: 8px;">Cliente Comercial o Productor</td>
+      <td style="padding: 8px;">Cliente comercial o productor</td>
       <td style="padding: 8px;">Alta</td>
       <td style="padding: 8px;">EP06</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">Acceso seguro a pasarela de pagos Stripe</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Acceso seguro a pasarela de pagos Stripe en móvil</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Como</strong> Cliente Comercial o Productor, <strong>Quiero</strong> poder acceder de manera directa al flujo de suscripción Premium mediante Stripe, <strong>Para</strong> actualizar mi plan a Miembro Pro sin ser bloqueado por las políticas de enrutamiento de mi rol.
+        <strong>Como</strong> cliente comercial o productor, <strong>Quiero</strong> poder acceder al formulario de pago nativo de Stripe (Payment Sheet), <strong>Para</strong> actualizar mi plan a Miembro Pro sin salir de la aplicación móvil.
       </td>
     </tr>
     <tr>
@@ -1461,20 +1477,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Redirección exitosa a Checkout</strong><br>
-        <strong>Given</strong> que el usuario hace clic en el botón global "Upgrade to Pro" desde cualquier módulo<br>
-        <strong>When</strong> el enrutador procesa la navegación hacia /checkout<br>
-        <strong>Then</strong> el guardia de navegación (Router Guard) convalida la autenticación y permite el renderizado de la pasarela de pago sin regresarlo a su dashboard de origen.<br><br>
-        <strong>Escenario 2: Persistencia del plan Pro</strong><br>
-        <strong>Given</strong> que la transacción en la pasarela externa finaliza con éxito<br>
-        <strong>When</strong> se actualiza el estado en el almacenamiento local<br>
-        <strong>Then</strong> la barra superior reemplaza el botón de compra por la insignia dorada inmutable de "Miembro Pro".
+        <strong>Escenario 1: Apertura de pasarela de pago nativa (Payment Sheet)</strong><br>
+        <strong>Given</strong> que el usuario Given que el usuario decide actualizar a Pro dentro de la app móvil;<br>
+        <strong>When</strong> el sistema procesa la solicitud de compra;<br>
+        <strong>Then</strong> la aplicación despliega la ventana modal nativa de Stripe sobre la pantalla actual sin redirigir a un navegador web externo.<br><br>
+        <strong>Escenario 2: Confirmación y actualización de plan</strong><br>
+        <strong>Given</strong>que la transacción en la pasarela de Stripe se completa exitosamente;<br>
+        <strong>When</strong>el sistema valida el pago con el Webhook;<br>
+        <strong>Then</strong> la app cierra el modal, actualiza la sesión del usuario y muestra la insignia de Miembro Pro en la cabecera de la cuenta.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1484,20 +1500,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US31</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Visitante</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP06</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Visualizar Landing Page</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> visitante, <strong>Quiero</strong> visualizar el contenido del Landing Page, <strong>Para</strong> entender la propuesta de valor de FruitLogix.
       </td>
     </tr>
     <tr>
@@ -1505,20 +1521,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Visualización exitosa</strong><br>
+        <strong>Given</strong> que el visitante accede al sitio web<br>
+        <strong>When</strong> la página carga correctamente<br>
+        <strong>Then</strong> el sistema muestra las secciones principales como inicio, beneficios, planes, clientes y testimonios.<br><br>
+        <strong>Escenario 2: Error de carga</strong><br>
+        <strong>Given</strong> que ocurre un fallo en la carga del sitio<br>
+        <strong>When</strong> intenta acceder<br>
+        <strong>Then</strong> el sistema muestra un mensaje indicando que la página no pudo cargarse correctamente.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1528,20 +1544,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US32</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Visitante</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP06</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Navegar entre secciones del Landing Page</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> visitante, <strong>Quiero</strong> navegar entre las secciones del Landing Page, <strong>Para</strong> explorar la información del producto de manera ordenada.
       </td>
     </tr>
     <tr>
@@ -1549,20 +1565,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Navegación exitosa</strong><br>
+        <strong>Given</strong> que el visitante se encuentra en el Landing Page;<br>
+        <strong>When</strong> selecciona una opción del menú de seccciones;<br>
+        <strong>Then</strong> el sistema desplaza la vista hacia la sección correspondiente.<br><br>
+        <strong>Escenario 2: Sección no encontrada</strong><br>
+        <strong>Given</strong> que selecciona en una opción inválida<br>
+        <strong>When</strong> el sistema no encuentra la sección<br>
+        <strong>Then</strong> mantiene la vista actual.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1572,20 +1588,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US33</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Visitante</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP06</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Visualización responsive del Landing Page</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> visitante, <strong>Quiero</strong> visualizar la Landing Page en distintos dispositivos, <strong>Para</strong> acceder a la información sin problemas de diseño o legibilidad.
       </td>
     </tr>
     <tr>
@@ -1593,20 +1609,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Visualización móvil</strong><br>
+        <strong>Given</strong> que el visitante accede a la Landing Page desde su smartphone;<br>
+        <strong>When</strong> carga la página;<br>
+        <strong>Then</strong> la interfaz se adapta correctamente.<br><br>
+        <strong>Escenario 2: Visualización escritorio</strong><br>
+        <strong>Given</strong> que el visitante accede a la Landing Page desde su computadora;<br>
+        <strong>When</strong> carga la página;<br>
+        <strong>Then</strong> muestra una distribución adecuada de los elementos.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1616,20 +1632,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US34</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Cliente Comercial</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Explorar catálogo con renders de alta fidelidad</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> Cliente Comercial, <strong>Quiero</strong> visualizar un catálogo de productos agrícolas con imágenes optimizadas y sistema de almacenamiento en caché móvil, <strong>Para</strong> identificar rápidamente los insumos desde mi smartphone y añadirlos al carrito con fluidez.
       </td>
     </tr>
     <tr>
@@ -1637,20 +1653,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Carga optimizada y almacenamiento en caché móvil</strong><br>
+        <strong>Given</strong> que el usuario navega por la pantalla del catálogo de productos en la aplicación;<br>
+        <strong>When</strong> la app procesa las imágenes desde el servidor o CDN;<br>
+        <strong>Then</strong> la vista las renderiza dentro del componente de tarjeta nativo de manera proporcional y almacena la foto en la memoria caché local del teléfono para evitar consumos excesivos de datos móviles.<br><br>
+        <strong>Escenario 2: Control de imágenes no disponibles (Fallback)</strong><br>
+        <strong>Given</strong> que un producto del catálogo no cuenta con una imagen asignada o falla la conexión de red.<br>
+        <strong>When</strong> el componente de imagen nativo detecta el error de carga;<br>
+        <strong>Then</strong> la app intercepta el evento y muestra automáticamente una imagen predeterminada de marcador de posición (placeholder), manteniendo la simetría y alineación del diseño táctil.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1660,20 +1676,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US35</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Cliente comercial</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP02</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Calificar servicio de entrega</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> cliente comercial, <strong>Quiero</strong> calificar el servicio recibido al confirmar la recepción de mi pedido, <strong>Para</strong> dejar constancia de mi experiencia y ayudar a mejorar el servicio.
       </td>
     </tr>
     <tr>
@@ -1681,20 +1697,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Calificación exitosa</strong><br>
+        <strong>Given</strong> que el cliente confirma la recepción;<br>
+        <strong>When</strong> asigna estrellas y comentario opcional;<br>
+        <strong>Then</strong> el sistema registra la calificación.<br><br>
+        <strong>Escenario 2: Confirmación sin calificación</strong><br>
+        <strong>Given</strong> que el cliente no selecciona estrellas;<br>
+        <strong>When</strong> confirma su calificación;<br>
+        <strong>Then</strong> permite continuar sin calificación obligatoria.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1704,20 +1720,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US36</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Cliente Comercial</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Visualizar balance financiero en Dashboard del Cliente</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> cliente comercial, <strong>Quiero</strong> visualizar de forma rápida mi saldo total y deuda acumulada en la pantalla principal del Dashboard, <strong>Para</strong> consultar mi estado financiero de forma segura desde mi smartphone.
       </td>
     </tr>
     <tr>
@@ -1725,20 +1741,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Carga y renderizado de montos financieros</strong><br>
+        <strong>Given</strong> que el cliente ingresa a la pantalla principal de la app;<br>
+        <strong>When</strong> la aplicación procesa las facturas y saldos pendientes desde la API;<br>
+        <strong>Then</strong> la vista reemplaza el indicador de carga (Skeleton/Spinner) y muestra el monto formateado correctamente en moneda local (Soles) sin retrasar la navegación.<br><br>
+        <strong>Escenario 2: Tolerancia y normalización de estados de pago</strong><br>
+        <strong>Given</strong> Given que la base de datos retorna estados de facturación en diferentes formatos de texto;<br>
+        <strong>When</strong> la app procesa las métricas financieras;<br>
+        <strong>Then</strong> normaliza la información para reflejar el balance exacto sin dejar métricas en cero por errores de formato.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1748,20 +1764,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US37</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Cliente, productor y distribuidor</td>
+      <td style="padding: 8px;">Baja</td>
+      <td style="padding: 8px;">EP05</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Adjuntar archivos en el chat</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> usuario, <strong>Quiero</strong> adjuntar archivos en el chat interno, <strong>Para</strong> compartir documentos o fotos relevantes al pedido.
       </td>
     </tr>
     <tr>
@@ -1769,20 +1785,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Adjunto exitoso</strong><br>
+        <strong>Given</strong> que el usuario abre un chat<br>
+        <strong>When</strong> selecciona y envía un archivo<br>
+        <strong>Then</strong> el archivo aparece en el hilo para ambas partes.<br><br>
+        <strong>Escenario 2: Error al adjuntar</strong><br>
+        <strong>Given</strong> que ocurre un fallo<br>
+        <strong>When</strong> el usuario intenta enviar un mensaje por chat<br>
+        <strong>Then</strong> muestra un mensaje de error.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1792,20 +1808,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US38</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Cliente Comercial</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Ver información del conductor en tracking</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> cliente comercial, <strong>Quiero</strong> ver los datos del conductor y vehículo asignado a mi entrega, <strong>Para</strong> saber quién transporta mi pedido y poder contactarlo.
       </td>
     </tr>
     <tr>
@@ -1813,20 +1829,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Conductor visible</strong><br>
+        <strong>Given</strong> que el pedido está en camino<br>
+        <strong>When</strong> el cliente accede al tracking<br>
+        <strong>Then</strong> visualiza nombre del conductor, vehículo y opción de contacto.<br><br>
+        <strong>Escenario 2: Sin conductor asignado</strong><br>
+        <strong>Given</strong> que aún no existe conductor<br>
+        <strong>When</strong> el cliente consulta el tracking<br>
+        <strong>Then</strong> muestra "Conductor aún no asignado".
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1836,20 +1852,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US39</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Editar ficha técnica de productor</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> Distribuidor, <strong>Quiero</strong> editar la ficha técnica de un productor registrado, <strong>Para</strong> mantener actualizada su información empresarial y agrícola.
       </td>
     </tr>
     <tr>
@@ -1857,20 +1873,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Edición exitosa</strong><br>
+        <strong>Given</strong> que el distribuidor accede a la ficha<br>
+        <strong>When</strong> modifica datos y guarda<br>
+        <strong>Then</strong> actualiza la información correctamente.<br><br>
+        <strong>Escenario 2: Datos incompletos</strong><br>
+        <strong>Given</strong> que el distribuidor deja campos vacíos<br>
+        <strong>When</strong> intenta guardar los datos de la ficha técnica<br>
+        <strong>Then</strong> muestra errores de validación.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1880,20 +1896,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US40</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Eliminar productor</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> Distribuidor, <strong>Quiero</strong> eliminar un productor de la red, <strong>Para</strong> depurar la lista de proveedores activos.
       </td>
     </tr>
     <tr>
@@ -1901,20 +1917,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Eliminación exitosa</strong><br>
+        <strong>Given</strong> que el distribuidor selecciona la opción de eliminar<br>
+        <strong>When</strong> confirma la acción<br>
+        <strong>Then</strong> el productor desaparece de la lista.<br><br>
+        <strong>Escenario 2: Cancelación</strong><br>
+        <strong>Given</strong> que el distribuidor ha seleccionado la opción de eliminar<br>
+        <strong>When</strong> selecciona la opción de cancelar<br>
+        <strong>Then</strong> no realiza cambios.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1924,20 +1940,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US41</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Invitar productor a la red</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> invitar a un nuevo productor mediante correo electrónico o enviando un enlace directo por WhatsApp/Mensajería nativa, <strong>Para</strong> acelerar su registro en la red desde mi dispositivo móvil.
       </td>
     </tr>
     <tr>
@@ -1945,20 +1961,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Envío de invitación por correo o enlace nativo</strong><br>
+        <strong>Given</strong> que el distribuidor ingresa el correo o teléfono de un nuevo productor;<br>
+        <strong>When</strong> selecciona la opción para enviar la invitación;<br>
+        <strong>Then</strong> el sistema envía el correo con el enlace o abre la hoja de navegación del smartphone (Share Sheet) para compartir el link por mensajería instantánea.<br><br>
+        <strong>Escenario 2: Validación de correo o teléfono</strong><br>
+        <strong>Given</strong> que el distribuidor ingresa un correo o número con formato incorrecto;<br>
+        <strong>When</strong> When intenta generar la invitación;<br>
+        <strong>Then</strong> la app detiene la acción y muestra un mensaje de error en la pantalla.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -1968,20 +1984,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US42</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Ver KPIs de gestión de productores</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> visualizar los indicadores clave (KPIs) de mis productores en un panel adaptado a la pantalla del celular, <strong>Para</strong> evaluar el desempeño de mi red de abastecimiento en tiempo real.
       </td>
     </tr>
     <tr>
@@ -1989,20 +2005,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Visualización de tarjetas de KPIs</strong><br>
+        <strong>Given</strong> que el distribuidor accede al módulo de Gestión de Productores;<br>
+        <strong>When</strong> carga la pantalla;<br>
+        <strong>Then</strong> la app despliega las tarjetas con el total de productores, calidad promedio, producción semanal e incidencias.<br><br>
+        <strong>Escenario 2: Sin productores registrados</strong><br>
+        <strong>Given</strong> que el distribuidor no cuenta con productores asignados;<br>
+        <strong>When</strong> este ingresa a la vista;<br>
+        <strong>Then</strong> la app muestra las tarjetas de métricas en cero junto a un mensaje informativo.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -2012,20 +2028,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US43</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Monitorear flota en tiempo real</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> visualizar el centro de control de flota con los despachos activos y su ubicación en mapa, <strong>Para</strong> supervisar todas las entregas en curso.
       </td>
     </tr>
     <tr>
@@ -2033,20 +2049,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Flota visible</strong><br>
+        <strong>Given</strong> que el distribuidor accede al módulo de logística y monitoreo;<br>
+        <strong>When</strong> carga la pantalla;<br>
+        <strong>Then</strong> visualiza despachos activos y su ubicación en vivo.<br><br>
+        <strong>Escenario 2: Sin despachos activos</strong><br>
+        <strong>Given</strong> que no existen despachos;<br>
+        <strong>When</strong> el distribuidor accede;<br>
+        <strong>Then</strong> muestra mensaje informativo.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -2056,20 +2072,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US44</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Gestionar incidencias operativas</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> ver y resolver incidencias detectadas automáticamente, <strong>Para</strong> tomar acciones correctivas oportunas.
       </td>
     </tr>
     <tr>
@@ -2077,20 +2093,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Incidencia resuelta</strong><br>
+        <strong>Given</strong> que existe una incidencia activa y el distribuidor se encuentra en la pantalla de incidencias;<br>
+        <strong>When</strong> el distribuidor la marca como resuelta de la lista de incidencia;<br>
+        <strong>Then</strong> desaparece de la lista activa.<br><br>
+        <strong>Escenario 2: Sin incidencias</strong><br>
+        <strong>Given</strong> que no existen incidencias;<br>
+        <strong>When</strong> el distribuidor accede a la pantalla de incidencias;<br>
+        <strong>Then</strong> muestra mensaje informando que no hay incidencias pendientes.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -2100,20 +2116,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US45</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Monitorear sensores IoT</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> visualizar la telemetría en tiempo real de los sensores vinculados a cada vehículo, <strong>Para</strong> detectar desviaciones antes de que afecten la carga.
       </td>
     </tr>
     <tr>
@@ -2121,20 +2137,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Sensor dentro del umbral</strong><br>
+        <strong>Given</strong> que el sensor registra valores correctos<br>
+        <strong>When</strong> el distribuidor accede al módulo<br>
+        <strong>Then</strong> la aplicación conectada muestra indicadores en verde.<br><br>
+        <strong>Escenario 2: Sensor fuera del umbral</strong><br>
+        <strong>Given</strong> que el valor captado por el sensor supera el límite<br>
+        <strong>When</strong> el sistema lo detecta<br>
+        <strong>Then</strong> genera una alerta y resalta la lectura.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -2144,20 +2160,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US46</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Ver detalle de despacho con telemetría</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> ver el detalle completo de un despacho activo incluyendo temperatura, humedad, velocidad y ETA, <strong>Para</strong> tener visibilidad total de cada entrega.
       </td>
     </tr>
     <tr>
@@ -2165,20 +2181,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Detalle disponible</strong><br>
+        <strong>Given</strong> que existen sensores activos<br>
+        <strong>When</strong> el distribuidor abre el detalle<br>
+        <strong>Then</strong> visualiza toda la telemetría en tiempo real.<br><br>
+        <strong>Escenario 2: Sensores inactivos</strong><br>
+        <strong>Given</strong> que no existen sensores<br>
+        <strong>When</strong> el distribuidor abre el detalle de sensores<br>
+        <strong>Then</strong> muestra mensaje informando que no hay sensores.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -2188,20 +2204,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US47</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP04</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Gestionar facturación</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> visualizar y gestionar las cuentas por cobrar y por pagar desde mi celular, <strong>Para</strong> mantener el control del flujo de caja fuera de la oficina.
       </td>
     </tr>
     <tr>
@@ -2209,20 +2225,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Facturas visibles</strong><br>
+        <strong>Given</strong> que el distribuidor ingresa al módulo de gestión de pago;<br>
+        <strong>When</strong> carga la pantalla;<br>
+        <strong>Then</strong> la app muestra el listado agrupado de cuentas por cobrar (receivables), por pagar (payables) y sus respectivos estados.<br><br>
+        <strong>Escenario 2: Exportar y compartir reporte financiero</strong><br>
+        <strong>Given</strong> que el usuario aplica filtros por fecha o estado;<br>
+        <strong>When</strong> presiona el botón "Exportar Reporte";<br>
+        <strong>Then</strong> la app genera el documento y abre las opciones nativas del smartphone para guardarlo o enviarlo.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -2232,20 +2248,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US48</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Productor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Registrar carga de cosecha</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> productor, <strong>Quiero</strong> registrar una nueva carga de cosecha con producto, cantidad y fecha, <strong>Para</strong> informar al distribuidor sobre la disponibilidad de producción.
       </td>
     </tr>
     <tr>
@@ -2253,20 +2269,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Registro exitoso</strong><br>
+        <strong>Given</strong> que completa los campos obligatorios;<br>
+        <strong>When</strong> el productor guarda los cambios;<br>
+        <strong>Then</strong> el sistema registra la carga correctamente.<br><br>
+        <strong>Escenario 2: Campos incompletos</strong><br>
+        <strong>Given</strong> que deja datos vacíos;<br>
+        <strong>When</strong> el productor intenta guardar los cambios;<br>
+        <strong>Then</strong> indica los campos incompletos que han de llenarse.
       </td>
     </tr>
   </tbody>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
       <th style="width: 20%; padding: 8px;">Story ID</th>
@@ -2276,20 +2292,20 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td style="padding: 8px;">US49</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">Productor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">Gestionar stock de productos</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        -----
+        <strong>Como</strong> productor, <strong>Quiero</strong> visualizar y actualizar el stock disponible de cada producto mediante controles táctiles rápidos, <strong>Para</strong> mantener informado al distribuidor sobre mi capacidad de abastecimiento.
       </td>
     </tr>
     <tr>
@@ -2297,14 +2313,58 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: -----</strong><br>
-        <strong>Given</strong> -----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----<br><br>
-        <strong>Escenario 2: -----</strong><br>
-        <strong>Given</strong>-----<br>
-        <strong>When</strong> -----<br>
-        <strong>Then</strong> -----
+        <strong>Escenario 1: Actualización rápida de inventario</strong><br>
+        <strong>Given</strong> que el productor modifica las cantidades disponibles de sus productos;<br>
+        <strong>When</strong> selecciona la opción de guardar los cambios;<br>
+        <strong>Then</strong> la app registra la nueva cantidad y actualiza la disponibilidad en el sistema.<br><br>
+        <strong>Escenario 2: Indicador visual de stock mínimo</strong><br>
+        <strong>Given</strong> que la cantidad de un producto cae por debajo del umbral mínimo;<br>
+        <strong>When</strong> el sistema detecta el nivel bajo;<br>
+        <strong>Then</strong> la pantalla resalta el producto con una etiqueta roja de "Stock Crítico".
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US50</td>
+      <td style="padding: 8px;">Productor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP02</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Enviar reporte de calidad al distribuidor</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> productor, <strong>Quiero</strong> enviar el reporte de calidad de un lote directamente al distribuidor con fotos adjuntas, <strong>Para</strong> formalizar la validación antes del despacho.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Envío de inspección exitoso</strong><br>
+        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
+        <strong>When</strong> selecciona la opción de enviar;<br>
+        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
+        <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
+        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
+        <strong>When</strong> intenta enviar la inspección;<br>
+        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
       </td>
     </tr>
   </tbody>
@@ -2319,14 +2379,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
       <th style="width: 25%; padding: 8px;">Epic</th>
     </tr>
     <tr>
-      <td style="padding: 8px;">US50</td>
+      <td style="padding: 8px;">US??</td>
       <td style="padding: 8px;">-----</td>
       <td style="padding: 8px;">-----</td>
-      <td style="padding: 8px;">EP0-</td>
+      <td style="padding: 8px;">EP0?</td>
     </tr>
     <tr>
       <th style="padding: 8px;">Title</th>
-      <td colspan="3" style="text-align: left; padding: 8px;">-</td>
+      <td colspan="3" style="text-align: left; padding: 8px;">-----</td>
     </tr>
     <tr>
       <th colspan="4" style="padding: 8px;">Description</th>

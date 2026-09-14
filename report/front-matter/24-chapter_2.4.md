@@ -3733,3 +3733,295 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
   </tbody>
 </table>
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SS01</td>
+      <td style="padding: 8px;">Equipo de Desarrollo</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">Feature Autónomo</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Integración de Telemetría IoT (Aprendizaje Autónomo)</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Contexto:</strong> La plataforma requiere monitorear la cadena de frío en tiempo real. Se evaluará un protocolo (ej. MQTT o WebSockets) no visto en clase para conectar los sensores de los furgones al sistema.<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar y prototipar la conexión de un simulador IoT, <strong>Para</strong> entender las implicaciones técnicas, de rendimiento y latencia al recibir telemetría.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Recepción de telemetría</strong><br>
+        <strong>Given</strong> que el simulador IoT emite lecturas de temperatura,<br>
+        <strong>When</strong> el backend recibe el payload,<br>
+        <strong>Then</strong> los datos se procesan e interpretan en el formato esperado sin pérdida de información.<br><br>
+        <strong>Escenario 2: Evaluación de latencia en alertas</strong><br>
+        <strong>Given</strong> que la temperatura simulada excede el límite permitido,<br>
+        <strong>When</strong> el sistema la registra,<br>
+        <strong>Then</strong> se evalúa y documenta la latencia desde la captura hasta la alerta generada.<br><br>
+        <strong>Definition of Done (DoD):</strong><br>
+        - PoC en una rama de experimentación (spike/iot-telemetry).<br>
+        - Informe en Markdown justificando la selección del protocolo.<br>
+        - Timebox: 14 horas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SS02</td>
+      <td style="padding: 8px;">Equipo de Desarrollo</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01 / EP02</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Persistencia y Sincronización Offline</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Contexto:</strong> Los usuarios en campo suelen quedarse sin señal al registrar formularios. Debemos definir la tecnología de almacenamiento local (SQLite, IndexedDB, etc.) para retener la información.<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar mecanismos de persistencia local en dispositivos móviles, <strong>Para</strong> garantizar que la evidencia fotográfica y los datos crudos no se pierdan al fallar la conexión a internet.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Guardado local sin red</strong><br>
+        <strong>Given</strong> que la aplicación no tiene acceso a la red,<br>
+        <strong>When</strong> el usuario guarda un formulario de inspección,<br>
+        <strong>Then</strong> los datos persisten localmente en la caché del dispositivo de forma segura.<br><br>
+        <strong>Escenario 2: Sincronización al recuperar conexión</strong><br>
+        <strong>Given</strong> que se restablece la conexión a internet,<br>
+        <strong>When</strong> el sistema detecta la red,<br>
+        <strong>Then</strong> los registros locales se envían automáticamente al servidor principal.<br><br>
+        <strong>Definition of Done (DoD):</strong><br>
+        - Prototipo funcional demostrando el guardado offline y la sincronización (spike/offline-sync).<br>
+        - Documento técnico explicando la decisión sobre la herramienta elegida.<br>
+        - Timebox: 16 horas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SS03</td>
+      <td style="padding: 8px;">Equipo de Desarrollo</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP06</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Implementación de Pasarela Nativa con Stripe</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Contexto:</strong> Se procesarán pagos de suscripciones dentro de la aplicación móvil usando Payment Sheet y validación de webhooks, evitando redirigir al usuario al navegador.<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> prototipar el uso del SDK nativo de Stripe, <strong>Para</strong> confirmar la viabilidad técnica del flujo de pago y la validación asíncrona de transacciones.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Validación de webhook exitosa</strong><br>
+        <strong>Given</strong> que se procesa un pago de prueba exitoso en el modal nativo,<br>
+        <strong>When</strong> el webhook de Stripe notifica el evento al servidor,<br>
+        <strong>Then</strong> el sistema valida la firma y actualiza el estado del plan.<br><br>
+        <strong>Escenario 2: Webhook con firma inválida</strong><br>
+        <strong>Given</strong> que el webhook envía una firma no válida,<br>
+        <strong>When</strong> el backend recibe la notificación,<br>
+        <strong>Then</strong> el sistema descarta el evento por seguridad.<br><br>
+        <strong>Definition of Done (DoD):</strong><br>
+        - PoC de la pasarela desplegada en una rama de pruebas (spike/stripe-integration).<br>
+        - Guía de configuración de variables de entorno elaborada.<br>
+        - Timebox: 12 horas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SS04</td>
+      <td style="padding: 8px;">Equipo de Desarrollo</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Ruteo de Deep Linking y Notificaciones Push</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Contexto:</strong> El sistema enviará notificaciones push mediante FCM o APNs por alertas de calidad o retrasos[cite: 9]. Al interactuar con la notificación, la app debe abrir directamente la pantalla del recurso asociado en lugar del inicio[cite: 9].<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> probar el ruteo de deep links embebidos en el payload de las notificaciones push[cite: 9], <strong>Para</strong> asegurar una navegación directa y mejorar la experiencia del usuario.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Navegación desde alerta</strong><br>
+        <strong>Given</strong> que el usuario recibe una notificación push con un deep link válido[cite: 9],<br>
+        <strong>When</strong> toca la alerta,<br>
+        <strong>Then</strong> la aplicación se abre e intercepta la ruta para cargar la vista exacta del pedido[cite: 9].<br><br>
+        <strong>Escenario 2: Deep link no encontrado</strong><br>
+        <strong>Given</strong> que el recurso referenciado en el deep link ya no existe[cite: 9],<br>
+        <strong>When</strong> el sistema intenta resolver la ruta,<br>
+        <strong>Then</strong> la aplicación captura el error y muestra una pantalla informativa[cite: 9].<br><br>
+        <strong>Definition of Done (DoD):</strong><br>
+        - Prototipo de navegación con un servicio simulado de notificaciones (spike/deep-linking).<br>
+        - Documento técnico de ruteo interno.<br>
+        - Timebox: 10 horas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SS05</td>
+      <td style="padding: 8px;">Equipo de Desarrollo</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Escaneo de Códigos QR con Librerías Nativas</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Contexto:</strong> Los distribuidores deben validar automáticamente la recepción de lotes usando la cámara de su smartphone para escanear códigos QR[cite: 9].<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> evaluar librerías de escaneo QR compatibles con nuestro stack móvil[cite: 9], <strong>Para</strong> medir su precisión, consumo de memoria y velocidad de lectura nativa.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Extracción rápida de ID</strong><br>
+        <strong>Given</strong> un código QR generado con el ID de un lote[cite: 9],<br>
+        <strong>When</strong> la cámara del dispositivo lo enfoca[cite: 9],<br>
+        <strong>Then</strong> la librería extrae el ID correctamente en menos de 2 segundos.<br><br>
+        <strong>Escenario 2: Permisos denegados</strong><br>
+        <strong>Given</strong> que el usuario deniega los permisos de cámara,<br>
+        <strong>When</strong> intenta abrir el escáner,<br>
+        <strong>Then</strong> la aplicación maneja la excepción sin cerrarse y solicita los permisos adecuadamente.<br><br>
+        <strong>Definition of Done (DoD):</strong><br>
+        - PoC de lectura con la cámara nativa (spike/qr-scanner).<br>
+        - Tabla comparativa de al menos dos librerías evaluadas.<br>
+        - Timebox: 8 horas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">SS06</td>
+      <td style="padding: 8px;">Equipo de Desarrollo</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP06</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Caché de Imágenes Optimizado para el Catálogo</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Contexto:</strong> El catálogo comercial mostrará múltiples imágenes de productos. Para no consumir excesivamente los datos móviles de los clientes comerciales, es necesario implementar un sistema de caché de imágenes y carga diferida (lazy loading)[cite: 9].<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar y probar librerías de caché de imágenes en el frontend[cite: 9], <strong>Para</strong> optimizar los tiempos de renderizado y reducir las peticiones redundantes al servidor.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Carga desde caché local</strong><br>
+        <strong>Given</strong> que el usuario visita el catálogo y se descargan las imágenes[cite: 9],<br>
+        <strong>When</strong> vuelve a abrir la vista posteriormente,<br>
+        <strong>Then</strong> las imágenes cargan desde la caché local sin hacer nuevas peticiones de red[cite: 9].<br><br>
+        <strong>Escenario 2: Carga de placeholder (Fallback)</strong><br>
+        <strong>Given</strong> que una imagen no está disponible[cite: 9],<br>
+        <strong>When</strong> el componente intenta cargarla,<br>
+        <strong>Then</strong> se muestra automáticamente una imagen predeterminada (placeholder) manteniendo el diseño de la tarjeta[cite: 9].<br><br>
+        <strong>Definition of Done (DoD):</strong><br>
+        - Prototipo de lazy loading y caché implementado (spike/image-cache).<br>
+        - Justificación escrita de la herramienta seleccionada.<br>
+        - Timebox: 8 horas.
+      </td>
+    </tr>
+  </tbody>
+</table>

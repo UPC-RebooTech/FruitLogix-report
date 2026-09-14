@@ -3902,8 +3902,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> El sistema enviará notificaciones push mediante FCM o APNs por alertas de calidad o retrasos[cite: 9]. Al interactuar con la notificación, la app debe abrir directamente la pantalla del recurso asociado en lugar del inicio[cite: 9].<br><br>
-        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> probar el ruteo de deep links embebidos en el payload de las notificaciones push[cite: 9], <strong>Para</strong> asegurar una navegación directa y mejorar la experiencia del usuario.
+        <strong>Contexto:</strong> El sistema enviará notificaciones push mediante FCM o APNs por alertas de calidad o retrasos. Al interactuar con la notificación, la app debe abrir directamente la pantalla del recurso asociado en lugar del inicio.<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> probar el ruteo de deep links embebidos en el payload de las notificaciones push, <strong>Para</strong> asegurar una navegación directa y mejorar la experiencia del usuario.
       </td>
     </tr>
     <tr>
@@ -3912,13 +3912,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Navegación desde alerta</strong><br>
-        <strong>Given</strong> que el usuario recibe una notificación push con un deep link válido[cite: 9],<br>
+        <strong>Given</strong> que el usuario recibe una notificación push con un deep link válido,<br>
         <strong>When</strong> toca la alerta,<br>
-        <strong>Then</strong> la aplicación se abre e intercepta la ruta para cargar la vista exacta del pedido[cite: 9].<br><br>
+        <strong>Then</strong> la aplicación se abre e intercepta la ruta para cargar la vista exacta del pedido.<br><br>
         <strong>Escenario 2: Deep link no encontrado</strong><br>
-        <strong>Given</strong> que el recurso referenciado en el deep link ya no existe[cite: 9],<br>
+        <strong>Given</strong> que el recurso referenciado en el deep link ya no existe,<br>
         <strong>When</strong> el sistema intenta resolver la ruta,<br>
-        <strong>Then</strong> la aplicación captura el error y muestra una pantalla informativa[cite: 9].<br><br>
+        <strong>Then</strong> la aplicación captura el error y muestra una pantalla informativa.<br><br>
         <strong>Definition of Done (DoD):</strong><br>
         - Prototipo de navegación con un servicio simulado de notificaciones (spike/deep-linking).<br>
         - Documento técnico de ruteo interno.<br>
@@ -3951,8 +3951,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> Los distribuidores deben validar automáticamente la recepción de lotes usando la cámara de su smartphone para escanear códigos QR[cite: 9].<br><br>
-        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> evaluar librerías de escaneo QR compatibles con nuestro stack móvil[cite: 9], <strong>Para</strong> medir su precisión, consumo de memoria y velocidad de lectura nativa.
+        <strong>Contexto:</strong> Los distribuidores deben validar automáticamente la recepción de lotes usando la cámara de su smartphone para escanear códigos QR.<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> evaluar librerías de escaneo QR compatibles con nuestro stack móvil, <strong>Para</strong> medir su precisión, consumo de memoria y velocidad de lectura nativa.
       </td>
     </tr>
     <tr>
@@ -3961,8 +3961,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Extracción rápida de ID</strong><br>
-        <strong>Given</strong> un código QR generado con el ID de un lote[cite: 9],<br>
-        <strong>When</strong> la cámara del dispositivo lo enfoca[cite: 9],<br>
+        <strong>Given</strong> un código QR generado con el ID de un lote,<br>
+        <strong>When</strong> la cámara del dispositivo lo enfoca,<br>
         <strong>Then</strong> la librería extrae el ID correctamente en menos de 2 segundos.<br><br>
         <strong>Escenario 2: Permisos denegados</strong><br>
         <strong>Given</strong> que el usuario deniega los permisos de cámara,<br>
@@ -4000,8 +4000,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> El catálogo comercial mostrará múltiples imágenes de productos. Para no consumir excesivamente los datos móviles de los clientes comerciales, es necesario implementar un sistema de caché de imágenes y carga diferida (lazy loading)[cite: 9].<br><br>
-        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar y probar librerías de caché de imágenes en el frontend[cite: 9], <strong>Para</strong> optimizar los tiempos de renderizado y reducir las peticiones redundantes al servidor.
+        <strong>Contexto:</strong> El catálogo comercial mostrará múltiples imágenes de productos. Para no consumir excesivamente los datos móviles de los clientes comerciales, es necesario implementar un sistema de caché de imágenes y carga diferida (lazy loading).<br><br>
+        <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar y probar librerías de caché de imágenes en el frontend, <strong>Para</strong> optimizar los tiempos de renderizado y reducir las peticiones redundantes al servidor.
       </td>
     </tr>
     <tr>
@@ -4010,13 +4010,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Carga desde caché local</strong><br>
-        <strong>Given</strong> que el usuario visita el catálogo y se descargan las imágenes[cite: 9],<br>
+        <strong>Given</strong> que el usuario visita el catálogo y se descargan las imágenes,<br>
         <strong>When</strong> vuelve a abrir la vista posteriormente,<br>
-        <strong>Then</strong> las imágenes cargan desde la caché local sin hacer nuevas peticiones de red[cite: 9].<br><br>
+        <strong>Then</strong> las imágenes cargan desde la caché local sin hacer nuevas peticiones de red.<br><br>
         <strong>Escenario 2: Carga de placeholder (Fallback)</strong><br>
-        <strong>Given</strong> que una imagen no está disponible[cite: 9],<br>
+        <strong>Given</strong> que una imagen no está disponible,<br>
         <strong>When</strong> el componente intenta cargarla,<br>
-        <strong>Then</strong> se muestra automáticamente una imagen predeterminada (placeholder) manteniendo el diseño de la tarjeta[cite: 9].<br><br>
+        <strong>Then</strong> se muestra automáticamente una imagen predeterminada (placeholder) manteniendo el diseño de la tarjeta.<br><br>
         <strong>Definition of Done (DoD):</strong><br>
         - Prototipo de lazy loading y caché implementado (spike/image-cache).<br>
         - Justificación escrita de la herramienta seleccionada.<br>

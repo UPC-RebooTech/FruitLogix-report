@@ -100,6 +100,8 @@ En este paso se incorporaron External Systems al EventStorm con el propósito de
 
 Dentro del proceso relacionado con la identidad y autenticación de usuarios se modeló `Auth0 / Firebase Auth` como un servicio externo considerado durante el análisis para apoyar actividades relacionadas con el acceso y la seguridad de los usuarios.
 
+La representación de `Auth0 / Firebase Auth` corresponde al modelado realizado durante el análisis del dominio y no establece necesariamente la tecnología definitiva utilizada para implementar la autenticación de la solución.
+
 Asimismo, en el flujo relacionado con conductores y vehículos se identificó `Vehicle & License API` como una dependencia externa orientada a proporcionar información necesaria para la validación de licencias y características asociadas a los vehículos antes de su incorporación a la operación logística.
 
 Este refinamiento contribuye a delimitar con mayor claridad las responsabilidades internas y externas del sistema antes de continuar con la identificación de Aggregates.
@@ -288,5 +290,72 @@ Para este análisis se utilizó Domain Storytelling, permitiendo representar de 
 
 Las historias seleccionadas se basan en los procesos ya identificados durante el EventStorming, evitando incorporar funcionalidades o relaciones que no hayan sido previamente evidenciadas en el modelo.
 
+##### Domain Story 1: Order Management to Delivery
 
+La primera Domain Story representa el proceso principal mediante el cual un pedido gestionado por un Distributor avanza a través de diferentes responsabilidades del dominio hasta completar su entrega al Commercial Client.
 
+El flujo comienza en `Order Management`, donde el Distributor registra un Order y posteriormente asigna un Producer encargado de suministrar el Batch asociado. El lote pasa entonces al `Quality Control Context`, donde el Distributor verifica su calidad y aprueba su continuidad para que el proceso pueda avanzar hacia el despacho.
+
+Una vez aprobada la calidad del Batch, `Order Management` continúa con la creación del Shipment. A partir de este punto, `Logistics and Monitoring` asume la responsabilidad de inicializar y gestionar el envío. Para su ejecución se utilizan recursos administrados por `Fleet Management`, principalmente Drivers y Vehicles disponibles para la operación logística.
+
+Durante la entrega, el Driver inicia el recorrido y el seguimiento de la ubicación se realiza mediante información proporcionada por `GPS Tracker / Mobile App GPS`, que alimenta el Tracking del Shipment. Finalmente, el Driver completa la entrega al Commercial Client.
+
+Esta historia permite visualizar la colaboración entre `Order Management`, `Quality Control Context`, `Fleet Management` y `Logistics and Monitoring`, manteniendo separadas las responsabilidades de cada contexto durante el desarrollo del proceso.
+
+<img alt="Domain_1" height="200%" src="../assets/miro/Domain_1.jpg" width="600"/>
+
+##### Domain Story 2: Distributor Profile and Fleet Setup
+
+La segunda Domain Story representa la transición desde la configuración del perfil de un Distributor hasta la incorporación de los recursos necesarios para gestionar su flota dentro de FruitLogix.
+
+El proceso inicia en `Profiles Management`, donde el Distributor realiza su registro, selecciona el rol correspondiente, proporciona la documentación requerida y completa la configuración de su perfil. Una vez completado este proceso, el Distributor puede continuar con las actividades relacionadas con la administración de su flota.
+
+En `Fleet Management`, el Distributor registra su cuenta asociada a la operación logística y se valida la documentación correspondiente. Posteriormente, puede incorporar Drivers a la flota, cuya licencia debe ser validada antes de que puedan participar en la operación.
+
+El mismo contexto permite registrar Vehicles, almacenar su información técnica y posteriormente incorporarlos como recursos disponibles de la flota. De esta manera, `Fleet Management` mantiene las responsabilidades específicas relacionadas con Drivers, Vehicles y recursos de transporte.
+
+Esta historia permite visualizar la colaboración entre `Profiles Management` y `Fleet Management`, mostrando cómo la configuración inicial del perfil del Distributor precede a las responsabilidades específicas relacionadas con la administración de sus recursos logísticos.
+
+<img alt="Domain_2" height="200%" src="../assets/miro/Domain_2.jpg" width="600"/>
+
+##### Domain Story 3: Order Billing and Payment
+
+La tercera Domain Story representa la colaboración entre `Order Management` y `Payment Management` durante el proceso de facturación y pago asociado a una operación realizada dentro de FruitLogix.
+
+El flujo inicia cuando la información relacionada con el Order pasa desde `Order Management` hacia `Payment Management` para dar soporte al proceso de facturación. Esta transición se representa de manera general debido a que el EventStorm evidencia la conexión entre ambos contextos, aunque no especifica de forma inequívoca un único evento del Order como responsable del inicio de la facturación.
+
+Dentro de `Payment Management`, el Commercial Client registra la información correspondiente a su método de pago y posteriormente inicia el proceso de pago de la Invoice. A partir de esta acción se inicia una Transaction que es procesada mediante el External System `Payment Gateway`.
+
+Cuando la transacción es confirmada, el pago se considera completado y la Invoice pasa a representar una operación pagada. Posteriormente se genera el documento correspondiente en formato PDF y este es enviado al Commercial Client. Para esta última actividad se utiliza `Email Service` como External System de soporte para la entrega del comprobante.
+
+Esta historia permite visualizar cómo `Order Management` proporciona la información necesaria para iniciar el proceso financiero, mientras que `Payment Management` mantiene la responsabilidad sobre la facturación, métodos de pago, procesamiento de transacciones y generación y envío del comprobante.
+
+<img alt="Domain_3" height="200%" src="../assets/miro/Domain_3.jpg" width="600"/>
+
+##### Domain Story 4: IoT Telemetry During Delivery
+
+La cuarta Domain Story representa la colaboración entre `Infrastructure & IoT` y `Logistics and Monitoring` para proporcionar información de telemetría durante la ejecución de un Shipment y detectar condiciones que requieren atención durante la entrega.
+
+El flujo comienza en `Infrastructure & IoT`, donde los Physical Sensors generan información que es representada mediante una Sensor Reading. Esta lectura es posteriormente registrada y validada, permitiendo obtener una `Validated Reading` que puede ser utilizada como información de telemetría asociada a un Shipment activo.
+
+A partir de esta información, `Logistics and Monitoring` permite relacionar el Shipment con sus condiciones actuales de operación. El Distributor puede consultar la Telemetry correspondiente durante el desarrollo de la entrega, manteniendo visibilidad sobre la información relevante proporcionada por los sensores.
+
+El flujo también contempla situaciones en las que una lectura registrada se encuentra fuera del rango esperado. En estos casos, `Infrastructure & IoT` identifica una `Out-of-Range Reading` y proporciona la información necesaria para generar una alerta asociada al Shipment. Dentro de `Logistics and Monitoring`, esta situación es representada mediante un `Shipment Alert`, que permite notificar al Distributor sobre la condición detectada.
+
+Esta historia permite visualizar cómo `Infrastructure & IoT` mantiene la responsabilidad sobre la captura, registro y validación de las lecturas provenientes de sensores, mientras que `Logistics and Monitoring` utiliza dicha información dentro del seguimiento operativo de un Shipment y de las alertas relacionadas con su entrega.
+
+<img alt="Domain_4" height="200%" src="../assets/miro/Domain_4.jpg" width="600"/>
+
+##### Resultados del Domain Message Flows Modeling
+
+El Domain Message Flows Modeling permitió representar cómo los Candidate Bounded Contexts identificados previamente colaboran durante diferentes procesos del negocio de FruitLogix. Mediante Domain Storytelling se modelaron historias específicas en lugar de intentar representar todas las responsabilidades del dominio dentro de un único flujo.
+
+La primera historia mostró la colaboración entre `Order Management`, `Quality Control Context`, `Fleet Management` y `Logistics and Monitoring` durante el proceso que inicia con la gestión de un pedido y finaliza con su entrega al Commercial Client.
+
+La segunda historia permitió representar la relación entre `Profiles Management` y `Fleet Management`, mostrando cómo la configuración inicial del perfil del Distributor precede a las actividades relacionadas con la incorporación y administración de Drivers y Vehicles.
+
+La tercera historia representó la colaboración entre `Order Management` y `Payment Management` durante el proceso de facturación y pago asociado a una operación.
+
+Finalmente, la cuarta historia permitió representar la colaboración entre `Infrastructure & IoT` y `Logistics and Monitoring`, mostrando cómo las lecturas obtenidas mediante sensores pueden ser utilizadas durante el seguimiento de un Shipment y cómo una condición fuera de rango puede originar una alerta para el Distributor.
+
+En conjunto, estas historias permiten observar cómo las responsabilidades permanecen separadas entre los diferentes Bounded Contexts, pero colaboran cuando los procesos de negocio requieren información o capacidades pertenecientes a más de un contexto. De esta manera, el Domain Message Flows Modeling complementa el Candidate Context Discovery al hacer visibles las principales interacciones de negocio existentes entre los contextos identificados.

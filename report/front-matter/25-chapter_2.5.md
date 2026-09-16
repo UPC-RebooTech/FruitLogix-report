@@ -960,5 +960,56 @@ El uso de servicios externos como `Payment Gateway`, `S3 / Document Storage` y `
 
 Las capacidades relacionadas con facturación, pagos y reembolsos comparten un lenguaje y ciclo financiero común, por lo que mantienen cohesión suficiente dentro del mismo contexto. Con la evidencia disponible, no se identifica la necesidad de dividir `Payment Management` ni de trasladar sus capacidades principales hacia otro Bounded Context.
 
+#### 2.5.2. Context Mapping
+
+A partir de los Bounded Contexts identificados durante el Candidate Context Discovery y refinados mediante Domain Storytelling y Bounded Context Canvases, se realizó el proceso de Context Mapping con el propósito de visualizar y analizar las relaciones estructurales existentes entre las diferentes áreas del dominio de FruitLogix.
+
+Durante este proceso se conservaron los siete Bounded Contexts previamente definidos: `Profiles Management`, `Fleet Management`, `Order Management`, `Quality Control Context`, `Infrastructure & IoT`, `Logistics and Monitoring` y `Payment Management`. El análisis se concentró en revisar las dependencias y colaboraciones existentes entre ellos, manteniendo los límites y responsabilidades que fueron establecidos durante las etapas anteriores.
+
+Como punto de partida se revisaron principalmente las dependencias documentadas en los Bounded Context Canvases y las colaboraciones representadas mediante Domain Storytelling. A partir de esta información se elaboró un primer Context Map orientado a visualizar las dependencias observadas entre los contextos antes de aplicar patrones específicos de relación de Domain-Driven Design.
+
+##### Candidate Context Map 1: Observed Dependencies
+
+El primer Context Map representa las principales dependencias identificadas a partir del análisis previo del dominio. Este diseño mantiene los siete Bounded Contexts sin modificar sus responsabilidades y muestra la información o capacidades que determinados contextos proporcionan a otros durante los principales procesos de FruitLogix.
+
+`Profiles Management` proporciona información correspondiente a los actores previamente registrados y configurados, utilizada posteriormente por `Fleet Management` y `Order Management`. `Fleet Management`, por su parte, administra Drivers y Vehicles que posteriormente son utilizados por `Logistics and Monitoring` durante la ejecución de Shipments.
+
+`Quality Control Context` proporciona los resultados asociados a la evaluación de calidad de los Batches utilizados durante el proceso gestionado por `Order Management`. A su vez, `Order Management` proporciona información necesaria tanto para iniciar el proceso logístico como para continuar con los procesos de facturación y pago administrados por `Payment Management`.
+
+Finalmente, `Infrastructure & IoT` proporciona información de telemetría y y condiciones detectadas utilizada durante el seguimiento de Shipments en `Logistics and Monitoring`. También se reconoce una relación de apoyo hacia `Quality Control Context`, debido a que determinadas mediciones provenientes de sensores pueden utilizarse como información complementaria durante procesos de evaluación de calidad.
+
+<img alt="Context Map 1" height="200%" src="../assets/miro/context_maps_1.jpg" width="550"/>
+
+##### Candidate Context Map 2: Refined Upstream/Downstream Relationships
+
+A partir de las dependencias identificadas en el primer Context Map, se elaboró un segundo diseño orientado a precisar la dirección de las relaciones entre los Bounded Contexts. Para este refinamiento se utilizó la distinción entre upstream y downstream, donde el contexto upstream mantiene la responsabilidad sobre la información o capacidad proporcionada, mientras que el downstream utiliza dicha información dentro de sus propios procesos.
+
+Este diseño mantiene sin cambios los siete Bounded Contexts definidos previamente. La diferencia respecto del primer mapa consiste en hacer explícita la dirección de las dependencias y conservar la autonomía de cada contexto, evitando que un contexto incorpore directamente las reglas internas pertenecientes a otro.
+
+De acuerdo con el enfoque de aislamiento considerado para la arquitectura móvil, la colaboración entre contextos se plantea mediante Domain Events. De esta manera, los cambios relevantes producidos dentro de un Bounded Context pueden ser comunicados a otros contextos interesados sin compartir directamente sus modelos internos.
+
+Las principales relaciones identificadas se mantienen consistentes con el análisis anterior. `Profiles Management` actúa como upstream respecto de `Fleet Management` y `Order Management` al proporcionar información correspondiente a los actores previamente configurados. `Fleet Management` proporciona a `Logistics and Monitoring` los recursos de transporte disponibles para participar en los Shipments.
+
+`Quality Control Context` proporciona a `Order Management` los resultados derivados de la evaluación de los Batches. A su vez, `Order Management` actúa como upstream respecto de `Logistics and Monitoring` y `Payment Management`, proporcionando la información necesaria para continuar respectivamente con la ejecución logística y los procesos financieros.
+
+Finalmente, `Infrastructure & IoT` proporciona información de telemetría y condiciones detectadas a `Logistics and Monitoring`. La relación hacia `Quality Control Context` se mantiene como una dependencia de apoyo, debido a que las mediciones obtenidas mediante sensores pueden complementar determinados procesos de evaluación de calidad sin constituir una dependencia obligatoria para todos los casos.
+
+<img alt="Context Map 2" height="200%" src="../assets/miro/context_maps_2.jpg" width="550"/>
+
+##### Relationship Patterns Evaluation
+
+Durante el refinamiento del Context Map se consideraron diferentes patrones de relación de Domain-Driven Design con el propósito de determinar si alguno describía de manera adecuada las colaboraciones existentes entre los Bounded Contexts de FruitLogix.
+
+El patrón `Customer/Supplier` fue considerado debido a la existencia de relaciones donde un contexto proporciona información que posteriormente es utilizada por otro. Sin embargo, la evidencia disponible no permite afirmar que exista una relación organizacional en la que las necesidades del downstream determinen las prioridades del upstream. Por esta razón, se mantuvo una representación más general basada en relaciones Upstream/Downstream.
+
+También se evaluó el uso de `Shared Kernel`. Esta alternativa implicaría compartir deliberadamente parte del modelo entre distintos Bounded Contexts. No obstante, los Bounded Context Canvases desarrollados previamente muestran responsabilidades, reglas y lenguajes específicos para cada contexto, por lo que compartir directamente sus modelos incrementaría el acoplamiento y reduciría su independencia.
+
+El patrón `Conformist` fue igualmente considerado, pero no se identificó evidencia suficiente para afirmar que alguno de los contextos downstream deba adoptar directamente el modelo definido por otro contexto sin capacidad de adaptación.
+
+Finalmente, se consideró el patrón `Anti-Corruption Layer`. Aunque este patrón puede ser utilizado para proteger el modelo de un contexto frente a modelos externos o incompatibles, los artefactos desarrollados actualmente no evidencian la necesidad de introducir una capa de traducción explícita entre los siete Bounded Contexts identificados.
+
+Como resultado de esta evaluación, se seleccionó el segundo Context Map como aproximación final. Este diseño conserva los límites previamente establecidos, representa explícitamente las relaciones Upstream/Downstream y mantiene la independencia de los modelos de cada Bounded Context mediante una estrategia de comunicación basada en Domain Events.
+
+
 
 

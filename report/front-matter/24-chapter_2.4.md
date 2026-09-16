@@ -4040,3 +4040,590 @@ El Impact Mapping es una herramienta de planificación estrategica que nos permi
 #### Impact Map - Segmento 3: Distribuidor de Frutas
 
 <img alt="ImpactMapDistribuidor" height="100%" src="../assets/ux-pressia/ImpactMap-JuanVega.png" width="500"/>
+
+
+### 2.4.4 Product Backlog
+
+En esta sección se presenta el Product Backlog del proyecto FruitLogix, gestionado prioritariamente según el valor entregado al negocio y las dependencias técnicas fundamentales. Las historias de usuario e ítems técnicos han sido estimados mediante la escala Fibonacci y distribuidos en los sprints correspondientes para asegurar entregables funcionales desde las primeras iteraciones.
+
+
+<table>
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>User Story Id</th>
+      <th>Título</th>
+      <th>Story Points<br>(1 / 2 / 3 / 5 / 8)</th>
+      <th>Sprint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>TS01</td>
+      <td>Configurar entorno de desarrollo</td>
+      <td>1</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TS08</td>
+      <td>Conversión de tipos de datos en EF Core</td>
+      <td>2</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TS03</td>
+      <td>Implementar registro de usuarios</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>TS02</td>
+      <td>Implementar autenticación de usuarios</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>US31</td>
+      <td>Visualizar Landing Page</td>
+      <td>2</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>US32</td>
+      <td>Navegar entre secciones del Landing Page</td>
+      <td>1</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>US33</td>
+      <td>Visualización responsive del Landing Page</td>
+      <td>2</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>US01</td>
+      <td>Registrarse como cliente comercial</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>US02</td>
+      <td>Iniciar sesión con credenciales</td>
+      <td>2</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>TS18</td>
+      <td>Implementar caché de imágenes optimizada para catálogo</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>US34</td>
+      <td>Explorar catálogo con renders de alta fidelidad</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>US48</td>
+      <td>Registrar carga de cosecha</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>US51</td>
+      <td>Capturar fotografía de producto para el catálogo</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>US49</td>
+      <td>Gestionar stock de productos</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>TS04</td>
+      <td>Implementar registro de pedidos</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>US04</td>
+      <td>Crear pedido de insumos</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>US05</td>
+      <td>Agregar productos al carrito</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>US06</td>
+      <td>Confirmar pedido y seleccionar método de pago</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>TS17</td>
+      <td>Integrar SDK nativo de Stripe (Payment Sheet)</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>US07</td>
+      <td>Visualizar estado del pedido</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>TS05</td>
+      <td>Implementar consulta de pedidos</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>TS06</td>
+      <td>Implementar actualización de estado de pedido</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>TS12</td>
+      <td>Servicio de generación y validación de QR</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>US54</td>
+      <td>Escaneo de código QR/barras en recepción de lote</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>TS07</td>
+      <td>Implementar registro de control de calidad</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>US50</td>
+      <td>Enviar reporte de calidad al distribuidor con fotos</td>
+      <td>5</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>US03</td>
+      <td>Recuperar contraseña mediante correo</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>TS20</td>
+      <td>Registro y consulta de geolocalización en tiempo real</td>
+      <td>5</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>US43</td>
+      <td>Monitorear flota en tiempo real</td>
+      <td>8</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>US38</td>
+      <td>Ver información del conductor en tracking</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>US56</td>
+      <td>Geolocalización automática al marcar entrega</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>TS16</td>
+      <td>Almacenamiento y verificación de firma digital</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>US52</td>
+      <td>Evidencia fotográfica en el punto de entrega</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>TS15</td>
+      <td>Carga de evidencia fotográfica con marca de agua</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>US46</td>
+      <td>Ver detalle de despacho con telemetría</td>
+      <td>5</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>US45</td>
+      <td>Monitorear sensores IoT</td>
+      <td>8</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>US12</td>
+      <td>Ver reportes de calidad dinámicos</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>US44</td>
+      <td>Gestionar incidencias operativas</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>US57</td>
+      <td>Nota de voz para reportar incidencias</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>TS11</td>
+      <td>Sincronización de datos en modo offline</td>
+      <td>8</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>US55</td>
+      <td>Sincronización automática de datos offline</td>
+      <td>8</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>US53</td>
+      <td>Formulario de inspección de campo offline</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>TS13</td>
+      <td>Configurar servicio de notificaciones push (FCM/APNs)</td>
+      <td>3</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>TS09</td>
+      <td>Implementar envío de notificaciones</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>TS21</td>
+      <td>Manejo de deep links desde notificaciones push</td>
+      <td>3</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>US58</td>
+      <td>Aprobar o rechazar lote desde notificación push</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>US19</td>
+      <td>Ver dashboard operativo del Productor</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>US20</td>
+      <td>Ver dashboard general de distribución</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>US41</td>
+      <td>Invitar productor a la red</td>
+      <td>3</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>US39</td>
+      <td>Editar ficha técnica de producto</td>
+      <td>4</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>US40</td>
+      <td>Eliminar productor de la red</td>
+      <td>1</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>US37</td>
+      <td>Adjuntar archivos en el chat</td>
+      <td>5</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>TS14</td>
+      <td>Registro y validación de sesión biométrica</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>US59</td>
+      <td>Acceso mediante autenticación biométrica</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>US36</td>
+      <td>Visualizar balance financiero en Dashboard del Cliente</td>
+      <td>5</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>US47</td>
+      <td>Gestionar facturación</td>
+      <td>5</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>US42</td>
+      <td>Ver KPIs de gestión de productores</td>
+      <td>5</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>TS10</td>
+      <td>Implementar generación de reportes</td>
+      <td>5</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>TS19</td>
+      <td>Exportación y compartición nativa de reportes</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>TS22</td>
+      <td>Optimizar endpoints con paginación y payloads livianos</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>US35</td>
+      <td>Calificar servicio de entrega</td>
+      <td>2</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>US08</td>
+      <td>Filtrar catálogo por categoría y disponibilidad</td>
+      <td>2</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>US09</td>
+      <td>Guardar productos en lista de favoritos</td>
+      <td>2</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>US10</td>
+      <td>Consultar historial de compras anteriores</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>US11</td>
+      <td>Solicitar cotización personalizada</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>US13</td>
+      <td>Configurar alertas de temperatura y humedad</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>US14</td>
+      <td>Exportar historial de telemetría a PDF/Excel</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>US15</td>
+      <td>Asignar vehículo y conductor a un despacho</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>US16</td>
+      <td>Confirmar entrega mediante firma digital o código QR</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>US17</td>
+      <td>Registrar incidencia en la entrega</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>US18</td>
+      <td>Consultar historial de despachos realizados</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>US21</td>
+      <td>Registrar nuevo lote de producción</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>US22</td>
+      <td>Actualizar estado de un lote</td>
+      <td>2</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>US23</td>
+      <td>Generar e imprimir etiquetas con código QR</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>US24</td>
+      <td>Consultar historial de lotes producidos</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>US25</td>
+      <td>Enviar mensajes en el chat de un pedido</td>
+      <td>3</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>US26</td>
+      <td>Ver historial de mensajes</td>
+      <td>2</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>US27</td>
+      <td>Configurar perfil de usuario</td>
+      <td>2</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>US28</td>
+      <td>Configurar preferencias de notificaciones push</td>
+      <td>2</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>US29</td>
+      <td>Visualizar términos y condiciones</td>
+      <td>1</td>
+      <td>Sprint 4</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>US30</td>
+      <td>Cerrar sesión de forma segura</td>
+      <td>1</td>
+      <td>Sprint 4</td>
+    </tr>
+  </tbody>
+</table>

@@ -976,7 +976,7 @@ El primer Context Map representa las principales dependencias identificadas a pa
 
 `Quality Control Context` proporciona los resultados asociados a la evaluación de calidad de los Batches utilizados durante el proceso gestionado por `Order Management`. A su vez, `Order Management` proporciona información necesaria tanto para iniciar el proceso logístico como para continuar con los procesos de facturación y pago administrados por `Payment Management`.
 
-Finalmente, `Infrastructure & IoT` proporciona información de telemetría y y condiciones detectadas utilizada durante el seguimiento de Shipments en `Logistics and Monitoring`. También se reconoce una relación de apoyo hacia `Quality Control Context`, debido a que determinadas mediciones provenientes de sensores pueden utilizarse como información complementaria durante procesos de evaluación de calidad.
+Finalmente, `Infrastructure & IoT` proporciona información de telemetría y condiciones detectadas utilizada durante el seguimiento de Shipments en `Logistics and Monitoring`. También se reconoce una relación de apoyo hacia `Quality Control Context`, debido a que determinadas mediciones provenientes de sensores pueden utilizarse como información complementaria durante procesos de evaluación de calidad.
 
 <img alt="Context Map 1" height="200%" src="../assets/miro/context_maps_1.jpg" width="550"/>
 
@@ -1009,6 +1009,79 @@ El patrón `Conformist` fue igualmente considerado, pero no se identificó evide
 Finalmente, se consideró el patrón `Anti-Corruption Layer`. Aunque este patrón puede ser utilizado para proteger el modelo de un contexto frente a modelos externos o incompatibles, los artefactos desarrollados actualmente no evidencian la necesidad de introducir una capa de traducción explícita entre los siete Bounded Contexts identificados.
 
 Como resultado de esta evaluación, se seleccionó el segundo Context Map como aproximación final. Este diseño conserva los límites previamente establecidos, representa explícitamente las relaciones Upstream/Downstream y mantiene la independencia de los modelos de cada Bounded Context mediante una estrategia de comunicación basada en Domain Events.
+
+#### 2.5.3. Software Architecture
+
+La arquitectura de software de FruitLogix se representa utilizando el modelo C4, permitiendo visualizar progresivamente la solución desde su interacción con usuarios y sistemas externos hasta la distribución de sus principales elementos de software.
+
+Para esta etapa se parte de la arquitectura previamente desarrollada para FruitLogix y se adapta al alcance actual de la solución móvil. Se mantienen los servicios de negocio e integraciones que continúan formando parte del dominio, mientras que la representación de las aplicaciones cliente se actualiza para considerar una aplicación móvil nativa para Android y una aplicación móvil cross-platform.
+
+Debido a que las aplicaciones móviles se encuentran actualmente en fase de diseño, los diagramas representan la arquitectura objetivo de la solución. Las decisiones relacionadas con proveedores específicos de despliegue serán precisadas cuando exista una definición de infraestructura por parte del equipo.
+
+##### 2.5.3.1. Software Architecture Context Level Diagrams
+
+El Software Architecture Context Level Diagram representa a FruitLogix como un único Software System y muestra los principales tipos de usuarios y sistemas externos con los que interactúa.
+
+En este nivel no se detallan todavía las aplicaciones móviles, servicios backend ni mecanismos de persistencia, debido a que dichos elementos corresponden al nivel Container del modelo C4. El objetivo del Context Diagram es establecer el límite general de FruitLogix y visualizar las interacciones externas necesarias para soportar sus principales procesos de negocio.
+
+<img alt="Context Level" height="200%" src="../assets/arquitectura/C4_Context_Diagram.png" width="750"/>
+
+El Context Diagram presenta a `FruitLogix` como el sistema central que articula las operaciones de los principales actores de la cadena de suministro.
+
+El `Distributor` utiliza FruitLogix para gestionar pedidos, productores, recursos de flota, procesos de calidad y operaciones logísticas. El `Producer` participa mediante la gestión del abastecimiento, los lotes y la información relacionada con la calidad de los productos. El `Commercial Client` utiliza la solución para consultar el estado de sus pedidos y entregas y participar en los procesos comerciales correspondientes.
+
+El `Driver` participa en la ejecución de los Shipments y en las actividades asociadas a la entrega. Adicionalmente, el `Visitor` interactúa inicialmente con FruitLogix mediante la información pública del producto y el acceso al proceso de registro.
+
+FruitLogix también mantiene interacción con sistemas externos. `Google Maps API` proporciona información geográfica y servicios relacionados con rutas; `Payment Gateway` permite delegar el procesamiento de transacciones financieras; y `IoT Sensor System` proporciona las lecturas de telemetría utilizadas durante el monitoreo de las condiciones de transporte.
+
+En conjunto, el Context Diagram permite establecer el límite general de FruitLogix sin introducir todavía detalles sobre las aplicaciones cliente, servicios backend o mecanismos de persistencia, los cuales serán representados posteriormente en el Container Level Diagram.
+
+##### 2.5.3.2. Software Architecture Container Level Diagrams
+
+El Software Architecture Container Level Diagram profundiza en la estructura interna de FruitLogix mostrando los principales elementos ejecutables de la solución, las tecnologías utilizadas y las comunicaciones existentes entre ellos.
+
+La arquitectura objetivo considera dos aplicaciones móviles cliente: una aplicación nativa para Android desarrollada con Kotlin y Jetpack Compose, y una aplicación cross-platform desarrollada con Flutter y Dart. Ambas aplicaciones consumen las capacidades de negocio proporcionadas por el backend heredado de FruitLogix mediante servicios REST sobre HTTPS.
+
+Adicionalmente, la solución mantiene una Landing Page estático para presentar la propuesta de valor del producto. El backend centraliza las capacidades de negocio y el acceso a la persistencia, además de gestionar las integraciones con sistemas externos relacionados con rutas, pagos y telemetría IoT.
+
+En esta etapa el backend se representa como un único container lógico `FruitLogix Backend API`. La descomposición interna asociada a los Bounded Contexts será detallada posteriormente a nivel de componentes y Tactical-Level Domain-Driven Design, evitando asumir una distribución física en microservicios mientras dicha configuración no haya sido verificada en la implementación heredada.
+
+<img alt="Container Diagram" height="200%" src="../assets/arquitectura/C4_Container_Diagram.png" width="750"/>
+
+El Container Diagram muestra que las aplicaciones móviles constituyen los principales puntos de acceso a las capacidades operativas de FruitLogix. La `Native Android Application`, desarrollada con Kotlin y Jetpack Compose, y la `Cross-Platform Mobile Application`, desarrollada con Flutter y Dart, consumen los servicios expuestos por `FruitLogix Backend API` mediante comunicación REST sobre HTTPS.
+
+`FruitLogix Backend API`, implementado con ASP.NET Core y C#, concentra las capacidades de negocio utilizadas por las aplicaciones cliente y administra el acceso a la persistencia. El backend consulta y modifica la información almacenada en la `Relational Database`, representada mediante MySQL.
+
+La solución también incluye una `Landing Page` estático desarrollado con HTML5, CSS3 y JavaScript. Este container tiene como responsabilidad presentar públicamente la propuesta de valor e información general de FruitLogix, manteniéndose separado de las aplicaciones móviles operativas.
+
+Asimismo, el backend mantiene comunicación con sistemas externos necesarios para determinados procesos. `Google Maps API` proporciona información geográfica y servicios relacionados con rutas, `Payment Gateway` procesa transacciones financieras externas e `IoT Sensor System` proporciona lecturas de telemetría y condiciones ambientales utilizadas por FruitLogix durante el monitoreo del transporte.
+
+Esta organización permite separar las responsabilidades de presentación móvil, servicios de negocio, persistencia e integraciones externas, manteniendo un backend común que puede ser reutilizado por las diferentes aplicaciones cliente.
+
+##### 2.5.3.3. Software Architecture Deployment Diagrams
+
+El Software Architecture Deployment Diagram representa la distribución física prevista de los principales containers de FruitLogix sobre los dispositivos y entornos de infraestructura necesarios para su ejecución.
+
+Debido a que la solución móvil se encuentra actualmente en etapa de diseño y el equipo aún no ha definido los proveedores específicos de despliegue, el diagrama presenta una arquitectura objetivo independiente de proveedor. De esta manera, se establecen las responsabilidades de cada nodo de despliegue sin asumir servicios de infraestructura que todavía no han sido seleccionados.
+
+La aplicación móvil nativa se ejecuta directamente en dispositivos Android, mientras que la aplicación cross-platform se distribuye hacia dispositivos móviles compatibles con la estrategia Flutter. La Landing Page se publica mediante un servicio de hosting web estático.
+
+Por su parte, `FruitLogix Backend API` se ejecuta sobre un entorno de aplicación en la nube y se comunica con una instancia administrada de MySQL encargada de la persistencia de la información. Las aplicaciones móviles acceden al backend mediante HTTPS, manteniendo separadas las responsabilidades de presentación, lógica de negocio y almacenamiento.
+
+<img alt="Deployment Diagram" height="200%" src="../assets/arquitectura/C4_Deployment_Diagram.png" width="750"/>
+
+El Deployment Diagram representa la arquitectura objetivo de FruitLogix considerando los principales entornos físicos necesarios para ejecutar los containers definidos previamente.
+
+La `Native Android Application`, desarrollada con Kotlin y Jetpack Compose, se ejecuta directamente sobre dispositivos Android. De manera paralela, la `Cross-Platform Mobile Application`, desarrollada con Flutter y Dart, se ejecuta sobre dispositivos móviles compatibles con la estrategia multiplataforma. Ambas aplicaciones se comunican con `FruitLogix Backend API` mediante HTTPS.
+
+El `FruitLogix Backend API` se encuentra desplegado dentro de un entorno de Application Hosting perteneciente a una infraestructura cloud. Desde este entorno, el backend administra las capacidades de negocio y accede a la información almacenada en una instancia administrada de MySQL mediante comunicación SQL.
+
+Por otro lado, la `Landing Page` se despliega de forma independiente sobre un servicio de Static Web Hosting, debido a que su responsabilidad se limita a presentar información pública y la propuesta de valor del producto.
+
+En esta etapa los proveedores concretos de infraestructura permanecen por definir. Esta decisión permite representar la distribución lógica y física esperada de la solución sin asociarla prematuramente a un proveedor cloud específico. Los servicios seleccionados podrán ser precisados posteriormente durante la implementación y configuración del despliegue.
+
+
+
 
 
 

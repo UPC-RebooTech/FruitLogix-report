@@ -1042,21 +1042,21 @@ El Software Architecture Container Level Diagram profundiza en la estructura int
 
 La arquitectura objetivo considera dos aplicaciones móviles cliente: una aplicación nativa para Android desarrollada con Kotlin y Jetpack Compose, y una aplicación cross-platform desarrollada con Flutter y Dart. Ambas aplicaciones consumen las capacidades de negocio proporcionadas por el backend heredado de FruitLogix mediante servicios REST sobre HTTPS.
 
-Adicionalmente, la solución mantiene una Landing Page estático para presentar la propuesta de valor del producto. El backend centraliza las capacidades de negocio y el acceso a la persistencia, además de gestionar las integraciones con sistemas externos relacionados con rutas, pagos y telemetría IoT.
+Adicionalmente, la solución mantiene una Landing Page estática para presentar públicamente la propuesta de valor e información general del producto. Esta interfaz es utilizada por el `Visitor` para consultar información sobre FruitLogix y se mantiene independiente de las aplicaciones móviles operativas. El backend centraliza las capacidades de negocio y el acceso a la persistencia, además de gestionar las integraciones con sistemas externos relacionados con rutas, pagos y telemetría IoT.
 
 En esta etapa el backend se representa como un único container lógico `FruitLogix Backend API`. La descomposición interna asociada a los Bounded Contexts será detallada posteriormente a nivel de componentes y Tactical-Level Domain-Driven Design, evitando asumir una distribución física en microservicios mientras dicha configuración no haya sido verificada en la implementación heredada.
 
-<img alt="Container Diagram" height="200%" src="../assets/arquitectura/C4_Container_Diagram.png" width="750"/>
+<img alt="Container Diagram" height="200%" src="../assets/arquitectura/C4_Container_Diagrams.png" width="750"/>
 
 El Container Diagram muestra que las aplicaciones móviles constituyen los principales puntos de acceso a las capacidades operativas de FruitLogix. La `Native Android Application`, desarrollada con Kotlin y Jetpack Compose, y la `Cross-Platform Mobile Application`, desarrollada con Flutter y Dart, consumen los servicios expuestos por `FruitLogix Backend API` mediante comunicación REST sobre HTTPS.
 
 `FruitLogix Backend API`, implementado con ASP.NET Core y C#, concentra las capacidades de negocio utilizadas por las aplicaciones cliente y administra el acceso a la persistencia. El backend consulta y modifica la información almacenada en la `Relational Database`, representada mediante MySQL.
 
-La solución también incluye una `Landing Page` estático desarrollado con HTML5, CSS3 y JavaScript. Este container tiene como responsabilidad presentar públicamente la propuesta de valor e información general de FruitLogix, manteniéndose separado de las aplicaciones móviles operativas.
+La solución también incluye una `Landing Page` estática desarrollada con HTML5, CSS3 y JavaScript. El `Visitor` accede a este container mediante HTTPS para consultar públicamente la propuesta de valor e información general de FruitLogix. Debido a que su responsabilidad es informativa, la Landing Page se mantiene separada de las aplicaciones móviles operativas y, con la evidencia disponible para esta etapa, no se establece una dependencia directa con `FruitLogix Backend API`.
 
 Asimismo, el backend mantiene comunicación con sistemas externos necesarios para determinados procesos. `Google Maps API` proporciona información geográfica y servicios relacionados con rutas, `Payment Gateway` procesa transacciones financieras externas e `IoT Sensor System` proporciona lecturas de telemetría y condiciones ambientales utilizadas por FruitLogix durante el monitoreo del transporte.
 
-Esta organización permite separar las responsabilidades de presentación móvil, servicios de negocio, persistencia e integraciones externas, manteniendo un backend común que puede ser reutilizado por las diferentes aplicaciones cliente.
+Esta organización permite separar las responsabilidades de presentación pública, presentación móvil, servicios de negocio, persistencia e integraciones externas. La Landing Page atiende la consulta pública de información del producto, mientras que las aplicaciones móviles consumen las capacidades operativas proporcionadas por un backend común.
 
 ##### 2.5.3.3. Software Architecture Deployment Diagrams
 

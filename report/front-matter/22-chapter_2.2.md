@@ -1,5 +1,5 @@
-﻿### 2.2. Entrevistas
-#### 2.2.1. Diseño de entrevistas
+﻿## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
 
 El objetivo de la entrevista es comprender las necesidades, frustraciones y las razones de nuestros segmentos objetivos con finalidad de evaluar el problema identificado y consolidar nuestro proyecto.
 
@@ -45,7 +45,7 @@ El objetivo de la entrevista es comprender las necesidades, frustraciones y las 
 * ¿Prefieren usar apps o métodos tradicionales?
 * ¿Qué mejorarían en el proceso actual?
 
-#### 2.2.2. Registro de entrevistas
+### 2.2.2. Registro de entrevistas
 
 ### Segmento objetivo: Clientes Comerciales
 
@@ -122,7 +122,7 @@ La entrevista a Edwin Lozano, jefe de almacén y distribuidor de 38 años reside
 
 ---
 
-#### 2.2.3. Análisis de entrevistas
+### 2.2.3. Análisis de entrevistas
 
 #### Análisis de Clientes Comerciales:
 

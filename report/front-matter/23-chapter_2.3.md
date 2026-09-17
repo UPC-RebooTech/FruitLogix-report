@@ -1,5 +1,5 @@
-﻿### 2.3. Needfinding
-#### 2.3.1. User Personas
+﻿## 2.3. Needfinding
+### 2.3.1. User Personas
 
 En esta sección se presentan los User Personas correspondientes a los tres segmentos objetivo de FruitLogix. Estos arquetipos fueron construidos a partir del análisis de entrevistas, los patrones identificados en cada segmento y el análisis de la competencia, considerando principalmente características demográficas, roles dentro de la cadena de suministro, objetivos, motivaciones, frustraciones, canales de comunicación y uso de tecnología.
 
@@ -21,7 +21,7 @@ Alexandra Jiménez representa al segmento de productores agrícolas y fue constr
 
 Juan Vega representa al segmento de distribuidores de frutas y fue construido a partir de las entrevistas realizadas a Jorge Contreras, Paola Jiménez y Edwin Lozano. Se definió como un hombre de 55 años, ubicado en Lima, que representa a distribuidores con experiencia en la gestión de pedidos, coordinación con proveedores y abastecimiento a clientes comerciales. Sus objetivos principales se enfocan en cumplir los pedidos a tiempo, mantener los estándares de calidad exigidos, reducir rechazos, asegurar la disponibilidad constante del producto y mejorar la coordinación con sus proveedores. Sus frustraciones reflejan problemas frecuentes del segmento, como la poca anticipación de algunos pedidos, la variabilidad del stock, la exigencia de calidad, las dificultades para coordinar rápidamente con proveedores y el uso de procesos manuales o poco integrados. Asimismo, sus canales y herramientas tecnológicas representan el uso combinado de llamadas, WhatsApp, correo electrónico, notas y herramientas ofimáticas básicas, lo cual evidencia una operación funcional, pero todavía fragmentada. Finalmente, se consideraron marcas como Dole, Camposol y Fresh Plaza como referentes del sector vinculados a estándares de calidad y comercialización.
 
-#### 2.3.2. User Task Matrix
+### 2.3.2. User Task Matrix
 
 El User Task Matrix permite comparar las principales tareas que realizan los User Personas de FruitLogix dentro de la cadena de suministro de frutas, independientemente de la existencia de la solución. Para este análisis se consideran Alexandra Jiménez, representante de los productores agrícolas; Juan Vega, representante de los distribuidores de frutas; y María Gómez, representante de los clientes comerciales. Para cada tarea se evalúa su frecuencia de realización y su importancia dentro de las actividades habituales de cada User Persona.
 
@@ -92,7 +92,7 @@ El User Task Matrix permite comparar las principales tareas que realizan los Use
 
 La matriz evidencia que las tres User Personas coinciden en otorgar una alta importancia a la verificación de la calidad, la coordinación de entregas y el cumplimiento de estándares o requisitos. Sin embargo, la frecuencia de sus actividades varía según el rol que desempeñan dentro de la cadena de suministro. Alexandra Jiménez concentra sus tareas en la producción, preparación y control de calidad de la fruta, además de la planificación de la producción. Juan Vega presenta una mayor frecuencia en la gestión de pedidos, coordinación con proveedores y entregas, debido a su función como intermediario entre productores y clientes comerciales. Por su parte, María Gómez se enfoca principalmente en evaluar la demanda, realizar pedidos a proveedores, verificar la calidad de los productos recibidos y asegurar la continuidad del abastecimiento. Estas diferencias reflejan que, aunque los tres actores comparten objetivos relacionados con calidad y cumplimiento, cada uno participa en etapas distintas del proceso de abastecimiento.
 
-#### 2.3.3. User Journey Mapping
+### 2.3.3. User Journey Mapping
 
 El User Journey Mapping permite representar de manera estructurada la experiencia actual de los User Personas durante las principales actividades que realizan dentro de la cadena de suministro de frutas. Se elaboraron tres User Journey Maps en su versión As-Is, uno para cada segmento objetivo. Estos mapas permiten identificar los objetivos de los usuarios, sus puntos de contacto, los problemas que enfrentan, los cambios en su experiencia y las principales oportunidades de mejora encontradas a partir de las entrevistas.
 
@@ -110,7 +110,7 @@ El User Journey Map de Alexandra Jiménez representa las actividades actuales de
 ![UserJourneyMapDistribuidor](../assets/ux-pressia/UserJourney-Juan_Vega.png)
 El User Journey Map de Juan Vega representa el proceso actual de los distribuidores de frutas desde la recepción de un pedido hasta la resolución de posibles rechazos o incidencias. El recorrido comienza cuando Juan recibe los requerimientos del cliente mediante canales como WhatsApp, llamadas, correo electrónico u otros medios directos. Después verifica la disponibilidad de los productos utilizando registros existentes, su experiencia y la comunicación con proveedores, enfrentándose a una disponibilidad variable y a una limitada visibilidad inmediata del stock. Cuando necesita completar un pedido, coordina directamente con productores o proveedores para confirmar disponibilidad, calidad y tiempos, lo que puede resultar lento debido a la fragmentación de la comunicación. Posteriormente organiza el despacho y la entrega, procurando cumplir con los tiempos y condiciones acordadas, aunque el transporte y la manipulación pueden afectar el estado del producto. Finalmente, si se presentan rechazos, faltantes, retrasos o problemas de calidad, debe resolverlos mediante comunicaciones y coordinaciones manuales con clientes y proveedores. Este recorrido evidencia oportunidades para mejorar el registro de pedidos, la visibilidad de disponibilidad, la coordinación entre actores, el seguimiento de entregas y el registro de incidencias.
 
-#### 2.3.4. Empathy Mapping
+### 2.3.4. Empathy Mapping
 
 El Empathy Mapping permite profundizar en la experiencia de los User Personas considerando no solo las actividades que realizan, sino también sus percepciones, preocupaciones, necesidades y expectativas dentro de su contexto actual. Se elaboró un Empathy Map para cada segmento objetivo a partir de los patrones identificados en las entrevistas y su análisis. Cada mapa considera a quién se busca comprender, qué necesita hacer, qué observa, qué escucha, qué dice y hace, qué piensa y siente, además de sus principales Pains y Gains.
 
@@ -132,7 +132,7 @@ El Empathy Map de Alexandra Jiménez representa la experiencia de una productora
 
 El Empathy Map de Juan Vega representa la experiencia de un distribuidor encargado de recibir pedidos, verificar disponibilidad, coordinar con proveedores y gestionar entregas a clientes comerciales. Juan necesita responder a los requerimientos de sus clientes dentro de los tiempos acordados, asegurar la calidad de los productos y encontrar alternativas cuando el stock disponible no es suficiente. Para desarrollar estas actividades combina llamadas, WhatsApp, correo electrónico, registros manuales y otras herramientas básicas, manteniendo comunicación constante con proveedores y clientes. La variabilidad del stock, los pedidos con poca anticipación, la coordinación fragmentada y los posibles rechazos por problemas de calidad generan presión y dificultan la organización de su operación. Además, cuando se presenta un faltante, retraso o rechazo, debe coordinar una solución rápidamente para evitar pérdidas y mantener la relación comercial. Sus principales expectativas se relacionan con una mayor visibilidad de pedidos y disponibilidad, mejor coordinación con proveedores, cumplimiento más consistente de tiempos y calidad, reducción de rechazos y un mejor seguimiento de las incidencias.
 
-#### 2.3.5. As-Is Scenario Mapping
+### 2.3.5. As-Is Scenario Mapping
 
 Las tablas As-Is Scenario Mapping describen la situación actual (antes de implementar la plataforma digital) identificando fases, acciones (Doing), pensamientos (Thinking) y sentimientos (Feeling) a partir de los User Personas, User Journey Maps y Empathy Maps.
 
@@ -259,7 +259,7 @@ Este mapa ilustra las dificultades operativas que enfrenta el sector de producto
 
 Este mapa detalla el proceso de intermediación logística que ejecuta el distribuidor para conectar la oferta rural con la demanda urbana en ventanas críticas de menos de 48 horas. Evidencia una sobrecarga de trabajo causada por la transcripción manual de datos entre notas de papel, chats y hojas de cálculo, sumada a la incertidumbre permanente sobre el stock disponible de sus proveedores agrícolas. La preparación y despacho de las unidades se gestiona bajo alta presión de tiempo para cumplir los estrictos horarios del retail, enfrentando riesgos de merma por variaciones térmicas durante el flete. Como resultado, los reclamos y lotes rechazados en recepción generan desorden financiero en la liquidación de cuentas y pérdidas operativas recurrentes.
 
-#### 2.3.6. Big Picture EventStorming
+### 2.3.6. Big Picture EventStorming
 
 ### Introducción y Proceso:
 
@@ -336,7 +336,7 @@ Estos Pain Points permiten hacer visibles situaciones críticas dentro de la cad
 
 <img alt="bigpicture" height="200%" src="../assets/miro/Big_Picture_Event_Storming_Paso3.jpg" width="550"/>
 
-#### 2.3.7. Ubiquitous Language
+### 2.3.7. Ubiquitous Language
 
 El *Ubiquitous Language* define un conjunto de términos y conceptos compartidos entre los miembros del equipo y los stakeholders del dominio de negocio de FruitLogix. Su propósito es reducir ambigüedades y mantener una comunicación consistente al referirse a los actores, procesos y elementos que forman parte de la cadena de suministro de frutas.
 

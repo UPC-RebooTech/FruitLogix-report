@@ -4627,3 +4627,9 @@ En esta sección se presenta el Product Backlog del proyecto FruitLogix, gestion
     </tr>
   </tbody>
 </table>
+
+#### Evidencia de control de proyectos en Jira
+
+<img alt="ImpactMapClienteComercial" height="100%" src="../assets/jira/Product_Backlog_Jira.png" width="500"/>
+
+Enlace a la herramienta utlizada: https://rebootech-fruitlogix-202620.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiOWFlZjE1OWMzMWU3NGMxOGJkYjM2ZDI2NmZhZTkyYTAiLCJwIjoiaiJ9

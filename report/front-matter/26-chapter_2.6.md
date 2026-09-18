@@ -4,7 +4,7 @@ En este capítulo se formaliza la arquitectura de software del sistema FruitLogi
 
 Para lograrlo, se adopta un enfoque guiado por los patrones tácticos de Domain-Driven Design (DDD) y una arquitectura de capas. Esta combinación aísla la lógica central del negocio de los detalles de infraestructura, frameworks y servicios externos como pasarelas de pago o APIs de mapas.
 
-### 2.6.1. Bounded Context: Profiles Management
+### 2.6.1 Bounded Context: Profiles Management
 
 El Profiles Management Context administra los perfiles de los actores agrícolas en FruitLogix, enfocándose principalmente en la gestión integral de los productores (Producer). Su frontera arquitectónica aísla la información legal, operativa, de contacto y de producción del agricultor respecto a los contextos transaccionales y de transporte.
 
@@ -204,4 +204,92 @@ El diagrama de clases de la capa de dominio detalla la estructura estática y la
 
 El diagrama de base de datos relacional para el Quality Control Context modela la persistencia de las entidades y raíces de agregado garantizando integridad referencial y consistencia transaccional. La tabla principal HarvestBatches actúa como el pivote central del dominio, vinculándose mediante una relación de uno a muchos (1:N) con Incidents para el registro ilimitado de disconformidades y evidencias fotográficas sobre un lote. A su vez, se asocia de forma opcional y única (1:0..1) con QualityInspections, asegurando una auditoría formal consolidada por lote de cosecha. Por último, para reflejar fielmente la composición atómica del agregado, QualityInspections se descompone en tres tablas hijas especializadas (VisualInspections, TechnicalParameters y PreparationChecklists) conectadas bajo una cardinalidad estricta de uno a uno (1:1) mediante la clave foránea quality_inspection_id con restricción de unicidad, desacoplando limpiamente los parámetros fisicoquímicos, las listas de empaque y la evaluación organoléptica.
 
+### 2.6.6 Bounded Context: Logistics and Monitoring
+
+El Logistics and Monitoring Context gestiona el seguimiento en tiempo real, despacho y monitoreo de entregas de lotes agrícolas. Su límite arquitectónico aísla la telemetría GPS, la gestión de alertas operativas y la trazabilidad de rutas, asegurando que la logística de transporte permanezca desacoplada de la autenticación de usuarios y del control de calidad en origen.
+
+#### 2.6.6.1 Domain Layer
+
+Las entidades, objetos de valor e interfaces identificadas en este Bounded Context son:
+
+**Aggregate Roots**:
+* **Alert**: Gobierna el ciclo de vida de las incidencias operativas y desviaciones en ruta, centralizando su tipo, nivel de severidad y estado de resolución.
+* **Delivery**: Administra la orden de despacho y transporte del lote, orquestando los estados de tránsito, la asignación de conductor/vehículo y la trazabilidad telegráfica.
+
+**Entities**:
+* **TrackingLog**: Entidad dependiente asignada a una entrega (Delivery) que registra eventos cronológicos de telemetría, capturando coordenadas GPS y marcas de tiempo durante el trayecto.
+
+**Value Objects**:
+* **AlertSeverity**: Representa la escala de criticidad de las alertas en ruta (e.g., LOW, MEDIUM, HIGH, CRITICAL).
+* **AlertType**: Clasifica la naturaleza de la alerta registrada (e.g., DELAY, TEMPERATURE_EXCEEDED, ROUTE_DEVIATION).
+* **DeliveryStatus**: Define los estados permitidos dentro del flujo logístico (e.g., PENDING, IN_TRANSIT, DELIVERED, DELAYED).
+* **DriverInfo**: Encapsula los datos de identificación del conductor asignado a la unidad de transporte.
+* **GpsCoordinates**: Modela la ubicación geográfica mediante pares numéricos de latitud y longitud.
+* **RouteInfo**: Encapsula la información del punto de origen, destino y estimación de ruta.
+* **VehicleInfo**: Agrupa las especificaciones operativas de la unidad de transporte asignada (placa y tipo de vehículo).
+
+**Commands**:
+* CreateAlertCommand
+* CreateDeliveryCommand
+* CreateTrackingLogCommand
+* ReportDelayCommand
+* ResolveAlertCommand
+* StartDispatchCommand
+
+**Queries**:
+* GetAllActiveAlertsQuery
+* GetAllDeliveriesQuery
+* GetTrackingLogsByDeliveryIdQuery
+
+**Domain Repositories**:
+* IAlertRepository
+* IDeliveryRepository
+* ITrackingLogRepository
+
+#### 2.6.6.2 Interfaces Layer
+
+Expone contratos HTTP RESTful documentados para ser consumidos por el Frontend y aplicaciones cliente, permitiendo la interacción con la lógica de logística y monitoreo en tiempo real.
+
+**Controladores API**:
+* AlertsController
+* DeliveriesController
+* TrackingLogsController
+
+**Resources (DTOs)**:
+* AlertResource
+* CreateDeliveryResource
+* CreateTrackingLogResource
+* DeliveryResource
+* ReportDelayResource
+* TrackingLogResource
+
+**Assemblers (Mappers)**:
+Clases de transformación limpia (AlertResourceFromEntityAssembler, CreateDeliveryCommandFromResourceAssembler, CreateTrackingLogCommandFromResourceAssembler, DeliveryResourceFromEntityAssembler, TrackingLogResourceFromEntityAssembler) que convierten entidades de dominio a Resources y DTOs a Comandos sin filtrar detalles internos del modelo.
+
+#### 2.6.6.3 Application Layer
+
+Implementa el patrón de segregación de responsabilidades de consulta y comando (CQRS) mediante servicios dedicados de comandos y consultas, orquestando las transacciones del flujo logístico a través de la unidad de trabajo y repositorios de dominio.
+
+**Command Services**:
+* IAlertCommandService: Interfaz pública para la gestión de comandos de alertas operativas.
+* IDeliveryCommandService: Interfaz pública para la gestión del ciclo de vida de órdenes de entrega.
+* ITrackingLogCommandService: Interfaz pública para el registro transaccional de puntos de rastreo.
+* AlertCommandService: Servicio interno encargado de procesar comandos de resolución y creación de alertas (CreateAlertCommand, ResolveAlertCommand).
+* DeliveryCommandService: Servicio interno responsable de procesar la creación, despacho y reporte de retrasos en las entregas (CreateDeliveryCommand, StartDispatchCommand, ReportDelayCommand).
+* TrackingLogCommandService: Servicio interno que coordina la persistencia de logs de telemetría e incidencias geográficas (CreateTrackingLogCommand).
+
+**Query Services**:
+* IAlertQueryService: Interfaz pública para la consulta de alertas en ruta.
+* IDeliveryQueryService: Interfaz pública para la consulta de entregas registradas.
+* ITrackingLogQueryService: Interfaz pública para la lectura de la trazabilidad y logs de posicionamiento.
+* AlertQueryService: Servicio interno encargado de ejecutar las lecturas de alertas activas (GetAllActiveAlertsQuery).
+* DeliveryQueryService: Servicio interno responsable de coordinar la obtención general de órdenes de despacho (GetAllDeliveriesQuery).
+* TrackingLogQueryService: Servicio interno que procesa el historial de localización por entrega (GetTrackingLogsByDeliveryIdQuery).
+
+#### 2.6.6.4 Infrastructure Layer
+
+**Persistencia Relacional (EFC)**:
+Implementación de los repositorios de dominio sobre Entity Framework Core mediante AlertRepository, DeliveryRepository y TrackingLogRepository. 
+
+Esta capa gestiona la persistencia física de los Aggregate Roots (Delivery y Alert) junto a sus entidades dependientes (TrackingLog) y objetos de valor asociados (GpsCoordinates, RouteInfo, VehicleInfo, DriverInfo), encapsulando las consultas y operaciones I/O a la base de datos relacional sin acoplar las reglas de negocio de la capa de dominio.
 

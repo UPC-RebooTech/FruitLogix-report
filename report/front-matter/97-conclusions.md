@@ -1,0 +1,5 @@
+# Conclusiones
+
+- La delimitación de la solución mediante Domain-Driven Design (DDD) permitió traducir con exactitud la complejidad de la cadena de suministro agroindustrial a un ecosistema de software modular, donde cada contexto delimitado resuelve responsabilidades operativas bien definidas sin interferir en los procesos de otros módulos.
+- La adopción de una arquitectura en capas fundamentada en Clean Architecture e inversión de dependencias garantiza que la lógica de negocio central permanezca completamente aislada de la infraestructura, los marcos de trabajo y las bases de datos, facilitando futuras evoluciones tecnológicas, mantenimiento continuo y pruebas automatizadas.
+- La articulación entre el modelo de componentes C4 y los canales de interacción orientados a la aplicación móvil valida la viabilidad de la plataforma para operar en entornos operativos reales, ofreciendo una estructura escalable capaz de soportar un incremento gradual en el volumen de lotes, auditorías y usuarios concurrentes.

@@ -4413,217 +4413,217 @@ En esta sección se presenta el Product Backlog del proyecto FruitLogix, gestion
       <td>US40</td>
       <td>Eliminar productor de la red</td>
       <td>1</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>52</td>
       <td>US37</td>
       <td>Adjuntar archivos en el chat</td>
       <td>5</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>53</td>
       <td>TS14</td>
       <td>Registro y validación de sesión biométrica</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>54</td>
       <td>US59</td>
       <td>Acceso mediante autenticación biométrica</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>55</td>
       <td>US36</td>
       <td>Visualizar balance financiero en Dashboard del Cliente</td>
       <td>5</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>56</td>
       <td>US47</td>
       <td>Gestionar facturación</td>
       <td>5</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>57</td>
       <td>US42</td>
       <td>Ver KPIs de gestión de productores</td>
       <td>5</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>58</td>
       <td>TS10</td>
       <td>Implementar generación de reportes</td>
       <td>5</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>59</td>
       <td>TS19</td>
       <td>Exportación y compartición nativa de reportes</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>60</td>
       <td>TS22</td>
       <td>Optimizar endpoints con paginación y payloads livianos</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>61</td>
       <td>US35</td>
       <td>Calificar servicio de entrega</td>
       <td>2</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>62</td>
       <td>US08</td>
       <td>Filtrar catálogo por categoría y disponibilidad</td>
       <td>2</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>63</td>
       <td>US09</td>
       <td>Guardar productos en lista de favoritos</td>
       <td>2</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>64</td>
       <td>US10</td>
       <td>Consultar historial de compras anteriores</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>65</td>
       <td>US11</td>
       <td>Solicitar cotización personalizada</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>66</td>
       <td>US13</td>
       <td>Configurar alertas de temperatura y humedad</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>67</td>
       <td>US14</td>
       <td>Exportar historial de telemetría a PDF/Excel</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>68</td>
       <td>US15</td>
       <td>Asignar vehículo y conductor a un despacho</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>69</td>
       <td>US16</td>
       <td>Confirmar entrega mediante firma digital o código QR</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>70</td>
       <td>US17</td>
       <td>Registrar incidencia en la entrega</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>71</td>
       <td>US18</td>
       <td>Consultar historial de despachos realizados</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>72</td>
       <td>US21</td>
       <td>Registrar nuevo lote de producción</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>73</td>
       <td>US22</td>
       <td>Actualizar estado de un lote</td>
       <td>2</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>74</td>
       <td>US23</td>
       <td>Generar e imprimir etiquetas con código QR</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>75</td>
       <td>US24</td>
       <td>Consultar historial de lotes producidos</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>76</td>
       <td>US25</td>
       <td>Enviar mensajes en el chat de un pedido</td>
       <td>3</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>77</td>
       <td>US26</td>
       <td>Ver historial de mensajes</td>
       <td>2</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>78</td>
       <td>US27</td>
       <td>Configurar perfil de usuario</td>
       <td>2</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>79</td>
       <td>US28</td>
       <td>Configurar preferencias de notificaciones push</td>
       <td>2</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>80</td>
       <td>US29</td>
       <td>Visualizar términos y condiciones</td>
       <td>1</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
     <tr>
       <td>81</td>
       <td>US30</td>
       <td>Cerrar sesión de forma segura</td>
       <td>1</td>
-      <td>Sprint 4</td>
+      <td>Sprint 3</td>
     </tr>
   </tbody>
 </table>

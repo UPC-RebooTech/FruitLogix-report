@@ -8,3 +8,5 @@ https://github.com/UPC-RebooTech/FruitLogix-report.git
 
 El repositorio aplica GitFlow como workflow de control de versiones y Conventional Commits para los mensajes de
 commit, y Semantic Versioning para cada versión de release.
+
+<img src="../assets/collabs/AV1_Collab_Insights_Report.png" width ="100%">

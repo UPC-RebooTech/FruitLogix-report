@@ -88,7 +88,7 @@ Las entidades e identificadores en este Bounded Context son:
 
 El diagrama de componentes de la arquitectura de software para el Bounded Context Profiles Management describe la organización interna y la interacción entre las capas tácticas de Domain-Driven Design (DDD) e infraestructura en C# (.NET). Se enfatiza la separación estricta entre el flujo de mutación de comandos (ProducerCommandService) y el flujo de consultas de lectura (ProducerQueryService), garantizando un desacoplamiento limpio alineado a Clean Architecture / Hexagonal Architecture.
 
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagram
 
@@ -308,3 +308,14 @@ El diagrama de componentes de la arquitectura de software para el Bounded Contex
 En el paquete superior de repositorios se declaran las interfaces IDeliveryRepository, IAlertRepository e ITrackingLogRepository, las cuales encapsulan las consultas asíncronas especializadas (FindActiveAlertsAsync, FindByDeliveryIdAsync) aislando la lógica de negocio de las operaciones de persistencia. En el núcleo del modelo, el Aggregate Root Delivery gobierna el flujo operativo del despacho (PendingDispatch, InTransit, Delayed, etc.) integrando los Value Objects inmutables DriverInfo, VehicleInfo y RouteInfo.
 
 A su vez, la raíz de agregado Alert gestiona las incidencias en tiempo real acopladas al tipo y nivel de severidad (AlertType, AlertSeverity), mientras que la entidad TrackingLog registra las lecturas de telemetría e hidrotermia compuestas con el Value Object GpsCoordinates. Todas las entidades principales extienden IAuditableEntity para mantener la trazabilidad temporal (CreatedAt, UpdatedAt). Finalmente, los paquetes Commands y Queries orquestan las intenciones de mutación y lectura bajo el patrón CQRS, desacoplando los servicios de aplicación del modelo de dominio.
+
+##### 2.6.6.6.2. Bounded Context Database Design Diagram
+
+
+<img alt="ProfileManagementClassDiagram" height="200%" src="../assets/software_diagrams/Database_Diagram_Logistic_Monitoring.png"/>
+
+El diagrama de base de datos relacional para el Bounded Context Logistics and Monitoring modela la persistencia física de las raíces de agregado y entidades subordinadas del dominio operativo, garantizando la consistencia transaccional y la integridad referencial de los despachos.
+
+La tabla principal deliveries actúa como la entidad central del contexto, aplanando los Objetos de Valor inmutables (driver_name, driver_phone, vehicle_plate, route_origin, etc.) directamente en columnas de la tabla para optimizar la velocidad I/O y simplificar las consultas relacionales. Se vincula mediante una relación de uno a muchos (1:N) con la tabla alerts a través de la clave foránea delivery_id, permitiendo el registro auditor de incidencias clasificadas por severidad y tipo.
+
+Asimismo, la tabla deliveries se relaciona con cardinalidad de uno a muchos (1:N) con la tabla tracking_logs, la cual almacena de forma cronológica la telemetría GPS (latitude, longitude) y las lecturas ambientales de temperatura y humedad registradas durante el trayecto. Cada una de estas tablas incorpora las columnas auditables created_at y updated_at para respaldar los sellos de tiempo exigidos por el contrato IAuditableEntity, manteniendo un esquema de datos relacional altamente indexado y alineado a las necesidades de monitoreo en tiempo real.

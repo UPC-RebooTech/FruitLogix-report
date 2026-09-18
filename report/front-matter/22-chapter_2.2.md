@@ -99,7 +99,7 @@ La entrevista a Jessica, comerciante de 52 años residente en San Martín de Por
 
 ### Segmento objetivo: Distribuidores de frutas
 
-URL de todas las entrevistas del segmento: https://goo.su/Cffj7
+URL de las entrevistas: https://shorturl.at/XVT1c
 
 | Campo | ![Entrevista1](../assets/entrevistas/Entrevista%201.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%202.png) <br/>Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%203.png) <br/>Entrevista 3 |
 |---|----------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------|

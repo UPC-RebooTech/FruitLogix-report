@@ -9,7 +9,7 @@ Las tablas To-Be Scenario Mapping describen el flujo futuro y deseado una vez qu
 <table>
   <thead>
     <tr>
-      <th>Variable</th>
+      <th>Fase</th>
       <th>1. Planificación basada en datos</th>
       <th>2. Emisión digital del pedido</th>
       <th>3. Monitoreo y rastreo en ruta</th>
@@ -18,14 +18,6 @@ Las tablas To-Be Scenario Mapping describen el flujo futuro y deseado una vez qu
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><strong>Fase / Escenario</strong></td>
-      <td>Consulta de reportes históricos de consumo y stock para prever la demanda semanal de insumos perecibles.</td>
-      <td>Generación y pago de la orden de compra a través del catálogo interactivo de la plataforma.</td>
-      <td>Supervisión de la última milla del despacho con visualización en tiempo real de la ruta y tiempo estimado de llegada (ETA).</td>
-      <td>Descarga del lote, cotejo de la ficha técnica digital aprobada y registro de conformidad.</td>
-      <td>Apertura de tickets de reclamo inmediatos con respaldo fotográfico desde el módulo de soporte.</td>
-    </tr>
     <tr>
       <td><strong>Doing (Hacer)</strong></td>
       <td>Accede al dashboard del cliente comercial para revisar tendencias de consumo y disponibilidad de insumos de temporada.</td>
@@ -60,7 +52,7 @@ Este escenario describe una gestión de compras ágil, transparente y automatiza
 <table>
   <thead>
     <tr>
-      <th>Variable</th>
+      <th>Fase</th>
       <th>1. Planificación de cosechas asignadas</th>
       <th>2. Recepción de requerimientos estructurados</th>
       <th>3. Inspección y registro de calidad digital</th>
@@ -69,14 +61,6 @@ Este escenario describe una gestión de compras ágil, transparente y automatiza
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><strong>Fase / Escenario</strong></td>
-      <td>Visualización de órdenes de abastecimiento programadas por distribuidores con anticipación.</td>
-      <td>Aceptación formal del requerimiento y actualización de la capacidad de stock en chacra.</td>
-      <td>Evaluación estandarizada del lote cosechado (calibre, madurez, peso) con respaldo fotográfico.</td>
-      <td>Entrega de la carga al transporte con validación digital y vinculación a sensores IoT.</td>
-      <td>Consulta de reportes de calidad validados y confirmación de recepción para el cierre de liquidaciones.</td>
-    </tr>
     <tr>
       <td><strong>Doing (Hacer)</strong></td>
       <td>Revisa en su panel de bienvenida de FruitLogix las proyecciones de demanda semanal y calendarios de cosecha.</td>
@@ -111,7 +95,7 @@ Este mapa plasma la tecnificación y formalización de las labores de la product
 <table>
   <thead>
     <tr>
-      <th>Variable</th>
+      <th>Fase</th>
       <th>1. Recepción y asignación automatizada</th>
       <th>2. Monitoreo centralizado de inventario</th>
       <th>3. Aprobación y auditoría de calidad</th>
@@ -120,14 +104,6 @@ Este mapa plasma la tecnificación y formalización de las labores de la product
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><strong>Fase / Escenario</strong></td>
-      <td>Consolidación inmediata de órdenes comerciales y asignación al agricultor según disponibilidad.</td>
-      <td>Control en tiempo real de los volúmenes de abastecimiento de la red de productores asociados.</td>
-      <td>Validación técnica de los lotes recibidos mediante reportes fotográficos y paramétricos.</td>
-      <td>Supervisión de la flota en tránsito con control ambiental de temperatura y humedad por sensores.</td>
-      <td>Registro de entrega final, actualización automática de estados y facturación sincronizada.</td>
-    </tr>
     <tr>
       <td><strong>Doing (Hacer)</strong></td>
       <td>Acepta pedidos en el módulo de órdenes y utiliza el motor de sugerencia para asignar al proveedor óptimo.</td>

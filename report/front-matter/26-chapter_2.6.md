@@ -4,6 +4,83 @@ En este capítulo se formaliza la arquitectura de software del sistema FruitLogi
 
 Para lograrlo, se adopta un enfoque guiado por los patrones tácticos de Domain-Driven Design (DDD) y una arquitectura de capas. Esta combinación aísla la lógica central del negocio de los detalles de infraestructura, frameworks y servicios externos como pasarelas de pago o APIs de mapas.
 
+### 2.6.1. Bounded Context: Profiles Management
+
+El Profiles Management Context administra los perfiles de los actores agrícolas en FruitLogix, enfocándose principalmente en la gestión integral de los productores (Producer). Su frontera arquitectónica aísla la información legal, operativa, de contacto y de producción del agricultor respecto a los contextos transaccionales y de transporte.
+
+#### 2.6.1.1 Domain Layer
+
+Las entidades e identificadores en este Bounded Context son:
+
+**Aggregate Roots**:
+
+- Producer: Gobierna el perfil del productor, sus credenciales tributarias, ubicación geográfica, detalles de contacto y capacidad productiva.
+
+**Value Objects**:
+
+- TaxId: Encapsula el número de identificación fiscal (RUC/NIT) con reglas de validación de formato.
+
+- ContactInfo: Agrupa los canales de comunicación principal (teléfono, correo electrónico, persona de contacto).
+
+- Location: Estructura la dirección física, departamento, provincia y coordenadas de las instalaciones.
+
+- ProductionInfo: Define la capacidad operativa, hectáreas de cultivo, tipos de fruta producida y certificaciones.
+
+- ProducerType: Enumeración que clasifica el tipo de productor (e.g., Smallholder, MediumCommercial, ExportCooperative).
+**Repositories**:
+
+- IProducerRepository: Contrato de persistencia para las operaciones del agregado Producer.
+- 
+**Commands**:
+
+- CreateProducerCommand
+
+- UpdateProducerCommand
+
+**Queries**:
+
+- GetAllProducersQuery
+
+- GetProducerByIdQuery
+
+#### 2.6.1.2 Interfaces Layer
+
+**Controladores API**:
+
+- ProducersController: Expone los endpoints HTTP RESTful para el registro, actualización y consulta de productores.
+
+**Resources (DTOs)**:
+
+- CreateProducerResource
+
+- UpdateProducerResource
+
+- ProducerResource
+
+**Assemblers (Mappers)**:
+
+- ProducerResourceAssembler: Transforma los recursos DTO a comandos del dominio y mapea la entidad Producer hacia ProducerResource.
+
+#### 2.6.1.3 Application Layer
+
+**Command Services**:
+
+- IProducerCommandService: Interfaz pública para procesar mutaciones.
+
+- ProducerCommandService: Implementación de la lógica para procesar la creación y actualización de perfiles de productores.
+
+**Query Services**:
+
+- IProducerQueryService: Interfaz pública para lectura.
+
+- ProducerQueryService: Implementación para coordinar las consultas de lectura (GetAllProducersQuery, GetProducerByIdQuery).
+
+#### 2.6.1.4 Infrastructure Layer
+
+**Persistencia Relacional (EFC)**:
+
+- ProducerRepository: Implementación sobre Entity Framework Core encargada de la persistencia y mapeo relacional del agregado Producer y sus objetos de valor embebidos.
+
 
 ### 2.6.4. Quality Control
 
@@ -100,3 +177,5 @@ El diagrama de clases de la capa de dominio detalla la estructura estática y la
 <img alt="QualityControlDatabaseDiagram" height="200%" src="../assets/software_diagrams/Diagrama_BaseDatos_Quality_Control.png"/>
 
 El diagrama de base de datos relacional para el Quality Control Context modela la persistencia de las entidades y raíces de agregado garantizando integridad referencial y consistencia transaccional. La tabla principal HarvestBatches actúa como el pivote central del dominio, vinculándose mediante una relación de uno a muchos (1:N) con Incidents para el registro ilimitado de disconformidades y evidencias fotográficas sobre un lote. A su vez, se asocia de forma opcional y única (1:0..1) con QualityInspections, asegurando una auditoría formal consolidada por lote de cosecha. Por último, para reflejar fielmente la composición atómica del agregado, QualityInspections se descompone en tres tablas hijas especializadas (VisualInspections, TechnicalParameters y PreparationChecklists) conectadas bajo una cardinalidad estricta de uno a uno (1:1) mediante la clave foránea quality_inspection_id con restricción de unicidad, desacoplando limpiamente los parámetros fisicoquímicos, las listas de empaque y la evaluación organoléptica.
+
+

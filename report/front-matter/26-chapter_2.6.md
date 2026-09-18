@@ -293,3 +293,8 @@ Implementación de los repositorios de dominio sobre Entity Framework Core media
 
 Esta capa gestiona la persistencia física de los Aggregate Roots (Delivery y Alert) junto a sus entidades dependientes (TrackingLog) y objetos de valor asociados (GpsCoordinates, RouteInfo, VehicleInfo, DriverInfo), encapsulando las consultas y operaciones I/O a la base de datos relacional sin acoplar las reglas de negocio de la capa de dominio.
 
+### 2.6.6.5 Bounded Context Software Architecture Component Level Diagram
+
+<img alt="QualityControlComponentDiagram" height="200%" src="../assets/software_diagrams/C4_Component_Diagram_Logistics_Monitoring.png"/>
+
+El diagrama de componentes de la arquitectura de software para el Bounded Context Logistics and Monitoring describe la organización interna y la interacción entre las capas tácticas de Domain-Driven Design (DDD) e infraestructura en C# (.NET). Se enfatiza la separación estricta entre el flujo de escritura y comandos (CommandServices) y el flujo de consulta y lectura (QueryServices), garantizando un desacoplamiento limpio alineado a la arquitectura Hexagonal/Clean Architecture.

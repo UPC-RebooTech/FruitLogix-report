@@ -49,14 +49,14 @@ El objetivo de la entrevista es comprender las necesidades, frustraciones y las 
 
 ### Segmento objetivo: Clientes Comerciales
 
-URL de todas las entrevistas del segmento: https://goo.su/MrsO9
+URL de las entrevistas: https://shorturl.at/XVT1c
 
 | Campo | ![Entrevista1](../assets/entrevistas/Entrevista%207.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%209.png) <br/>Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%208.png) <br/>Entrevista 3 |
-|---|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **Nombre** | Bianzel Milagritos Noriega Donayre                                    | Luciana Breña                                                         | Rosa Arana Medina                                                     |
-| **Edad** | 22 años                                                               | 25 años                                                               | 43 años                                                               |
-| **Distrito** | San Isidro                                                            | San Juan de Miraflores                                                | Cajamarca                                                             |
-| **Duración** | 0:00 – 5:39 min                                                       | 5:41 – 9:04 min                                                       | 9:14 – 17:22 min                                                      |
+|---|----------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **Nombre** | Bianzel Milagritos Noriega Donayre                                         | Luciana Breña                                                              | Rosa Arana Medina                                                          |
+| **Edad** | 22 años                                                                    | 25 años                                                                    | 43 años                                                                    |
+| **Distrito** | San Isidro                                                                 | San Juan de Miraflores                                                     | Cajamarca                                                                  |
+| **Duración** | 0:04 – 5:40 min                                                            | 5:41 – 9:12 min                                                            | 9:13 – 17:29 min                                                           |
 
 **Resumen – Bianzel Milagritos Noriega Donayre**
 
@@ -74,14 +74,14 @@ La entrevista a Rosa Arana Medina, comerciante de 43 años residente en Cajamarc
 
 ### Segmento objetivo: Productores Agrícolas
 
-URL de todas las entrevistas del segmento: https://goo.su/Z7kcf
+URL de las entrevistas: https://shorturl.at/XVT1c
 
 | Campo | ![Entrevista1](../assets/entrevistas/Entrevista%204.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%206.png) <br/> Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%205.png) <br/> Entrevista 3 |
-|---|-----------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
-| **Nombre** | Renato Navarro                                                        | Karen Forcelledo                                                       | Jessica                                                                |
-| **Edad** | 25 años                                                               | 37 años                                                                | 52 años                                                                |
-| **Distrito** | Cercado de Lima                                                       | San Borja                                                              | San Martín de Porres                                                   |
-| **Duración** | 0:03 – 5:59 min                                                       | 6:05 – 9:31 min                                                        | 9:35 – 18:50 min                                                       |
+|---|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **Nombre** | Renato Navarro                                                             | Karen Forcelledo                                                            | Jessica                                                                    |
+| **Edad** | 25 años                                                                    | 37 años                                                                     | 52 años                                                                    |
+| **Distrito** | Cercado de Lima                                                            | San Borja                                                                   | San Martín de Porres                                                       |
+| **Duración** | 17:31 – 22:59 min                                                          | 22:30 – 26:29 min                                                           | 26:30 – 35:45 min                                                          |
 
 **Resumen – Renato Navarro**
 
@@ -99,14 +99,14 @@ La entrevista a Jessica, comerciante de 52 años residente en San Martín de Por
 
 ### Segmento objetivo: Distribuidores de frutas
 
-URL de todas las entrevistas del segmento: https://goo.su/Cffj7
+URL de las entrevistas: https://shorturl.at/XVT1c
 
 | Campo | ![Entrevista1](../assets/entrevistas/Entrevista%201.png) <br/>Entrevista 1 | ![Entrevista1](../assets/entrevistas/Entrevista%202.png) <br/>Entrevista 2 | ![Entrevista1](../assets/entrevistas/Entrevista%203.png) <br/>Entrevista 3 |
-|---|-----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **Nombre** | Jorge Contreras Ballarta                                              | Paola Jiménez                                                         | Edwin Lozano                                                          |
-| **Edad** | 45 años                                                               | 25 años                                                               | 38 años                                                               |
-| **Distrito** | Cieneguilla                                                           | San Juan de Miraflores                                                | Perené                                                                |
-| **Duración** | 0:03 – 9:00 min                                                       | 9:04 – 13:03 min                                                      | 13:10 – 20:10 min                                                     |
+|---|----------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **Nombre** | Jorge Contreras Ballarta                                                   | Paola Jiménez                                                              | Edwin Lozano                                                               |
+| **Edad** | 45 años                                                                    | 25 años                                                                    | 38 años                                                                    |
+| **Distrito** | Cieneguilla                                                                | San Juan de Miraflores                                                     | Perené                                                                     |
+| **Duración** | 35:46 – 43:48 min                                                          | 43:49 – 47:52 min                                                          | 47:53 – 52:34 min                                                          |
 
 **Resumen – Jorge Contreras Ballarta**
 

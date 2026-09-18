@@ -298,3 +298,13 @@ Esta capa gestiona la persistencia física de los Aggregate Roots (Delivery y Al
 <img alt="QualityControlComponentDiagram" height="200%" src="../assets/software_diagrams/C4_Component_Diagram_Logistics_Monitoring.png"/>
 
 El diagrama de componentes de la arquitectura de software para el Bounded Context Logistics and Monitoring describe la organización interna y la interacción entre las capas tácticas de Domain-Driven Design (DDD) e infraestructura en C# (.NET). Se enfatiza la separación estricta entre el flujo de escritura y comandos (CommandServices) y el flujo de consulta y lectura (QueryServices), garantizando un desacoplamiento limpio alineado a la arquitectura Hexagonal/Clean Architecture.
+
+#### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.6.6.1. Bounded Context Domain Layer Class Diagram
+
+<img alt="ProfileManagementClassDiagram" height="200%" src="../assets/software_diagrams/Class_Diagram_Logistic_Monitoring.jpg"/>
+
+En el paquete superior de repositorios se declaran las interfaces IDeliveryRepository, IAlertRepository e ITrackingLogRepository, las cuales encapsulan las consultas asíncronas especializadas (FindActiveAlertsAsync, FindByDeliveryIdAsync) aislando la lógica de negocio de las operaciones de persistencia. En el núcleo del modelo, el Aggregate Root Delivery gobierna el flujo operativo del despacho (PendingDispatch, InTransit, Delayed, etc.) integrando los Value Objects inmutables DriverInfo, VehicleInfo y RouteInfo.
+
+A su vez, la raíz de agregado Alert gestiona las incidencias en tiempo real acopladas al tipo y nivel de severidad (AlertType, AlertSeverity), mientras que la entidad TrackingLog registra las lecturas de telemetría e hidrotermia compuestas con el Value Object GpsCoordinates. Todas las entidades principales extienden IAuditableEntity para mantener la trazabilidad temporal (CreatedAt, UpdatedAt). Finalmente, los paquetes Commands y Queries orquestan las intenciones de mutación y lectura bajo el patrón CQRS, desacoplando los servicios de aplicación del modelo de dominio.

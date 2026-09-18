@@ -204,6 +204,84 @@ El diagrama de clases de la capa de dominio detalla la estructura estática y la
 
 El diagrama de base de datos relacional para el Quality Control Context modela la persistencia de las entidades y raíces de agregado garantizando integridad referencial y consistencia transaccional. La tabla principal HarvestBatches actúa como el pivote central del dominio, vinculándose mediante una relación de uno a muchos (1:N) con Incidents para el registro ilimitado de disconformidades y evidencias fotográficas sobre un lote. A su vez, se asocia de forma opcional y única (1:0..1) con QualityInspections, asegurando una auditoría formal consolidada por lote de cosecha. Por último, para reflejar fielmente la composición atómica del agregado, QualityInspections se descompone en tres tablas hijas especializadas (VisualInspections, TechnicalParameters y PreparationChecklists) conectadas bajo una cardinalidad estricta de uno a uno (1:1) mediante la clave foránea quality_inspection_id con restricción de unicidad, desacoplando limpiamente los parámetros fisicoquímicos, las listas de empaque y la evaluación organoléptica.
 
+### 2.6.5. Bounded Context: Infrastructure & IoT
+
+`Infrastructure & IoT` tiene como propósito registrar dispositivos, conectar sensores y procesar lecturas de telemetría inmutables[cite: 11]. Este contexto detecta desviaciones aplicando reglas de umbrales y genera alertas técnicas, pero no decide el estado logístico del envío, lo cual delega a *Logistics and Monitoring*[cite: 11].
+
+#### 2.6.5.1. Domain Layer
+
+El dominio garantiza que los dispositivos estén calibrados y que las reglas de alerta se evalúen sin depender de las operaciones logísticas[cite: 11]. `VehicleId` es únicamente una referencia de ubicación tipada.
+
+| Clase | Categoría | Propósito | Atributos / inputs clave | Operaciones principales | Relaciones / ownership |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `IoTDevice` | Aggregate Root | Administrar ciclo de vida del hardware. | `DeviceId`, `VehicleId`, status, connectionStatus. | `register`, `calibrate`, `updateConnection`. | Referencia `VehicleId` de BC Fleet. |
+| `RecordedReading` | Aggregate Root | Mantener historial de telemetría inmutable. | `ReadingId`, `DeviceId`, payload, timestamp, status. | `record`, `markOutOfRange`. | Compone `SensorReading` interno. |
+| `SensorReading` | Value Object | Capturar valor físico inmutable. | temperatura, humedad, timestamp. | `validate`. | Producido por sensores físicos. |
+| `AlertRule` | Aggregate Root | Configurar umbrales de detección. | `RuleId`, métrica, threshold, status. | `create`, `modifyThreshold`, `deactivate`. | Define evaluación lógica. |
+| `Alert` | Aggregate Root | Mantener alerta técnica generada. | `AlertId`, `DeviceId`, `ReadingId`, mensaje, status. | `generate`, `resolve`. | Referencia lectura causante. |
+| `IoTDeviceRepository`, `RecordedReadingRepository` | Repository interfaces | Cargar y guardar roots de hardware y telemetría. | IDs tipados y roots. | `byId`, `save`. | Implementaciones MySQL con EF Core. |
+| `AlertRepository` | Repository interfaces | Cargar y guardar reglas y alertas generadas. | IDs tipados y roots. | `byId`, `save`. | Dispara eventos de dominio al persistir. |
+
+#### 2.6.5.2. Interface Layer
+
+La interfaz captura tanto configuración HTTP tradicional como flujos de datos de alta velocidad provenientes de los brokers MQTT de los dispositivos.
+
+| Clase | Categoría | Propósito | Inputs clave | Operaciones principales | Colaboradores |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `IoTDeviceController` | REST Controller | Administrar inventario de hardware y calibración. | actor, `DeviceId`, detalles técnicos. | `registerDevice`, `calibrateDevice`. | Handlers de dispositivos. |
+| `AlertRuleController` | REST Controller | Configurar umbrales para telemetría. | actor, métrica, límite, versión. | `createRule`, `updateThreshold`. | Handlers de alertas. |
+| `TelemetryMqttListener` | Message Listener | Ingerir flujo constante de lecturas de sensores. | MQTT payload, topic. | `receiveSensorData`. | Handlers de telemetría. |
+
+#### 2.6.5.3. Application Layer
+
+Application aísla la ingesta masiva de datos y evalúa cada lectura contra las `AlertRules` activas, generando alertas si se cruzan los límites configurados[cite: 11].
+
+| Clase | Categoría | Propósito | Inputs clave | Operaciones principales | Colaboradores |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `RegisterIoTDeviceCommandHandler` | Command Handler | Habilitar nuevo dispositivo en la plataforma. | datos técnicos, `VehicleId`. | `handle`. | `IoTDeviceRepository`. |
+| `RecordSensorReadingCommandHandler` | Command Handler | Persistir lectura inmutable desde el broker. | `DeviceId`, valores del sensor, timestamp. | `handle`. | `RecordedReadingRepository`, `RuleEvaluatorService`. |
+| `EvaluateAlertRuleCommandHandler` | Command Handler | Analizar lectura contra umbrales y generar alerta. | `ReadingId`, `SensorReading`. | `handle`. | `AlertRuleRepository`, `AlertRepository`. |
+| `DispatchNotificationCommandHandler`| Command Handler | Notificar técnicamente a los actores relevantes. | `AlertId`, mensaje, destinatarios. | `handle`. | `NotificationServiceAdapter`. |
+
+#### 2.6.5.4. Infrastructure Layer
+
+Infrastructure maneja la persistencia transaccional y los conectores críticos hacia el broker MQTT y Firebase/APNs para notificaciones push[cite: 11].
+
+| Clase | Categoría | Propósito | Inputs / datos | Operaciones principales | Colaboradores |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `MySqlIoTDeviceRepository` | Repository implementation | Mapear estado y conexión de dispositivos. | device records. | `byId`, `save`. | `IoTDeviceRepository`, AppDbContext (EF Core). |
+| `MySqlRecordedReadingRepository` | Repository implementation | Persistir series temporales de telemetría. | reading records. | `byId`, `save`. | `RecordedReadingRepository`, AppDbContext. |
+| `MqttSensorDataAdapter` | External System Adapter | Recibir ráfagas de telemetría del hardware físico. | strings/JSON payloads, topics. | `subscribe`, `parsePayload`. | Broker MQTT externo (ej. AWS IoT). |
+| `FirebaseNotificationAdapter` | External System Adapter | Enviar alertas operativas push a móviles. | device tokens, payload alerta. | `sendPushNotification`. | Firebase Cloud Messaging (FCM). |
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+La vista C4 L3 muestra la dualidad del contexto: una API REST para configuración y un Listener MQTT para ingesta de datos asíncrona.
+
+<img alt="QualityControlDatabaseDiagram" height="200%" src="../assets/software_diagrams/C4_DIAGRAM_INFRASTRUCTURE.png"/>
+
+*Nota. Elaboración propia.*
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+Los diagramas detallan cómo las lecturas son ingeridas, evaluadas mediante reglas de umbral y persistidas de manera escalable.
+
+##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+El UML resalta cómo `RecordedReading` es evaluado a través de `AlertRule` para generar una `Alert` técnica.
+
+<img alt="QualityControlDatabaseDiagram" height="200%" src="../assets/software_diagrams/CLASS_DIAGRAM_INFRASTRUCTURE.png"/>
+
+*Nota. Elaboración propia.*
+
+##### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+El diseño lógico asocia lecturas con dispositivos de forma eficiente, separando las reglas de negocio de los registros masivos de series temporales (telemetría).
+
+<img alt="QualityControlDatabaseDiagram" height="200%" src="../assets/software_diagrams/DATABASE_DIAGRAM_INFRASTRUCTURE.png"/>
+
+*Nota. Elaboración propia.*
+
 ### 2.6.6 Bounded Context: Logistics and Monitoring
 
 El Logistics and Monitoring Context gestiona el seguimiento en tiempo real, despacho y monitoreo de entregas de lotes agrícolas. Su límite arquitectónico aísla la telemetría GPS, la gestión de alertas operativas y la trazabilidad de rutas, asegurando que la logística de transporte permanezca desacoplada de la autenticación de usuarios y del control de calidad en origen.
@@ -319,3 +397,83 @@ El diagrama de base de datos relacional para el Bounded Context Logistics and Mo
 La tabla principal deliveries actúa como la entidad central del contexto, aplanando los Objetos de Valor inmutables (driver_name, driver_phone, vehicle_plate, route_origin, etc.) directamente en columnas de la tabla para optimizar la velocidad I/O y simplificar las consultas relacionales. Se vincula mediante una relación de uno a muchos (1:N) con la tabla alerts a través de la clave foránea delivery_id, permitiendo el registro auditor de incidencias clasificadas por severidad y tipo.
 
 Asimismo, la tabla deliveries se relaciona con cardinalidad de uno a muchos (1:N) con la tabla tracking_logs, la cual almacena de forma cronológica la telemetría GPS (latitude, longitude) y las lecturas ambientales de temperatura y humedad registradas durante el trayecto. Cada una de estas tablas incorpora las columnas auditables created_at y updated_at para respaldar los sellos de tiempo exigidos por el contrato IAuditableEntity, manteniendo un esquema de datos relacional altamente indexado y alineado a las necesidades de monitoreo en tiempo real.
+
+### 2.6.7. Bounded Context: Payment Management
+
+`Payment Management` conserva la facturación, los métodos de pago, el procesamiento de transacciones y los reembolsos[cite: 11]. Una operación comercial en *Order Management* inicia la facturación, pero el ciclo de vida del pago, la interacción con la pasarela y la emisión del comprobante PDF son responsabilidad exclusiva de este contexto[cite: 11].
+
+#### 2.6.7.1. Domain Layer
+
+El dominio protege el ciclo de vida de la factura, el procesamiento de la transacción y las reglas financieras[cite: 11]. Las referencias a pedidos (`OrderId`) o clientes (`CommercialClientId`) son identificadores externos; este contexto no administra sus ciclos de vida operativos.
+
+| Clase | Categoría | Propósito | Atributos / inputs clave | Operaciones principales | Relaciones / ownership |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `Invoice` | Aggregate Root | Mantener facturación de operaciones. | `InvoiceId`, `OrderId`, monto total, fecha, status. | `issue`, `markAsPaid`, `void`. | Compone `InvoicePDF` referencial. |
+| `BillingInformation` | Aggregate Root | Mantener datos fiscales y métodos de pago. | `BillingInfoId`, `CommercialClientId`, datos fiscales. | `registerPaymentMethod`, `updateDetails`. | `CommercialClientId` tipado de Profiles BC. |
+| `Transaction` | Aggregate Root | Registrar ejecución inmutable de un pago. | `TransactionId`, `InvoiceId`, método, monto, status. | `confirm`, `fail`. | Referencia `Invoice` por ID; no es hijo. |
+| `Refund` | Entity | Mantener estado de solicitud de reembolso. | `RefundId`, monto, razón, status. | `request`, `approve`, `reject`. | Propiedad de `Transaction`. |
+| `PaymentPolicy` | Domain Policy | Evaluar viabilidad de pago y límites de reembolso. | estado de factura, monto transaccional. | `canProcessPayment`, `canRefund`. | Pura; sin I/O ni llamadas externas. |
+| `InvoiceRepository`, `BillingInformationRepository` | Repository interfaces | Cargar y guardar roots de facturación independientes. | IDs tipados y roots. | `byId`, `save`. | Implementaciones MySQL con EF Core. |
+| `TransactionRepository` | Repository interfaces | Cargar y guardar historial de pagos y transacciones. | IDs tipados y roots. | `byId`, `save`. | No accede a la pasarela externa directamente. |
+
+#### 2.6.7.2. Interface Layer
+
+La interfaz recibe comandos financieros con autorización del servidor. Delega la integración con sistemas externos (como Stripe) a la capa de infraestructura.
+
+| Clase | Categoría | Propósito | Inputs clave | Operaciones principales | Colaboradores |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `InvoiceController` | REST Controller | Exponer ciclo de vida de facturación. | actor, scope, `OrderId`, versión. | `issueInvoice`, `getInvoiceDetails`. | Handlers de facturación. |
+| `PaymentController` | REST Controller | Iniciar y confirmar pagos vía Webhooks. | payload de pasarela, firma, `InvoiceId`. | `initiatePayment`, `handlePaymentWebhook`. | Handlers de transacción. |
+| `BillingController` | REST Controller | Administrar perfiles de facturación de clientes. | actor, `CommercialClientId`, datos. | `updateBillingInfo`, `addPaymentMethod`. | Handlers de facturación. |
+
+#### 2.6.7.3. Application Layer
+
+Application orquesta los roots independientes, valida reglas de negocio financieras y coordina las llamadas a servicios de infraestructura externos (S3, Email, Pasarela)[cite: 11].
+
+| Clase | Categoría | Propósito | Inputs clave | Operaciones principales | Colaboradores |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `IssueInvoiceCommandHandler` | Command Handler | Generar y emitir factura basada en un pedido. | `OrderId`, monto, actor. | `handle`. | `InvoiceRepository`, `PdfGenerationService`. |
+| `InitiatePaymentTransactionCommandHandler`| Command Handler | Crear transacción pendiente e invocar pasarela. | `InvoiceId`, método de pago, actor. | `handle`. | `TransactionRepository`, `PaymentGateway`. |
+| `ConfirmTransactionCommandHandler` | Command Handler | Confirmar pago desde webhook seguro. | `TransactionId`, confirmación externa. | `handle`. | `TransactionRepository`, `InvoiceRepository`. |
+| `RequestRefundCommandHandler` | Command Handler | Registrar y evaluar solicitud de reembolso. | `TransactionId`, monto, razón. | `handle`. | `TransactionRepository`, `PaymentPolicy`. |
+| `SendInvoiceEmailCommandHandler` | Command Handler | Despachar PDF al cliente tras pago exitoso. | `InvoiceId`, email destino. | `handle`. | `EmailService`, `DocumentStorage`. |
+
+#### 2.6.7.4. Infrastructure Layer
+
+Infrastructure implementa los repositorios con Entity Framework Core (MySQL) y contiene los adaptadores reales que interactúan con la pasarela de pagos, S3 y servicios de correo electrónico[cite: 11].
+
+| Clase | Categoría | Propósito | Inputs / datos | Operaciones principales | Colaboradores |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `MySqlInvoiceRepository` | Repository implementation | Mapear Invoice y referencias a PDF. | invoice records. | `byId`, `save`. | `InvoiceRepository`, AppDbContext (EF Core). |
+| `MySqlTransactionRepository` | Repository implementation | Mapear transacciones y reembolsos. | transaction records. | `byId`, `save`. | `TransactionRepository`, AppDbContext (EF Core). |
+| `StripePaymentGatewayAdapter`| External System Adapter | Procesar cargos y validar webhooks financieros. | tokens, montos, firmas webhooks. | `charge`, `validateSignature`. | API de Stripe. |
+| `S3DocumentStorageAdapter` | External System Adapter | Almacenar y recuperar Invoice PDFs. | byte array, object key. | `uploadPdf`, `getPresignedUrl`. | AWS S3 SDK. |
+| `SmtpEmailServiceAdapter` | External System Adapter | Entregar comprobantes al cliente comercial. | plantilla, email, adjuntos. | `sendEmail`. | Servidor SMTP / SendGrid. |
+
+#### 2.6.7.5. Bounded Context Software Architecture Component Level Diagrams
+
+La vista C4 L3 separa la API financiera, los casos de uso, el modelo de dominio y la persistencia en MySQL. Las interacciones con Stripe y AWS S3 se manejan a través de puertos y adaptadores.
+
+<img alt="ProfileManagementClassDiagram" height="200%" src="../assets/software_diagrams/C4_DIAGRAM_PAYMENT.png"/>
+
+
+
+#### 2.6.7.6. Bounded Context Software Architecture Code Level Diagrams
+
+Los diagramas muestran los roots financieros y cómo las entidades se relacionan sin acoplarse directamente a otros contextos mediante bases de datos.
+
+##### 2.6.7.6.1. Bounded Context Domain Layer Class Diagrams
+
+El UML mantiene `Invoice`, `Transaction` y `BillingInformation` como raíces independientes con un ciclo de vida financiero.
+
+<img alt="ProfileManagementClassDiagram" height="200%" src="../assets/software_diagrams/CLASS_DIAGRAM_PAYMENT.png"/>
+
+
+
+##### 2.6.7.6.2. Bounded Context Database Design Diagram
+
+El diagrama lógico conserva las claves foráneas (FK) para relaciones locales; `order_id` y `commercial_client_id` permanecen como identificadores externos de otros contextos.
+
+<img alt="ProfileManagementClassDiagram" height="200%" src="../assets/software_diagrams/DATABASE_DIAGRAM_PAYMENT.png"/>
+
+

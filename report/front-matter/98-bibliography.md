@@ -1,0 +1,4 @@
+# Bibliografía
+- Agraria.pe. (2019, 16 de octubre). Perú: Las mermas en productos frescos son las más grandes del mundo. Red de Comunicación Agraria. https://agraria.pe/noticias/peru-las-mermas-en-productos-frescos-son-las-mas-grandes-de-2292
+- Decreto Supremo N° 007-98-SA. (1998, 25 de septiembre). Reglamento sobre Vigilancia y Control Sanitario de Alimentos y Bebidas. Ministerio de Salud (MINSA) / DIGESA. El Peruano. https://www.gob.pe/institucion/minsa/normas-legales/256394-007-98-sa
+- Organización de las Naciones Unidas para la Alimentación y la Agricultura [FAO]. (2019). El estado mundial de la agricultura y la alimentación 2019: Progresos en la lucha contra la pérdida y el desperdicio de alimentos. FAO. https://openknowledge.fao.org/server/api/core/bitstreams/2120f787-5a49-41f5-a9fb-f4ceaac98b2c/content

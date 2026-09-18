@@ -138,7 +138,7 @@ La identificación de estos Bounded Contexts representa el resultado del refinam
 
 Los siete contextos identificados serán analizados individualmente para validar la coherencia de sus responsabilidades y comprender con mayor precisión los límites existentes entre ellos.
 
-<img alt="EventStormingStep10" height="200%" src="../assets/miro/Big_Picture_Event_Storming_Paso10_2.png" width="650"/>
+<img alt="EventStormingStep10" height="200%" src="../assets/miro/Big_Picture_Event_Storming_Paso10.jpg" width="650"/>
 
 ##### Candidate Bounded Contexts Identificados
 
@@ -158,7 +158,23 @@ Estos elementos presentan una responsabilidad común centrada en permitir que lo
 
 El límite de este contexto se distingue especialmente de `Fleet Management`. Aunque un Distributor participa posteriormente en la administración de recursos logísticos, las responsabilidades relacionadas con Drivers, Vehicles, licencias, documentación y capacidad de la flota pertenecen a un proceso diferente. De esta manera, `Profiles Management` mantiene su enfoque en los perfiles de los actores, mientras que la administración de los recursos de transporte queda fuera de su responsabilidad.
 
-<img alt="Profiles_Management" height="200%" src="../assets/miro/Profiles_Management.png" width="600"/>
+<img alt="Profiles_Management" height="200%" src="../assets/miro/Profiles_Management.jpg" width="600"/>
+
+###### Fleet Management
+
+`Fleet Management` concentra las responsabilidades relacionadas con la incorporación y administración de los recursos de transporte utilizados dentro de FruitLogix, principalmente conductores y vehículos asociados a la operación logística.
+
+Dentro del EventStorming se observa la incorporación del Distributor al flujo y, posteriormente, acciones específicas asociadas a la gestión de la flota. Entre ellas se encuentra el Command `Add Driver to Fleet`, seguido por eventos como `Driver Profile Created by Distributor` y `Driver License Validated`. También se identifica el Read Model `Driver Profile Card`, que permite representar la información relevante del conductor dentro de este proceso.
+
+Para la administración de vehículos se incorpora el Command `Register Vehicle`, seguido por eventos como `Vehicle Technical Sheet Registered` y `Fleet Resource Assigned`. El flujo también contempla situaciones relacionadas con el estado operativo de los vehículos, como `Vehicle Maintenance Required`, `Fleet Capacity Exceeded` y `Vehicle Assignment Revoked`. Asimismo, el Read Model `Fleet Management Dashboard` permite consultar información consolidada relacionada con los recursos de la flota.
+
+Las Policies identificadas refuerzan la responsabilidad particular de este contexto. Entre ellas se establece que un Driver no puede ser activado mientras su `LicenseNumber` no haya sido verificado y se encuentre vigente. También se considera la validación de la capacidad de un Vehicle de acuerdo con los estándares correspondientes a su tipo.
+
+La agrupación de estos elementos evidencia una responsabilidad común centrada en administrar conductores, vehículos y las condiciones necesarias para que puedan participar como recursos de transporte dentro de FruitLogix. Por esta razón, fueron agrupados dentro del Candidate Bounded Context `Fleet Management`.
+
+Aunque el flujo presenta una relación directa con el Distributor previamente registrado, la responsabilidad de `Fleet Management` comienza cuando se gestionan los recursos asociados a su operación logística. De esta manera, la información general y configuración de los perfiles permanece en `Profiles Management`, mientras que la gestión específica de Drivers, Vehicles y recursos de flota corresponde a `Fleet Management`.
+
+<img alt="Fleet_Management" height="200%" src="../assets/miro/Fleet_Management.jpg" width="600"/>
 
 ###### Order Management
 
@@ -232,7 +248,7 @@ La agrupación de estos elementos evidencia una responsabilidad común centrada 
 
 Este contexto se diferencia de `Fleet Management` porque no administra el registro o estado general de Drivers y Vehicles, sino que utiliza dichos recursos para ejecutar un Shipment específico. Asimismo, se diferencia de `Order Management`, cuya responsabilidad principal se encuentra en administrar el pedido antes de que la operación pase al proceso especializado de envío y seguimiento.
 
-<img alt="Logistics_Monitoring" height="200%" src="../assets/miro/Logistics_Monitoring.png" width="600"/>
+<img alt="Logistics_Monitoring" height="200%" src="../assets/miro/Logistics_Monitoring.jpg" width="600"/>
 
 ###### Payment Management
 

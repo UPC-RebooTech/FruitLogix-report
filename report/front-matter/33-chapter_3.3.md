@@ -1,8 +1,8 @@
 ﻿## 3.3. Landing Page UI Design
 ### 3.3.1. Landing Page Wireframe
 
-![wireframe_landing.png](../assets/figma_files/wireframe_landing.png)
+![Wireframe_LandingPage](../assets/figma_files/Wireframe_LandingPage.png)
 
 ### 3.3.2. Landing Page Mock-up
 
-![Mockup1](../assets/figma_files/mockup1_1.png)
+![Mockup_LandingPage](../assets/figma_files/Mockup_LandingPage.png)

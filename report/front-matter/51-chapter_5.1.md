@@ -84,3 +84,25 @@ Se adoptarán las convenciones estándar de C# y arquitectura limpia en .NET par
 - Respuestas en formato JSON ligero optimizadas para consumo móvil.
 - Uso estándar de códigos de estado HTTP (`200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `404 Not Found`).
 
+#### 5.1.4. Software Deployment Configuration
+
+En esta sección se describe la configuración del despliegue y distribución de la solución móvil **FruitLogix**, detallando el proceso de compilación, empaquetado y entrega de los productos digitales a partir de sus repositorios de código fuente.
+
+#### Despliegue y Distribución de la Aplicación Móvil (Android)
+
+Para la distribución de la aplicación en entornos de prueba y entrega final, se establece el siguiente procedimiento:
+
+1. **Compilación de Artefactos**:
+   - Generación de archivos **APK** (Android Package) firmados para distribución interna de pruebas.
+   - Generación del formato **AAB** (Android App Bundle) optimizado para publicación en tiendas.
+2. **Firmado de Aplicación**:
+   - Configuración del archivo `keystore` y claves de firmado mediante variables de entorno seguras en la fase de Build (`release` buildType).
+3. **Distribución en Entorno de Pruebas**:
+   - Publicación de releases ejecutable (APKs de prueba) mediante **GitHub Releases** o **Firebase App Distribution**, permitiendo a los *stakeholders* y al equipo QA instalar la app en dispositivos físicos.
+4. **Publicación en Tienda (Producción / Internal Testing)**:
+   - Configuración de la ficha de la app en **Google Play Console**.
+   - Carga del paquete `.aab` en el canal de pruebas internas (Internal Testing Track) para validación de la solución en la Play Store.
+
+#### Consideraciones Móviles
+- El artefacto entregado debe ser compatible con versiones de Android 8.0 (API Level 26) o superior.
+- Control de versiones mediante el archivo `build.gradle.kts` incrementando el `versionCode` (entero para la tienda) y actualizando el `versionName` (ej. `1.0.0`) en cada entrega relevante.

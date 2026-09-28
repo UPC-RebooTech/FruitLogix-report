@@ -45,3 +45,42 @@ Para mantener un historial claro, consistente y facilitar la trazabilidad de los
 - **`refactor`**: Reestructuración de código sin alterar el comportamiento de la app  
   *(ej. `refactor(repository): migrate local storage to Room database`)*
 
+#### 5.1.3. Source Code Style Guide & Conventions
+
+Para garantizar la legibilidad, mantenibilidad y calidad del código en todo el equipo de desarrollo de la aplicación móvil **FruitLogix**, se adoptan las siguientes guías de estilo:
+
+#### Para la Aplicación Móvil (Android / Kotlin & Jetpack Compose)
+
+Se seguirán las guías oficiales de estilo de Kotlin y las buenas prácticas de arquitectura para Android sugeridas por Google (MVVM + Unidirectional Data Flow).
+
+#### Nomenclatura
+- **Funciones Composable**: `PascalCase` y sustantivos (ej. `@Composable fun OrderCard()`, `@Composable fun HomeScreen()`).
+- **Clases y ViewModels**: `PascalCase` (ej. `OrderViewModel`, `TaskRepository`, `UserEntity`).
+- **Funciones estándar y variables**: `camelCase` (ej. `fetchOrders()`, `uiState`, `isOrderCompleted`).
+- **Paquetes**: Todo en minúsculas sin guiones ni guiones bajos (ej. `pe.edu.upc.fruitlogix.ui.orders`).
+- **Recursos XML (Drawables, Strings, Colors)**: `snake_case` (ej. `ic_shopping_cart.xml`, `app_name`).
+
+#### Estructura del Proyecto
+- **Separación de capas (Clean Architecture / MVVM)**:
+  - `ui/`: Contiene los Composables (Views), ViewModels y estados de interfaz (`UiState`).
+  - `data/`: Contiene los Repositorios, Fuentes de Datos (Remote/Local APIs) y Modelos de datos (DTOs).
+  - `domain/`: Contiene los Casos de Uso (Use Cases) y Entidades del negocio.
+- **Uso de Estado Unidireccional (UDF)**: Modificación del estado únicamente a través de ViewModels exponiendo `StateFlow` o `mutableStateOf`.
+
+#### Formateo
+- Uso de la herramienta **ktlint** o el formateador integrado de Android Studio para mantener 4 espacios de indentación.
+- Evitar funciones Composable masivas; descomponer componentes en sub-composables reutilizables.
+
+### Para el Backend / Servicios RESTful (ASP.NET Core / C#)
+
+Se adoptarán las convenciones estándar de C# y arquitectura limpia en .NET para las Web APIs consumidas por la aplicación móvil.
+
+#### Nomenclatura
+- **Clases y Métodos**: `PascalCase` (ej. `OrderService`, `GetOrderById`).
+- **Variables**: `camelCase` (ej. `orderList`, `currentUserId`).
+- **Interfaces**: Prefijo `I` (ej. `IOrderRepository`).
+
+#### APIs RESTful para Móviles
+- Respuestas en formato JSON ligero optimizadas para consumo móvil.
+- Uso estándar de códigos de estado HTTP (`200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `404 Not Found`).
+

@@ -1,6 +1,6 @@
 ## Capítulo V: Product Implementation, Validation & Deployment
-### 5.1. Software Configuration Management
-#### 5.1.1. Software Development Environment Configuration
+### 4.1. Software Configuration Management
+#### 4.1.1. Software Development Environment Configuration
 Con el objetivo de garantizar un desarrollo fluido, estandarizado y consistente entre todos los miembros del equipo **RebooTech**, se ha definido el siguiente entorno de desarrollo para el ecosistema de la aplicación móvil **FruitLogix**:
 
 | Actividad | Producto | Propósito / Uso |
@@ -16,7 +16,7 @@ Con el objetivo de garantizar un desarrollo fluido, estandarizado y consistente 
 | **Version Control** | GitHub | Alojamiento de repositorios y gestión de versiones aplicando **GitFlow** y **Conventional Commits**. |
 | **Documentation** | Markdown | Documentación técnica del reporte del proyecto y manuales de arquitectura. |
 
-#### 5.1.2. Source Code Management
+#### 4.1.2. Source Code Management
 
 El código fuente del proyecto se gestionará utilizando **Git** como sistema de control de versiones y **GitHub** como plataforma de alojamiento, bajo una organización pública. Se adoptará un enfoque estructurado que favorezca la colaboración, la modularidad y el despliegue continuo mediante repositorios independientes para la aplicación móvil y sus servicios de soporte.
 
@@ -45,7 +45,7 @@ Para mantener un historial claro, consistente y facilitar la trazabilidad de los
 - **`refactor`**: Reestructuración de código sin alterar el comportamiento de la app  
   *(ej. `refactor(repository): migrate local storage to Room database`)*
 
-#### 5.1.3. Source Code Style Guide & Conventions
+#### 4.1.3. Source Code Style Guide & Conventions
 
 Para garantizar la legibilidad, mantenibilidad y calidad del código en todo el equipo de desarrollo de la aplicación móvil **FruitLogix**, se adoptan las siguientes guías de estilo:
 
@@ -84,7 +84,7 @@ Se adoptarán las convenciones estándar de C# y arquitectura limpia en .NET par
 - Respuestas en formato JSON ligero optimizadas para consumo móvil.
 - Uso estándar de códigos de estado HTTP (`200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `404 Not Found`).
 
-#### 5.1.4. Software Deployment Configuration
+#### 4.1.4. Software Deployment Configuration
 
 En esta sección se describe la configuración del despliegue y distribución de la solución móvil **FruitLogix**, detallando el proceso de compilación, empaquetado y entrega de los productos digitales a partir de sus repositorios de código fuente.
 

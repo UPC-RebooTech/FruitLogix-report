@@ -1,3 +1,7 @@
+# Capítulo III: Solution UI/UX Design
+
+## 3.1. Product design
+
 ### 3.1.1. Style Guidelines
 
 Las Style Guidelines de FruitLogix establecen una base visual común para los productos digitales de la solución: la Landing Page, la aplicación móvil nativa para Android y la aplicación móvil cross-platform. El objetivo es mantener una identidad consistente entre productos, facilitar el reconocimiento de los elementos de interfaz y reducir la carga cognitiva durante las tareas operativas.

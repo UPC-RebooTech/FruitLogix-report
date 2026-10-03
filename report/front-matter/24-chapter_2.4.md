@@ -3732,7 +3732,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> La plataforma requiere monitorear la cadena de frío en tiempo real. Se evaluará un protocolo (ej. MQTT o WebSockets) no visto en clase para conectar los sensores de los furgones al sistema.<br><br>
+        <strong>Contexto:</strong> FruitLogix es una plataforma de gestión logística de la cadena de suministro de frutas que conecta a productores, distribuidores y clientes comerciales, compuesta por una aplicación móvil para Android e iOS, un backend de servicios web RESTful con Entity Framework Core y MySQL, y una landing page web. Para proteger la cadena de frío, los furgones llevan sensores de temperatura y humedad cuyas lecturas deben llegar al backend en tiempo real, de modo que el distribuidor sea alertado antes de que la carga se dañe. Esta spike evaluará un protocolo de comunicación (ej. MQTT o WebSockets) no visto en clase, usando un simulador IoT en lugar de hardware real. Se analizarán el formato y la integridad de los datos recibidos, la latencia entre la captura de la lectura y la generación de la alerta, y el consumo de recursos del backend con lecturas frecuentes. El resultado servirá de base para las historias de monitoreo de sensores y alertas de calidad.<br><br>
+        <strong>Historias relacionadas:</strong> US18, US45, US46, TS20<br><br>
         <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar y prototipar la conexión de un simulador IoT, <strong>Para</strong> entender las implicaciones técnicas, de rendimiento y latencia al recibir telemetría.
       </td>
     </tr>
@@ -3781,7 +3782,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> Los usuarios en campo suelen quedarse sin señal al registrar formularios. Debemos definir la tecnología de almacenamiento local (SQLite, IndexedDB, etc.) para retener la información.<br><br>
+        <strong>Contexto:</strong> FruitLogix es una plataforma de gestión logística de la cadena de suministro de frutas que conecta a productores, distribuidores y clientes comerciales, compuesta por una aplicación móvil para Android e iOS, un backend de servicios web RESTful con Entity Framework Core y MySQL, y una landing page web. Productores y distribuidores llenan formularios de inspección y capturan evidencia fotográfica en campo, donde la conexión a internet es intermitente o inexistente, y esa información no debe perderse. Esta spike definirá la tecnología de almacenamiento local en el dispositivo (SQLite, IndexedDB, etc.), cómo guardar los datos y las fotografías de forma segura, y cómo identificar los registros pendientes de envío. También investigará la estrategia de sincronización automática al recuperar la red, incluyendo el manejo de conflictos con datos ya modificados en el servidor y de reintentos ante fallos. El resultado servirá de base para las historias de formularios de inspección offline y de sincronización de datos.<br><br>
+        <strong>Historias relacionadas:</strong> US53, US55, TS11<br><br>
         <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar mecanismos de persistencia local en dispositivos móviles, <strong>Para</strong> garantizar que la evidencia fotográfica y los datos crudos no se pierdan al fallar la conexión a internet.
       </td>
     </tr>
@@ -3830,7 +3832,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> Se procesarán pagos de suscripciones dentro de la aplicación móvil usando Payment Sheet y validación de webhooks, evitando redirigir al usuario al navegador.<br><br>
+        <strong>Contexto:</strong> FruitLogix es una plataforma de gestión logística de la cadena de suministro de frutas que conecta a productores, distribuidores y clientes comerciales, compuesta por una aplicación móvil para Android e iOS, un backend de servicios web RESTful con Entity Framework Core y MySQL, y una landing page web. La plataforma ofrecerá la suscripción al plan Miembro Pro, cuyo pago debe realizarse dentro de la aplicación móvil mediante el Payment Sheet nativo de Stripe, sin redirigir al usuario al navegador. Esta spike revisará la documentación y el SDK móvil de Stripe, el flujo de pago con Payment Intents y la validación de webhooks en el backend para confirmar el pago de forma asíncrona. Se analizarán además los riesgos de seguridad (cumplimiento PCI, protección de claves secretas, verificación de firma del webhook), las dependencias necesarias y los costos por transacción. El resultado servirá de base para las historias de acceso a la pasarela de pagos y de actualización del plan del usuario.<br><br>
+        <strong>Historias relacionadas:</strong> US30, TS17<br><br>
         <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> prototipar el uso del SDK nativo de Stripe, <strong>Para</strong> confirmar la viabilidad técnica del flujo de pago y la validación asíncrona de transacciones.
       </td>
     </tr>
@@ -3878,7 +3881,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> El sistema enviará notificaciones push mediante FCM o APNs por alertas de calidad o retrasos. Al interactuar con la notificación, la app debe abrir directamente la pantalla del recurso asociado en lugar del inicio.<br><br>
+        <strong>Contexto:</strong> FruitLogix es una plataforma de gestión logística de la cadena de suministro de frutas que conecta a productores, distribuidores y clientes comerciales, compuesta por una aplicación móvil para Android e iOS, un backend de servicios web RESTful con Entity Framework Core y MySQL, y una landing page web. El sistema enviará notificaciones push mediante FCM (Android) y APNs (iOS) para avisar de alertas de calidad, retrasos en la entrega, mensajes y acciones pendientes sobre lotes. Al tocar la notificación, la app debe abrir directamente la pantalla del recurso asociado (pedido o lote) en lugar del inicio, tanto con la app cerrada como en segundo plano. Esta spike probará cómo embeber el deep link en el payload de la notificación, cómo la app lo intercepta y enruta a la vista correcta, y cómo reacciona cuando el recurso ya no existe o el usuario no tiene sesión activa. El resultado servirá de base para las historias de notificaciones push y de navegación directa.<br><br>
+        <strong>Historias relacionadas:</strong> US17, US18, US26, US58, TS13, TS21<br><br>
         <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> probar el ruteo de deep links embebidos en el payload de las notificaciones push, <strong>Para</strong> asegurar una navegación directa y mejorar la experiencia del usuario.
       </td>
     </tr>
@@ -3927,7 +3931,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> Los distribuidores deben validar automáticamente la recepción de lotes usando la cámara de su smartphone para escanear códigos QR.<br><br>
+        <strong>Contexto:</strong> FruitLogix es una plataforma de gestión logística de la cadena de suministro de frutas que conecta a productores, distribuidores y clientes comerciales, compuesta por una aplicación móvil para Android e iOS, un backend de servicios web RESTful con Entity Framework Core y MySQL, y una landing page web. En la recepción de mercadería, el distribuidor debe validar el lote escaneando con la cámara del celular el código QR de la caja o pallet, para contrastar producto y cantidad contra el pedido sin digitar datos manualmente. Esta spike evaluará librerías de escaneo QR compatibles con el stack móvil del equipo y las comparará en precisión de lectura, velocidad, consumo de memoria y desempeño con códigos dañados o poca luz. También revisará el manejo de los permisos de cámara, para que la app no falle cuando el usuario los deniegue. El resultado servirá de base para las historias de escaneo de lotes y de confirmación de entrega por código QR.<br><br>
+        <strong>Historias relacionadas:</strong> US54, US16, TS12<br><br>
         <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> evaluar librerías de escaneo QR compatibles con nuestro stack móvil, <strong>Para</strong> medir su precisión, consumo de memoria y velocidad de lectura nativa.
       </td>
     </tr>
@@ -3976,7 +3981,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Contexto:</strong> El catálogo comercial mostrará múltiples imágenes de productos. Para no consumir excesivamente los datos móviles de los clientes comerciales, es necesario implementar un sistema de caché de imágenes y carga diferida (lazy loading).<br><br>
+        <strong>Contexto:</strong> FruitLogix es una plataforma de gestión logística de la cadena de suministro de frutas que conecta a productores, distribuidores y clientes comerciales, compuesta por una aplicación móvil para Android e iOS, un backend de servicios web RESTful con Entity Framework Core y MySQL, y una landing page web. El catálogo comercial muestra múltiples imágenes de productos, y los clientes lo consultan desde sus celulares con datos móviles limitados, por lo que cada descarga innecesaria encarece y ralentiza la experiencia. Esta spike investigará librerías de caché de imágenes y carga diferida (lazy loading) en el frontend móvil, junto con imágenes redimensionadas servidas desde un CDN. Se medirán los tiempos de renderizado, la reducción de peticiones repetidas al servidor, y el comportamiento cuando una imagen no está disponible o falla la conexión. El resultado servirá de base para las historias de exploración del catálogo y de optimización de imágenes.<br><br>
+        <strong>Historias relacionadas:</strong> US34, US51, TS18<br><br>
         <strong>Como</strong> equipo de desarrollo, <strong>Quiero</strong> investigar y probar librerías de caché de imágenes en el frontend, <strong>Para</strong> optimizar los tiempos de renderizado y reducir las peticiones redundantes al servidor.
       </td>
     </tr>

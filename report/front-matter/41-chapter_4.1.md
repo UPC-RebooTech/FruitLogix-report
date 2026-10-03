@@ -5,7 +5,7 @@ Con el objetivo de garantizar un desarrollo fluido, estandarizado y consistente 
 
 | Actividad | Producto | Propósito / Uso |
 | :--- | :--- | :--- |
-| **Project Management** | Trello | Gestión del Product Backlog, planificación de Sprints y seguimiento de tareas. |
+| **Project Management** | Jira | Gestión del Product Backlog, planificación de Sprints y seguimiento de tareas. |
 | **Requirements Management** | UXPressia | Elaboración de artefactos de descubrimiento (User Personas, Empathy Maps, Journey Maps) para la definición de requisitos. |
 | **UX/UI Design** | Figma | Diseño de la guía de estilo, prototipos de baja fidelidad (wireframes) y alta fidelidad (mockups) basados en **Material Design 3**. |
 | **User Flows & Wireflows** | Lucidchart | Elaboración de Wireflows y flujos de navegación de la aplicación móvil (User Flows). |

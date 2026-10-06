@@ -2742,6 +2742,889 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
   </tbody>
 </table>
 
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US60</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Alerta predictiva de temperatura</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> recibir una alerta cuando la tendencia de temperatura indique que se superará el límite permitido (ej. "excederá 4.0°C en 12 min"), <strong>Para</strong> actuar de forma preventiva antes de que la carga se dañe.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Alerta predictiva generada</strong><br>
+        <strong>Given</strong> que los sensores del furgón reportan una tendencia de temperatura creciente durante el viaje;<br>
+        <strong>When</strong> el sistema proyecta que se superará el umbral configurado para esa fruta;<br>
+        <strong>Then</strong> envía una notificación push indicando la temperatura proyectada y el tiempo estimado en que se excederá el límite.<br><br>
+        <strong>Escenario 2: Tendencia estable</strong><br>
+        <strong>Given</strong> que la temperatura se mantiene estable dentro del rango permitido;<br>
+        <strong>When</strong> el sistema evalúa la tendencia de las últimas lecturas;<br>
+        <strong>Then</strong> no genera ninguna alerta y mantiene el indicador en estado normal.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US61</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Ver gráfica de temperatura del viaje</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> visualizar la evolución de la temperatura durante el viaje con los límites configurados y las excursiones marcadas, <strong>Para</strong> evaluar si se mantuvo la cadena de frío durante todo el traslado.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Gráfica con excursiones marcadas</strong><br>
+        <strong>Given</strong> que el despacho cuenta con lecturas de temperatura registradas;<br>
+        <strong>When</strong> el distribuidor abre el detalle del viaje;<br>
+        <strong>Then</strong> la app muestra la gráfica de temperatura con las líneas de límite mínimo y máximo y resalta los tramos donde hubo excursiones.<br><br>
+        <strong>Escenario 2: Sin lecturas registradas</strong><br>
+        <strong>Given</strong> que el despacho no tiene lecturas de temperatura almacenadas;<br>
+        <strong>When</strong> el distribuidor abre la gráfica del viaje;<br>
+        <strong>Then</strong> la app muestra un mensaje informativo indicando que no hay datos de temperatura disponibles.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US62</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Umbrales por tipo de fruta</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> configurar los rangos de temperatura y humedad permitidos para cada tipo de fruta, <strong>Para</strong> que las alertas y validaciones de calidad se ajusten a las necesidades de conservación de cada producto.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Umbral configurado correctamente</strong><br>
+        <strong>Given</strong> que el distribuidor selecciona un tipo de fruta en el módulo de configuración;<br>
+        <strong>When</strong> ingresa valores válidos de temperatura y humedad mínima y máxima y guarda los cambios;<br>
+        <strong>Then</strong> el sistema almacena los umbrales y los aplica a las futuras validaciones y alertas de ese producto.<br><br>
+        <strong>Escenario 2: Rango inválido</strong><br>
+        <strong>Given</strong> que el distribuidor ingresa un valor mínimo mayor al máximo o un valor fuera del rango físico permitido;<br>
+        <strong>When</strong> intenta guardar la configuración;<br>
+        <strong>Then</strong> la app bloquea el guardado, resalta los campos erróneos y muestra el rango válido esperado.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US63</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Estado de sensores</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> consultar el nivel de batería, la señal y los sensores que se encuentran fuera de línea, <strong>Para</strong> garantizar que el monitoreo de la cadena de frío no se interrumpa durante los despachos.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Estado de sensores visible</strong><br>
+        <strong>Given</strong> que existen sensores vinculados a los vehículos de la flota;<br>
+        <strong>When</strong> el distribuidor accede al módulo de estado de sensores;<br>
+        <strong>Then</strong> la app muestra por cada sensor su nivel de batería, intensidad de señal y estado (en línea o fuera de línea).<br><br>
+        <strong>Escenario 2: Sensor offline o batería baja</strong><br>
+        <strong>Given</strong> que un sensor se encuentra fuera de línea o con batería por debajo del nivel crítico;<br>
+        <strong>When</strong> el sistema detecta la condición;<br>
+        <strong>Then</strong> resalta el sensor con una etiqueta de advertencia y lo lista en la parte superior para atención inmediata.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US64</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Verificar reefer antes de despachar</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> verificar la temperatura del contenedor refrigerado (reefer) antes de autorizar la salida, <strong>Para</strong> evitar despachar cargas en condiciones que comprometan su conservación.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Verificación aprobada</strong><br>
+        <strong>Given</strong> que el distribuidor prepara un despacho y el reefer reporta una temperatura dentro del rango de la fruta cargada;<br>
+        <strong>When</strong> ejecuta la verificación previa al despacho;<br>
+        <strong>Then</strong> el sistema confirma la conformidad y habilita el botón para iniciar el despacho.<br><br>
+        <strong>Escenario 2: Despacho bloqueado por temperatura fuera de rango</strong><br>
+        <strong>Given</strong> que el reefer reporta una temperatura fuera del rango permitido;<br>
+        <strong>When</strong> el distribuidor intenta iniciar el despacho;<br>
+        <strong>Then</strong> la app bloquea la acción y muestra la temperatura actual junto con el rango requerido.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US65</td>
+      <td style="padding: 8px;">Cliente Comercial</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Aviso de llegada por geocerca</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> cliente comercial, <strong>Quiero</strong> recibir una notificación cuando un camión ingrese a la zona de mi almacén y ver el listado de llegadas, <strong>Para</strong> preparar la recepción y el personal de descarga con anticipación.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Notificación de llegada</strong><br>
+        <strong>Given</strong> que existe un pedido en camino con una geocerca configurada alrededor del almacén del cliente;<br>
+        <strong>When</strong> el camión ingresa al perímetro de la geocerca;<br>
+        <strong>Then</strong> el sistema envía una notificación push al cliente y registra la llegada en el listado de arribos.<br><br>
+        <strong>Escenario 2: Sin llegadas registradas</strong><br>
+        <strong>Given</strong> que ningún camión ha ingresado a la zona del almacén;<br>
+        <strong>When</strong> el cliente abre el listado de llegadas;<br>
+        <strong>Then</strong> la app muestra un mensaje informativo indicando que no hay llegadas registradas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US66</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP04</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Factura automática al recibir</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> que el sistema genere automáticamente la factura al confirmarse la recepción, calculando kilos recibidos × precio pactado, <strong>Para</strong> agilizar el cobro y evitar errores de cálculo manual.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Factura generada automáticamente</strong><br>
+        <strong>Given</strong> que el cliente confirma la recepción del pedido con los kilos efectivamente recibidos;<br>
+        <strong>When</strong> el sistema procesa la confirmación;<br>
+        <strong>Then</strong> genera la factura con el monto resultante de multiplicar los kilos recibidos por el precio pactado y la registra como cuenta por cobrar.<br><br>
+        <strong>Escenario 2: Precio pactado no disponible</strong><br>
+        <strong>Given</strong> que el pedido no tiene un precio pactado asociado al producto;<br>
+        <strong>When</strong> el sistema intenta generar la factura;<br>
+        <strong>Then</strong> detiene la emisión, marca el pedido como "Facturación pendiente" y notifica al distribuidor para que complete el dato.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US67</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Nota de crédito propuesta</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> que el sistema me sugiera una nota de crédito cuando existan frutas rechazadas o excursiones de temperatura, <strong>Para</strong> compensar al cliente de forma justa y sustentada.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Propuesta de nota de crédito</strong><br>
+        <strong>Given</strong> que un pedido recibido registra fruta rechazada o una excursión de temperatura;<br>
+        <strong>When</strong> el sistema evalúa la facturación asociada;<br>
+        <strong>Then</strong> muestra una nota de crédito propuesta con el monto sugerido y el motivo, para que el distribuidor la apruebe o la ajuste.<br><br>
+        <strong>Escenario 2: Pedido sin observaciones</strong><br>
+        <strong>Given</strong> que el pedido fue recibido sin rechazos ni excursiones de temperatura;<br>
+        <strong>When</strong> el sistema evalúa la facturación asociada;<br>
+        <strong>Then</strong> no genera ninguna propuesta de nota de crédito.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US68</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Baja</td>
+      <td style="padding: 8px;">EP04</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Evolución de precios</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> visualizar un gráfico del precio por kilo por producto y por cliente a lo largo del tiempo, <strong>Para</strong> analizar las variaciones de precio y apoyar decisiones de negociación.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Gráfico de precios cargado</strong><br>
+        <strong>Given</strong> que existen precios históricos registrados para el producto y cliente seleccionados;<br>
+        <strong>When</strong> el distribuidor aplica los filtros y abre la vista de evolución de precios;<br>
+        <strong>Then</strong> la app muestra el gráfico con la variación del precio por kilo en el periodo elegido.<br><br>
+        <strong>Escenario 2: Sin historial de precios</strong><br>
+        <strong>Given</strong> que no existen precios registrados para la combinación de filtros seleccionada;<br>
+        <strong>When</strong> el distribuidor abre la vista de evolución de precios;<br>
+        <strong>Then</strong> la app muestra un mensaje informativo indicando que no hay datos para graficar.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US69</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Resumen de compras por cliente</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> consultar los kilos y montos comprados por cada cliente agrupados por semana o mes, <strong>Para</strong> identificar a mis clientes más relevantes y planificar el abastecimiento.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Resumen generado</strong><br>
+        <strong>Given</strong> que el cliente seleccionado tiene pedidos finalizados en el periodo elegido;<br>
+        <strong>When</strong> el distribuidor selecciona la agrupación semanal o mensual;<br>
+        <strong>Then</strong> la app muestra el total de kilos y montos por cada periodo.<br><br>
+        <strong>Escenario 2: Cliente sin compras</strong><br>
+        <strong>Given</strong> que el cliente no registra compras en el periodo seleccionado;<br>
+        <strong>When</strong> el distribuidor consulta el resumen;<br>
+        <strong>Then</strong> la app muestra los totales en cero junto con un mensaje informativo.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US70</td>
+      <td style="padding: 8px;">Cliente Comercial</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Recordatorios de facturas</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> cliente comercial, <strong>Quiero</strong> recibir avisos de las facturas próximas a vencer, <strong>Para</strong> pagar a tiempo y evitar recargos o bloqueos de crédito.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Recordatorio enviado</strong><br>
+        <strong>Given</strong> que existe una factura pendiente de pago cuya fecha de vencimiento está próxima;<br>
+        <strong>When</strong> el sistema alcanza el plazo de anticipación configurado;<br>
+        <strong>Then</strong> envía una notificación push al cliente indicando el número de factura, el monto y la fecha de vencimiento.<br><br>
+        <strong>Escenario 2: Factura ya pagada</strong><br>
+        <strong>Given</strong> que la factura fue pagada antes de su vencimiento;<br>
+        <strong>When</strong> el sistema evalúa los recordatorios pendientes;<br>
+        <strong>Then</strong> cancela el aviso y no envía ninguna notificación al cliente.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US71</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Certificado de cadena de frío</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> generar un certificado con el historial de temperatura, las excursiones registradas y un hash de verificación, <strong>Para</strong> demostrar al cliente el cumplimiento de la cadena de frío y respaldar posibles reclamos.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Certificado generado</strong><br>
+        <strong>Given</strong> que el despacho finalizado cuenta con el historial completo de lecturas de temperatura;<br>
+        <strong>When</strong> el distribuidor solicita el certificado de cadena de frío;<br>
+        <strong>Then</strong> el sistema genera el documento con el historial, las excursiones detectadas y un hash de integridad, y permite compartirlo mediante las opciones nativas del smartphone.<br><br>
+        <strong>Escenario 2: Historial incompleto</strong><br>
+        <strong>Given</strong> que el despacho no cuenta con lecturas de temperatura registradas;<br>
+        <strong>When</strong> el distribuidor solicita el certificado;<br>
+        <strong>Then</strong> el sistema no genera el documento y muestra un mensaje indicando que no hay información suficiente para emitirlo.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US72</td>
+      <td style="padding: 8px;">Cliente, productor y distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Línea de tiempo del lote</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> usuario, <strong>Quiero</strong> visualizar la línea de tiempo de un lote con sus etapas: cosechado, inspeccionado, cargado, recibido y facturado, <strong>Para</strong> conocer la trazabilidad completa del producto en cualquier momento.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Línea de tiempo completa</strong><br>
+        <strong>Given</strong> que el lote tiene eventos registrados en distintas etapas de la cadena;<br>
+        <strong>When</strong> el usuario abre el detalle de trazabilidad del lote;<br>
+        <strong>Then</strong> la app muestra los eventos en orden cronológico con su fecha, hora y responsable.<br><br>
+        <strong>Escenario 2: Lote con etapas pendientes</strong><br>
+        <strong>Given</strong> que el lote aún no ha completado todas las etapas;<br>
+        <strong>When</strong> el usuario consulta su línea de tiempo;<br>
+        <strong>Then</strong> la app muestra las etapas completadas y señala las pendientes como "Por realizar".
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US73</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP04</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Reporte de merma</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> generar un reporte de pérdidas por etapa y por causa, <strong>Para</strong> identificar dónde se producen las mermas y tomar acciones correctivas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Reporte generado</strong><br>
+        <strong>Given</strong> que existen mermas registradas en el periodo seleccionado;<br>
+        <strong>When</strong> el distribuidor aplica el filtro de fechas y genera el reporte;<br>
+        <strong>Then</strong> el sistema muestra las pérdidas agrupadas por etapa (cosecha, transporte, recepción) y por causa.<br><br>
+        <strong>Escenario 2: Sin mermas en el periodo</strong><br>
+        <strong>Given</strong> que no existen mermas registradas en el rango de fechas seleccionado;<br>
+        <strong>When</strong> el distribuidor genera el reporte;<br>
+        <strong>Then</strong> la app muestra un mensaje informativo indicando que no hay mermas registradas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US74</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Baja</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Consultar conductores</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> consultar la lista de conductores con su licencia y disponibilidad (solo lectura), <strong>Para</strong> conocer qué personal está disponible para planificar los despachos.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Lista de conductores</strong><br>
+        <strong>Given</strong> que existen conductores registrados en la flota;<br>
+        <strong>When</strong> el distribuidor accede al módulo de conductores;<br>
+        <strong>Then</strong> la app muestra la lista con nombre, licencia y estado de disponibilidad, sin opciones de edición.<br><br>
+        <strong>Escenario 2: Sin conductores registrados</strong><br>
+        <strong>Given</strong> que no existen conductores registrados;<br>
+        <strong>When</strong> el distribuidor accede al módulo;<br>
+        <strong>Then</strong> la app muestra un mensaje informativo indicando que no hay conductores registrados.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US75</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Baja</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Consultar vehículos</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> consultar la lista de vehículos con su placa, tipo, capacidad y estado (solo lectura), <strong>Para</strong> conocer qué unidades están disponibles para asignarlas a los despachos.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Lista de vehículos</strong><br>
+        <strong>Given</strong> que existen vehículos registrados en la flota;<br>
+        <strong>When</strong> el distribuidor accede al módulo de vehículos;<br>
+        <strong>Then</strong> la app muestra la lista con placa, tipo, capacidad y estado, sin opciones de edición.<br><br>
+        <strong>Escenario 2: Sin vehículos registrados</strong><br>
+        <strong>Given</strong> que no existen vehículos registrados;<br>
+        <strong>When</strong> el distribuidor accede al módulo;<br>
+        <strong>Then</strong> la app muestra un mensaje informativo indicando que no hay vehículos registrados.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US76</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Ver puntos de control del viaje</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> visualizar los puntos de control (checkpoints) recorridos, la posición actual y las demoras de un viaje, <strong>Para</strong> detectar desvíos o retrasos a tiempo y avisar al cliente.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Checkpoints visibles</strong><br>
+        <strong>Given</strong> que el despacho está en curso y tiene puntos de control definidos;<br>
+        <strong>When</strong> el distribuidor abre el detalle del viaje;<br>
+        <strong>Then</strong> la app muestra los checkpoints recorridos, la posición actual del vehículo y las demoras acumuladas.<br><br>
+        <strong>Escenario 2: Viaje sin puntos de control</strong><br>
+        <strong>Given</strong> que el despacho no tiene puntos de control configurados;<br>
+        <strong>When</strong> el distribuidor abre el detalle del viaje;<br>
+        <strong>Then</strong> la app muestra solo la posición actual y un mensaje indicando que no hay checkpoints definidos.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US77</td>
+      <td style="padding: 8px;">Cliente Comercial</td>
+      <td style="padding: 8px;">Media</td>
+      <td style="padding: 8px;">EP03</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Contactar al conductor</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> cliente comercial, <strong>Quiero</strong> abrir el marcador del teléfono con el número del conductor asignado a mi pedido, <strong>Para</strong> comunicarme directamente con él ante cualquier coordinación de entrega.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Llamada iniciada</strong><br>
+        <strong>Given</strong> que el pedido está en camino y tiene un conductor asignado con teléfono registrado;<br>
+        <strong>When</strong> el cliente presiona el botón "Contactar al conductor";<br>
+        <strong>Then</strong> la app abre el marcador del teléfono con el número del conductor precargado.<br><br>
+        <strong>Escenario 2: Teléfono no disponible</strong><br>
+        <strong>Given</strong> que el conductor no tiene un número de contacto registrado;<br>
+        <strong>When</strong> el cliente intenta contactarlo;<br>
+        <strong>Then</strong> la app muestra un mensaje indicando que el contacto no está disponible.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US78</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Baja</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Ver detalle de conductor</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> ver el detalle de un conductor con su licencia, vigencia, despacho actual y datos de contacto, <strong>Para</strong> validar que cumple los requisitos para operar y ubicarlo cuando sea necesario.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Detalle visible</strong><br>
+        <strong>Given</strong> que el distribuidor selecciona un conductor de la lista;<br>
+        <strong>When</strong> se abre la pantalla de detalle;<br>
+        <strong>Then</strong> la app muestra la licencia, su fecha de vigencia, el despacho actual y el contacto del conductor.<br><br>
+        <strong>Escenario 2: Licencia vencida</strong><br>
+        <strong>Given</strong> que la licencia del conductor se encuentra vencida;<br>
+        <strong>When</strong> el distribuidor abre el detalle;<br>
+        <strong>Then</strong> la app resalta la vigencia con una etiqueta roja de "Licencia vencida".
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
+  <tbody>
+    <tr>
+      <th style="width: 20%; padding: 8px;">Story ID</th>
+      <th style="width: 30%; padding: 8px;">User</th>
+      <th style="width: 25%; padding: 8px;">Priority</th>
+      <th style="width: 25%; padding: 8px;">Epic</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px;">US79</td>
+      <td style="padding: 8px;">Distribuidor</td>
+      <td style="padding: 8px;">Alta</td>
+      <td style="padding: 8px;">EP01</td>
+    </tr>
+    <tr>
+      <th style="padding: 8px;">Title</th>
+      <td colspan="3" style="text-align: left; padding: 8px;">Asignar conductor y vehículo</td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Como</strong> distribuidor, <strong>Quiero</strong> asignar un conductor y un vehículo disponibles a un despacho, <strong>Para</strong> dejar la entrega lista para ser iniciada con los recursos adecuados.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4" style="padding: 8px;">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: left; padding: 12px;">
+        <strong>Escenario 1: Asignación exitosa</strong><br>
+        <strong>Given</strong> que existe un despacho sin recursos asignados y hay un conductor y un vehículo disponibles;<br>
+        <strong>When</strong> el distribuidor selecciona ambos y confirma la asignación;<br>
+        <strong>Then</strong> el sistema vincula los recursos al despacho, los marca como no disponibles y notifica al cliente los datos del conductor.<br><br>
+        <strong>Escenario 2: Recurso no disponible</strong><br>
+        <strong>Given</strong> que el conductor o el vehículo seleccionado ya fue asignado a otro despacho en el mismo horario;<br>
+        <strong>When</strong> el distribuidor intenta confirmar la asignación;<br>
+        <strong>Then</strong> la app bloquea la acción y muestra un mensaje indicando qué recurso no está disponible.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
 <table style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 24px;">
   <tbody>
     <tr>
@@ -4182,433 +5065,574 @@ En esta sección se presenta el Product Backlog del proyecto FruitLogix, gestion
     </tr>
     <tr>
       <td>21</td>
+      <td>US43</td>
+      <td>Monitorear flota en tiempo real</td>
+      <td>8</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>US46</td>
+      <td>Ver detalle de despacho con telemetría</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>US74</td>
+      <td>Consultar conductores</td>
+      <td>2</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>US76</td>
+      <td>Ver puntos de control del viaje</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>US77</td>
+      <td>Contactar al conductor</td>
+      <td>1</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>US65</td>
+      <td>Aviso de llegada por geocerca</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>US61</td>
+      <td>Ver gráfica de temperatura del viaje</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>US20</td>
+      <td>Ver dashboard general de distribución</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>US60</td>
+      <td>Alerta predictiva de temperatura</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>US54</td>
+      <td>Escaneo de código QR/barras en recepción de lote</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>US47</td>
+      <td>Gestionar facturación</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>US27</td>
+      <td>Configurar perfil de usuario</td>
+      <td>2</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>US53</td>
+      <td>Formulario de inspección de campo offline</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>US57</td>
+      <td>Nota de voz para reportar incidencias</td>
+      <td>5</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>US45</td>
+      <td>Monitorear sensores IoT</td>
+      <td>8</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>US63</td>
+      <td>Estado de sensores</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>US10</td>
+      <td>Consultar historial de compras anteriores</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>US41</td>
+      <td>Invitar productor a la red</td>
+      <td>3</td>
+      <td>Sprint 1</td>
+    </tr>
+    <tr>
+      <td>39</td>
       <td>TS05</td>
       <td>Implementar consulta de pedidos</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>22</td>
+      <td>40</td>
       <td>TS06</td>
       <td>Implementar actualización de estado de pedido</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>23</td>
+      <td>41</td>
       <td>TS12</td>
       <td>Servicio de generación y validación de QR</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>24</td>
-      <td>US54</td>
-      <td>Escaneo de código QR/barras en recepción de lote</td>
-      <td>3</td>
-      <td>Sprint 2</td>
-    </tr>
-    <tr>
-      <td>25</td>
+      <td>42</td>
       <td>TS07</td>
       <td>Implementar registro de control de calidad</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>26</td>
+      <td>43</td>
       <td>US50</td>
       <td>Enviar reporte de calidad al distribuidor con fotos</td>
       <td>5</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>27</td>
+      <td>44</td>
       <td>US03</td>
       <td>Recuperar contraseña mediante correo</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>28</td>
+      <td>45</td>
       <td>TS20</td>
       <td>Registro y consulta de geolocalización en tiempo real</td>
       <td>5</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>29</td>
-      <td>US43</td>
-      <td>Monitorear flota en tiempo real</td>
-      <td>8</td>
-      <td>Sprint 2</td>
-    </tr>
-    <tr>
-      <td>30</td>
+      <td>46</td>
       <td>US38</td>
       <td>Ver información del conductor en tracking</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>31</td>
+      <td>47</td>
       <td>US56</td>
       <td>Geolocalización automática al marcar entrega</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>32</td>
+      <td>48</td>
       <td>TS16</td>
       <td>Almacenamiento y verificación de firma digital</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>33</td>
+      <td>49</td>
       <td>US52</td>
       <td>Evidencia fotográfica en el punto de entrega</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>34</td>
+      <td>50</td>
       <td>TS15</td>
       <td>Carga de evidencia fotográfica con marca de agua</td>
       <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>35</td>
-      <td>US46</td>
-      <td>Ver detalle de despacho con telemetría</td>
+      <td>51</td>
+      <td>US62</td>
+      <td>Umbrales por tipo de fruta</td>
+      <td>3</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>US75</td>
+      <td>Consultar vehículos</td>
+      <td>2</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>US64</td>
+      <td>Verificar reefer antes de despachar</td>
       <td>5</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>36</td>
-      <td>US45</td>
-      <td>Monitorear sensores IoT</td>
-      <td>8</td>
+      <td>54</td>
+      <td>US79</td>
+      <td>Asignar conductor y vehículo</td>
+      <td>3</td>
       <td>Sprint 2</td>
     </tr>
     <tr>
-      <td>37</td>
+      <td>55</td>
+      <td>US78</td>
+      <td>Ver detalle de conductor</td>
+      <td>2</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>US71</td>
+      <td>Certificado de cadena de frío</td>
+      <td>5</td>
+      <td>Sprint 2</td>
+    </tr>
+    <tr>
+      <td>57</td>
       <td>US12</td>
       <td>Ver reportes de calidad dinámicos</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>38</td>
+      <td>58</td>
       <td>US44</td>
       <td>Gestionar incidencias operativas</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>39</td>
-      <td>US57</td>
-      <td>Nota de voz para reportar incidencias</td>
-      <td>5</td>
-      <td>Sprint 3</td>
-    </tr>
-    <tr>
-      <td>40</td>
+      <td>59</td>
       <td>TS11</td>
       <td>Sincronización de datos en modo offline</td>
       <td>8</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>41</td>
+      <td>60</td>
       <td>US55</td>
       <td>Sincronización automática de datos offline</td>
       <td>8</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>42</td>
-      <td>US53</td>
-      <td>Formulario de inspección de campo offline</td>
-      <td>5</td>
-      <td>Sprint 3</td>
-    </tr>
-    <tr>
-      <td>43</td>
+      <td>61</td>
       <td>TS13</td>
       <td>Configurar servicio de notificaciones push (FCM/APNs)</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>44</td>
+      <td>62</td>
       <td>TS09</td>
       <td>Implementar envío de notificaciones</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>45</td>
+      <td>63</td>
       <td>TS21</td>
       <td>Manejo de deep links desde notificaciones push</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>46</td>
+      <td>64</td>
       <td>US58</td>
       <td>Aprobar o rechazar lote desde notificación push</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>47</td>
+      <td>65</td>
       <td>US19</td>
       <td>Ver dashboard operativo del Productor</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>48</td>
-      <td>US20</td>
-      <td>Ver dashboard general de distribución</td>
-      <td>5</td>
-      <td>Sprint 3</td>
-    </tr>
-    <tr>
-      <td>49</td>
-      <td>US41</td>
-      <td>Invitar productor a la red</td>
-      <td>3</td>
-      <td>Sprint 3</td>
-    </tr>
-    <tr>
-      <td>50</td>
+      <td>66</td>
       <td>US39</td>
       <td>Editar ficha técnica de producto</td>
       <td>4</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>51</td>
+      <td>67</td>
       <td>US40</td>
       <td>Eliminar productor de la red</td>
       <td>1</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>52</td>
+      <td>68</td>
       <td>US37</td>
       <td>Adjuntar archivos en el chat</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>53</td>
+      <td>69</td>
       <td>TS14</td>
       <td>Registro y validación de sesión biométrica</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>54</td>
+      <td>70</td>
       <td>US59</td>
       <td>Acceso mediante autenticación biométrica</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>55</td>
+      <td>71</td>
       <td>US36</td>
       <td>Visualizar balance financiero en Dashboard del Cliente</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>56</td>
-      <td>US47</td>
-      <td>Gestionar facturación</td>
-      <td>5</td>
-      <td>Sprint 3</td>
-    </tr>
-    <tr>
-      <td>57</td>
+      <td>72</td>
       <td>US42</td>
       <td>Ver KPIs de gestión de productores</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>58</td>
+      <td>73</td>
       <td>TS10</td>
       <td>Implementar generación de reportes</td>
       <td>5</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>59</td>
+      <td>74</td>
       <td>TS19</td>
       <td>Exportación y compartición nativa de reportes</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>60</td>
+      <td>75</td>
       <td>TS22</td>
       <td>Optimizar endpoints con paginación y payloads livianos</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>61</td>
+      <td>76</td>
       <td>US35</td>
       <td>Calificar servicio de entrega</td>
       <td>2</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>62</td>
+      <td>77</td>
       <td>US08</td>
       <td>Filtrar catálogo por categoría y disponibilidad</td>
       <td>2</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>63</td>
+      <td>78</td>
       <td>US09</td>
       <td>Guardar productos en lista de favoritos</td>
       <td>2</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>64</td>
-      <td>US10</td>
-      <td>Consultar historial de compras anteriores</td>
-      <td>3</td>
-      <td>Sprint 3</td>
-    </tr>
-    <tr>
-      <td>65</td>
+      <td>79</td>
       <td>US11</td>
       <td>Solicitar cotización personalizada</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>66</td>
+      <td>80</td>
       <td>US13</td>
       <td>Configurar alertas de temperatura y humedad</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>67</td>
+      <td>81</td>
       <td>US14</td>
       <td>Exportar historial de telemetría a PDF/Excel</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>68</td>
+      <td>82</td>
       <td>US15</td>
       <td>Asignar vehículo y conductor a un despacho</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>69</td>
+      <td>83</td>
       <td>US16</td>
       <td>Confirmar entrega mediante firma digital o código QR</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>70</td>
+      <td>84</td>
       <td>US17</td>
       <td>Registrar incidencia en la entrega</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>71</td>
+      <td>85</td>
       <td>US18</td>
       <td>Consultar historial de despachos realizados</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>72</td>
+      <td>86</td>
       <td>US21</td>
       <td>Registrar nuevo lote de producción</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>73</td>
+      <td>87</td>
       <td>US22</td>
       <td>Actualizar estado de un lote</td>
       <td>2</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>74</td>
+      <td>88</td>
       <td>US23</td>
       <td>Generar e imprimir etiquetas con código QR</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>75</td>
+      <td>89</td>
       <td>US24</td>
       <td>Consultar historial de lotes producidos</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>76</td>
+      <td>90</td>
       <td>US25</td>
       <td>Enviar mensajes en el chat de un pedido</td>
       <td>3</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>77</td>
+      <td>91</td>
       <td>US26</td>
       <td>Ver historial de mensajes</td>
       <td>2</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>78</td>
-      <td>US27</td>
-      <td>Configurar perfil de usuario</td>
-      <td>2</td>
-      <td>Sprint 3</td>
-    </tr>
-    <tr>
-      <td>79</td>
+      <td>92</td>
       <td>US28</td>
       <td>Configurar preferencias de notificaciones push</td>
       <td>2</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>80</td>
+      <td>93</td>
       <td>US29</td>
       <td>Visualizar términos y condiciones</td>
       <td>1</td>
       <td>Sprint 3</td>
     </tr>
     <tr>
-      <td>81</td>
+      <td>94</td>
       <td>US30</td>
       <td>Cerrar sesión de forma segura</td>
       <td>1</td>
       <td>Sprint 3</td>
     </tr>
+    <tr>
+      <td>95</td>
+      <td>US72</td>
+      <td>Línea de tiempo del lote</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>US66</td>
+      <td>Factura automática al recibir</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>US67</td>
+      <td>Nota de crédito propuesta</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>US69</td>
+      <td>Resumen de compras por cliente</td>
+      <td>3</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>US68</td>
+      <td>Evolución de precios</td>
+      <td>3</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>US70</td>
+      <td>Recordatorios de facturas</td>
+      <td>2</td>
+      <td>Sprint 3</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>US73</td>
+      <td>Reporte de merma</td>
+      <td>5</td>
+      <td>Sprint 3</td>
+    </tr>
   </tbody>
 </table>
+
 
 #### Evidencia de control de proyectos en Jira
 

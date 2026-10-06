@@ -92,7 +92,7 @@ A continuación, se detallan las User Stories priorizadas y las tareas asociadas
 | US03 | Recuperar contraseña mediante correo  | SCRUM-31 | Recuperar contraseña mediante correo | Sección donde se puede recuperar contraseña mediante correo. | 3 |Cesar Marin | Done |
 
 
-#### 5.2.1.4 Development Evidence for Sprint Review
+#### 4.2.1.4 Development Evidence for Sprint Review
 
 En este Sprint se logró la implementación del Landing Page de FruitLogix, desarrollando su estructura principal en HTML y CSS, así como la navegación entre secciones y avances en su diseño responsive. De forma paralela, se avanzó en el desarrollo de la aplicación móvil en Android con Jetpack Compose, estructurando la arquitectura por Bounded Contexts e implementando módulos clave como la gestión de pedidos, facturación, monitoreo de infraestructura IoT, perfil de distribuidores, recepción logística y reporte de incidencias con grabación de audio.
 
@@ -208,6 +208,7 @@ Para el cliente móvil de FruitLogix, se configuró la compilación nativa en An
 * **Plataforma / Entorno de ejecución:** Android 8.0+ (API Level 26+)
 * **Tecnología:** Kotlin / Jetpack Compose
 * **Mecanismo de distribución:** Compilación de artefacto binario (`app-debug.apk`) y vinculación directa a los botones de descarga en la Landing Page web.
+* **URL de acceso público:** [https://github.com/UPC-RebooTech/Fruitlogix-AppMobile.git](https://github.com/UPC-RebooTech/Fruitlogix-AppMobile.git)
 
 #### Proceso de Despliegue Móvil:
 1. **Compilación de Artefactos de Desarrollo:** Se ejecutó el proceso de construcción en Gradle (`./gradlew assembleDebug`) para empaquetar los recursos del proyecto, dependencias y la navegación por *Bounded Contexts*.

@@ -29,3 +29,4 @@ A continuación se presenta la tabla con las versiones del informe, indicando el
 | AV1        | 1.0.0   | 18/09/2026 | Renzo Bojórquez    | Se completa el primer avance del proyecto, incluyendo los capítulos I y II, así como el control de versiones. |
 | AV1        | 1.0.1   | 18/09/2026 | Renzo Bojórquez    | Se agrega una introducción al control de versiones.                                                           |
 | TB1        | 1.7.2   | 06/10/2026 | Esteban Chavez     | Se actualizo el Product Backlog y se agrego nuevos User Stories                                               |
+| TB1        | 1.7.3   | 06/10/2026 | Esteban Chavez     | Se actualizo el Student Outcome                                                                               |

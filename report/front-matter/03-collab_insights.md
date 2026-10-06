@@ -12,6 +12,7 @@ commit, y Semantic Versioning para cada versión de release.
 
 <img src="../assets/collabs/AV1_Collab_Insights_Report.png" width ="100%">
 
+Para ver los demás repositorios véase el Anexo B: Enlaces a repositorios y artefactos
 
 # AV1: Sprint Review
 

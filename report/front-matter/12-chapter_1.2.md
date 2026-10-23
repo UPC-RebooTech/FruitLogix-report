@@ -19,15 +19,11 @@ A continuación, se desarrollarán las preguntas clave usando el modelo de las 5
 
 ### 1.2.2.1 Lean Ux Problem Statements
 
-El estado actual de la logística agrícola y la cadena de suministro de frutas en el Perú se ha centrado principalmente en productores, distribuidores medianos y clientes comerciales (supermercados, mercados mayoristas y restaurantes) que coordinan sus operaciones mediante procesos manuales como hojas de cálculo, registros en papel y aplicaciones de mensajería, lo que genera desorganización en la gestión de pedidos, falta de trazabilidad durante la distribución y retrasos que afectan la calidad del servicio y la toma de decisiones.
+Nuestro servicio ofrece una plataforma digital que centraliza la gestión logística, el control de calidad y la trazabilidad de entregas entre productores agrícolas, distribuidores medianos y clientes comerciales (supermercados, mercados mayoristas y restaurantes). A través de nuestro servicio, los distribuidores de Lima Metropolitana pueden monitorear pedidos y coordinar la cadena de suministro de fruta fresca de manera integrada y en tiempo real.
 
-Lo que los productos/servicios existentes no logran resolver es la falta de coordinación y monitoreo en tiempo real entre productores, distribuidores y clientes comerciales, lo que impide anticipar y prevenir pérdidas de calidad en productos perecederos, y responder a imprevistos antes de que el producto llegue al cliente final.
+Hemos observado que un factor crítico que afecta la calidad del servicio y la rentabilidad es la dependencia de procesos manuales (hojas de cálculo, papel y aplicaciones de mensajería) para coordinar las operaciones. Actualmente, la falta de visibilidad y monitoreo en tiempo real durante la distribución impide anticipar pérdidas en productos perecederos, lo que provoca constantes retrasos, desorganización y un alto porcentaje de pedidos rechazados por mermas de calidad.
 
-Nuestro producto/servicio abordará esta brecha centralizando la gestión de pedidos, el control de calidad y la trazabilidad en tiempo real de las entregas, integrando en una sola plataforma digital la comunicación entre productores, distribuidores y clientes comerciales.
-
-Nuestro enfoque inicial será los distribuidores medianos de Lima Metropolitana que abastecen a supermercados, mercados mayoristas y restaurantes.
-
-Sabremos que tenemos éxito cuando observemos una reducción del 30% en los errores operativos y del 25% en los pedidos rechazados por problemas de calidad, durante los primeros seis meses de uso de la plataforma.
+¿Cómo mejorar la coordinación y la trazabilidad en tiempo real de la distribución de frutas logrando que los distribuidores optimicen sus operaciones, reduzcan los errores logísticos y entreguen productos frescos que satisfagan a sus clientes comerciales?
 
 ### 1.2.2.2. Lean UX Assumptions
 

@@ -403,13 +403,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Lista con proveedores</strong><br>
-        <strong>Given</strong> que existen productores registrados,<br>
-        <strong>When</strong> accede al módulo correspondiente,<br>
+        <strong>Given</strong> que existen productores registrados en el sistema,<br>
+        <strong>When</strong> el distribuidor accede al al directorio,<br>
         <strong>Then</strong> muestra nombre, tipo de producto y contacto.<br><br>
         <strong>Escenario 2: Sin productores</strong><br>
         <strong>Given</strong> que no existen productores,<br>
         <strong>When</strong> accede al módulo correspondiente,<br>
-        <strong>Then</strong> muestra un mensaje indicando que no hay productores registrados.
+        <strong>Then</strong> el sistema presenta el listado renderizando tarjetas con nombre comercial, tipo de fruto y botón directo de contacto.
       </td>
     </tr>
   </tbody>
@@ -534,14 +534,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Validación exitosa</strong><br>
-        <strong>Given</strong> que el productor selecciona un lote e ingresa datos válidos<br>
-        <strong>When</strong> guarda los cambios<br>
-        <strong>Then</strong> cambia el estado del lote a uno validado.<br><br>
-        <strong>Escenario 2: Datos fuera de rango</strong><br>
-        <strong>Given</strong> que el productor ingresa valores inválidos<br>
-        <strong>When</strong> intenta guardar los cambios<br>
-        <strong>Then</strong> se muestra mensaje de error.
+        <strong>Escenario 1: Registro de calidad validado</strong><br>
+        <strong>Given</strong> que el productor selecciona un lote en estado pendiente de inspección,<br>
+        <strong>When</strong> ingresa los parámetros de calidad dentro de las tolerancias permitidas y confirma el envío,<br>
+        <strong>Then</strong> el sistema actualiza el registro a estado "Calidad Validada".<br><br>
+        <strong>Escenario 2: Parámetro técnico fuera de tolerancia (Edge Case)</strong><br>
+        <strong>Given</strong> que el valor máximo permitido de Brix o firmeza es superado en el formulario,<br>
+        <strong>When</strong> el productor intenta guardar el reporte,<br>
+        <strong>Then</strong> el sistema marca los campos fuera de rango en rojo y bloquea la confirmación indicando "Lectura fuera del umbral estandarizado".
       </td>
     </tr>
   </tbody>
@@ -625,9 +625,9 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
         <strong>Escenario 1: Captura directa y registro exitoso</strong><br>
         <strong>Given</strong> que el cliente recibe un pedido con fruta dañada,<br>
         <strong>When</strong> abre el formulario de reclamo, toma la fotografía del producto usando la cámara nativa de la app e ingresa la descripción,<br>
-        <strong>Then</strong> Then el sistema adjunta la fotografía codificada con sello de agua (fecha y hora), genera el ticket de reclamo y confirma el registro de la incidencia.<br><br>
+        <strong>Then</strong> el sistema adjunta la fotografía codificada con sello de agua (fecha y hora), genera el ticket de reclamo y confirma el registro de la incidencia.<br><br>
         <strong>Escenario 2: Intento de registro sin descripción</strong><br>
-        <strong>Given</strong> que el Given que el cliente adjunta la fotografía pero no completa el campo de descripción,<br>
+        <strong>Given</strong> que el cliente adjunta la fotografía pero no completa el campo de descripción,<br>
         <strong>When</strong> intenta guardar la incidencia<br>
         <strong>Then</strong> la app detiene el envío y muestra una alerta que menciona que la descripción es obligatoria.
       </td>
@@ -667,13 +667,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Carga exitosa de telemetría</strong><br>
-        <strong>Given</strong> que existen registros guardados en la base de datos de la aplicación.<br>
+        <strong>Given</strong> que existen registros guardados en la base de datos de la aplicación,<br>
         <strong>When</strong> el productor abre la vista de telemetría,<br>
-        <strong>Then</strong> el sistema mapea los objetos anidados e identifica los lotes con desperdicios.<br><br>
-        <strong>Escenario 2: Servidor sin datos</strong><br>
-        <strong>Given</strong> que la base de datos está vacía,<br>
+        <strong>Then</strong> el sistema mapea los objetos anidados y despliega el listado de lotes analizados.<br><br>
+        <strong>Escenario 2: Servidor sin datos (Empty State)</strong><br>
+        <strong>Given</strong> que la base de datos no contiene registros de inspección,<br>
         <strong>When</strong> el productor intenta abrir la vista de telemetría,<br>
-        <strong>Then</strong> la aplicación muestra la base de datos vacía, sin registros.
+        <strong>Then</strong> la aplicación muestra un contenedor informativo indicando que no hay reportes disponibles.
       </td>
     </tr>
   </tbody>
@@ -712,12 +712,12 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Estado visible</strong><br>
         <strong>Given</strong> que el cliente ingresa un ID de producto válido,<br>
-        <strong>When</strong> ejecuta la consulta el estado de entrega actual del producto<br>
-        <strong>Then</strong> se visualiza el estado de entrega actual del producto.<br><br>
+        <strong>When</strong> ejecuta la consulta del estado de entrega actual del producto,<br>
+        <strong>Then</strong> se visualiza de forma clara el estado actual del despacho.<br><br>
         <strong>Escenario 2: Pedido no encontrado</strong><br>
         <strong>Given</strong> que el cliente ingresa un ID inválido o inexistente,<br>
-        <strong>When</strong> ejecuta la consulta el estado de entrega actual del producto<br>
-        <strong>Then</strong> se muestra un mensaje de error indicando que falló la consulta.
+        <strong>When</strong> ejecuta la consulta del estado de entrega,<br>
+        <strong>Then</strong> se muestra un mensaje de error indicando que no se encontró el registro.
       </td>
     </tr>
   </tbody>
@@ -799,13 +799,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Mapa visible</strong><br>
-        <strong>Given</strong> que el pedido se encuentra en camino,<br>
+        <strong>Given</strong> que el pedido se encuentra en camino y cuenta con coordenadas válidas,<br>
         <strong>When</strong> el distribuidor consulta los detalles del producto,<br>
-        <strong>Then</strong> se muestra la ruta sugerida para el producto.<br><br>
+        <strong>Then</strong> se muestra la ruta sugerida integrada mediante Google Maps.<br><br>
         <strong>Escenario 2: Dirección no localizada</strong><br>
-        <strong>Given</strong> que se produce un error con la dirección actual del producto,<br>
+        <strong>Given</strong> que se produce un error de geolocalización con la dirección actual del producto,<br>
         <strong>When</strong> el distribuidor consulta los detalles del producto,<br>
-        <strong>Then</strong> se muestra un error de ubicación.
+        <strong>Then</strong> se muestra una alerta indicando que no se pudo cargar el mapa de ruta.
       </td>
     </tr>
   </tbody>
@@ -848,8 +848,8 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
         <strong>Then</strong> la app registra la hora exacta, almacena la conformidad de recepción y cambia su estado a finalizado.<br><br>
         <strong>Escenario 2: Rechazo de entrega</strong><br>
         <strong>Given</strong> que el cliente no acepta la mercadería por inconformidad;<br>
-        <strong>When</strong> When el distribuidor rechaza la entrega;<br>
-        <strong>Then</strong> Then la app exige seleccionar el motivo del rechazo y cambia el estado de la orden a una incidencia en la entrega.
+        <strong>When</strong> el distribuidor rechaza la entrega;<br>
+        <strong>Then</strong> la app exige seleccionar el motivo del rechazo y cambia el estado de la orden a una incidencia en la entrega.
       </td>
     </tr>
   </tbody>
@@ -887,12 +887,12 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Envío de notificación push por retraso</strong><br>
-        <strong>Given</strong> que existe un retraso en la ruta del camión;<br>
-        <strong>When</strong> el distribuidor actualiza la nueva hora estimada de llegada en la app;<br>
+        <strong>Given</strong> que existe un retraso en la ruta del camión,<br>
+        <strong>When</strong> el distribuidor actualiza la nueva hora estimada de llegada en la app,<br>
         <strong>Then</strong> el sistema envía una notificación push inmediata al smartphone del cliente comercial indicando el motivo y el nuevo horario.<br><br>
         <strong>Escenario 2: Validación de fecha estimada</strong><br>
-        <strong>Given</strong> que el distribuidor intenta activar la alerta de retraso;<br>
-        <strong>When</strong> no especifica la nueva fecha u hora estimada de llegada;<br>
+        <strong>Given</strong> que el distribuidor intenta activar la alerta de retraso,<br>
+        <strong>When</strong> no especifica la nueva fecha u hora estimada de llegada,<br>
         <strong>Then</strong> la app muestra un mensaje indicando que se debe ingresar una nueva fecha y hora estimada para notificar al cliente.
       </td>
     </tr>
@@ -933,7 +933,7 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
         <strong>Escenario 1: Alerta push por parámetros fuera de rango</strong><br>
         <strong>Given</strong> que los sensores o registros reportan una temperatura o humedad fuera del rango óptimo para la fruta;<br>
         <strong>When</strong> el sistema procesa la lectura anómala;<br>
-        <strong>Then</strong> envía una notificación push de alta prioridad al celular del distribuidor indicando el problema crítico en el lote..<br><br>
+        <strong>Then</strong> envía una notificación push de alta prioridad al celular del distribuidor indicando el problema crítico en el lote.<br><br>
         <strong>Escenario 2: Lote conforme</strong><br>
         <strong>Given</strong> que los valores de calidad y conservación se mantienen dentro de los parámetros correctos;<br>
         <strong>When</strong> se ejecuta la validación del sistema;<br>
@@ -975,12 +975,12 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Visualización correcta de métricas</strong><br>
-        <strong>Given</strong> que el productor inicia sesión y aterriza en la plataforma<br>
-        <strong>When</strong> se carga la interfaz principal<br>
+        <strong>Given</strong> que el productor inicia sesión y aterriza en la plataforma,<br>
+        <strong>When</strong> se carga la interfaz principal,<br>
         <strong>Then</strong> se visualizan tarjetas informativas dinámicas, un gráfico circular de distribución de hectáreas y una tabla de acciones requeridas de acceso rápido.<br><br>
         <strong>Escenario 2: Navegación desde llamadas de acción</strong><br>
-        <strong>Given</strong> que el productor visualiza un pedido en estado de control pendiente"<br>
-        <strong>When</strong> decide consultar el pedido<br>
+        <strong>Given</strong> que el productor visualiza un pedido en estado de control pendiente,<br>
+        <strong>When</strong> decide consultar el pedido haciendo clic en la tarjeta,<br>
         <strong>Then</strong> la aplicación lo redirige directamente a la lista detallada de sus órdenes activas.
       </td>
     </tr>
@@ -1019,12 +1019,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Dashboard cargado</strong><br>
-        <strong>Given</strong> que el distribuidor inicia sesión en la aplicación<br>
-        <strong>When</strong> se carga la interfaz principal<br>
-        <strong>Then</strong> muestra métricas, gráficos y pedidos recientes.<br><br>
+        <strong>Given</strong> que el distribuidor inicia sesión en la aplicación con conexión estable,<br>
+        <strong>When</strong> se carga la interfaz principal,<br>
+        <strong>Then</strong> muestra métricas, gráficos y pedidos recientes de forma dinámica.<br><br>
         <strong>Escenario 2: Error de conexión</strong><br>
-        <strong>Given</strong> que el distribuidor intenta iniciar sesión en la aplicación, mas no cuenta con conexión a internet.<br>
-        <strong>Then</strong> muestra un mensaje de error de conexión.
+        <strong>Given</strong> que el distribuidor intenta iniciar sesión en la aplicación, mas no cuenta con conexión a internet,<br>
+        <strong>When</strong> el sistema intenta sincronizar los datos del dashboard,<br>
+        <strong>Then</strong> muestra un mensaje de error de conectividad y habilita el modo de visualización local.
       </td>
     </tr>
   </tbody>
@@ -1062,13 +1063,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Generación exitosa</strong><br>
-        <strong>Given</strong> que el distribuidor ingresa un rango de fecha válido;<br>
-        <strong>When</strong> confirma la generación del reporte logístico;<br>
-        <strong>Then</strong> el sistema genera un reporte logistico en el rango de fecha dado.<br><br>
+        <strong>Given</strong> que el distribuidor ingresa un rango de fecha válido,<br>
+        <strong>When</strong> confirma la generación del reporte logístico,<br>
+        <strong>Then</strong> el sistema genera y descarga un reporte logístico filtrado en el rango de fechas indicado.<br><br>
         <strong>Escenario 2: Sin datos</strong><br>
-        <strong>Given</strong> que el distribuidor ingresa un rango de fecha válido, pero sin datos;<br>
-        <strong>When</strong> confirma la generación del reporte logístico;<br>
-        <strong>Then</strong> muestra mensaje informativo indicando que no hay datos.
+        <strong>Given</strong> que el distribuidor ingresa un rango de fechas válido en el cual no se registran transacciones,<br>
+        <strong>When</strong> confirma la generación del reporte logístico,<br>
+        <strong>Then</strong> el sistema muestra un mensaje informativo indicando que no hay datos disponibles para el periodo seleccionado.
       </td>
     </tr>
   </tbody>
@@ -1106,13 +1107,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Actualización exitosa</strong><br>
-        <strong>Given</strong> que el distribuidor se encuentra en su perfil;<br>
-        <strong>When</strong> modifica sus datos personales y los guarda;<br>
-        <strong>Then</strong> el sistema valida datos y confirma la actualización.<br><br>
+        <strong>Given</strong> que el usuario se encuentra en la sección de su perfil,<br>
+        <strong>When</strong> modifica sus datos personales y guarda los cambios,<br>
+        <strong>Then</strong> el sistema valida la información y confirma la actualización exitosa.<br><br>
         <strong>Escenario 2: Datos inválidos</strong><br>
-        <strong>Given</strong> que el distribuidor se encuentra en su perfil;<br>
-        <strong>When</strong> modifica sus datos personales, pero ingresa datos inválidos e intenta guardarlos;<br>
-        <strong>Then</strong> el sistema muestra error de validación.
+        <strong>Given</strong> que el usuario se encuentra en la sección de su perfil,<br>
+        <strong>When</strong> modifica sus datos personales ingresando un formato inválido e intenta guardarlos,<br>
+        <strong>Then</strong> el sistema muestra un mensaje de error de validación en los campos correspondientes.
       </td>
     </tr>
   </tbody>
@@ -1150,9 +1151,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Visualización exitosa</strong><br>
-        <strong>Then</strong> muestra nombre, correo, rol y contacto.<br><br>
+        <strong>Given</strong> que el usuario cuenta con una sesión activa en la aplicación,<br>
+        <strong>When</strong> accede a la sección de su perfil personal,<br>
+        <strong>Then</strong> el sistema muestra su nombre, correo, rol y datos de contacto registrados.<br><br>
         <strong>Escenario 2: Error al cargar</strong><br>
-        <strong>Then</strong> muestra mensaje de fallo.
+        <strong>Given</strong> que se presenta una falla de comunicación con el servidor al consultar los datos del usuario,<br>
+        <strong>When</strong> el usuario intenta acceder a su perfil,<br>
+        <strong>Then</strong> la interfaz muestra un mensaje de fallo de carga con la opción de reintentar.
       </td>
     </tr>
   </tbody>
@@ -1234,13 +1239,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Envío y recepción simétrica de mensajes</strong><br>
-        <strong>Given</strong> que el productor envía un mensaje desde la orden activa asignada al ID del Distribuidor principal<br>
-        <strong>When</strong> el distribuidor abre su Centro de Mensajes<br>
-        <strong>Then</strong> visualiza la conversación sincronizada bajo el mismo identificador de canal sin duplicar canales.<br><br>
+        <strong>Given</strong> que el productor envía un mensaje desde la orden activa asociada al distribuidor principal,<br>
+        <strong>When</strong> el distribuidor abre su Centro de Mensajes en la app,<br>
+        <strong>Then</strong> visualiza la conversación sincronizada bajo el mismo identificador de canal sin duplicar canales de chat.<br><br>
         <strong>Escenario 2: Vinculación directa desde pedidos</strong><br>
-        <strong>Given</strong> que el usuario se encuentra revisando el detalle físico de una orden<br>
-        <strong>When</strong> presiona el icono de chat<br>
-        <strong>Then</strong> el sistema abre el Centro de Mensajería seleccionando y cargando el historial específico de ese pedido.
+        <strong>Given</strong> que el usuario se encuentra revisando el detalle físico o digital de una orden,<br>
+        <strong>When</strong> presiona el icono de chat rápido,<br>
+        <strong>Then</strong> el sistema abre el Centro de Mensajería seleccionando y cargando de inmediato el historial específico de ese pedido.
       </td>
     </tr>
   </tbody>
@@ -1278,13 +1283,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Recepción exitosa</strong><br>
-        <strong>Given</strong> que un actor de la cadena (ej. Productor) envía un mensaje directo al usuario;<br>
-        <strong>When</strong> el servidor procesa el mensaje;<br>
-        <strong>Then</strong>el smartphone del destinatario emite un banner de notificación push y muestra el mensaje recibido dentro del chat nativo de la app.<br><br>
+        <strong>Given</strong> que un actor de la cadena (ej. Productor) envía un mensaje directo al usuario,<br>
+        <strong>When</strong> el servidor procesa el mensaje en tiempo real,<br>
+        <strong>Then</strong> el smartphone del destinatario emite un banner de notificación push y muestra el mensaje recibido dentro del chat nativo de la app.<br><br>
         <strong>Escenario 2: Bandeja vacía</strong><br>
-        <strong>Given</strong> que el usuario ingresa al módulo de mensajes;<br>
-        <strong>When</strong> no existen conversaciones activas o mensajes pendientes;<br>
-        <strong>Then</strong> la pantalla muestra una ilustración descriptiva indicando que no hay mensajes nuevos.
+        <strong>Given</strong> que el usuario ingresa al módulo de mensajes,<br>
+        <strong>When</strong> no existen conversaciones activas o mensajes pendientes en su bandeja,<br>
+        <strong>Then</strong> la pantalla muestra una ilustración descriptiva (Empty State) indicando que no hay mensajes nuevos.
       </td>
     </tr>
   </tbody>
@@ -1322,13 +1327,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Redirección exitosa a tienda móvil</strong><br>
-        <strong>Given</strong> Given que el visitante explora la sección Hero o el pie de página del Landing Page;<br>
+        <strong>Given</strong> que el visitante explora la sección Hero o el pie de página del Landing Page;<br>
         <strong>When</strong> hace clic en el botón "Descargar para Android" o "Descargar para iOS";<br>
         <strong>Then</strong> el navegador lo redirige automáticamente a la ficha oficial de la aplicación en Google Play Store o Apple App Store.<br><br>
         <strong>Escenario 2: Detección inteligente de dispositivo</strong><br>
         <strong>Given</strong> que el visitante accede al Landing Page ingresando desde su celular;<br>
-        <strong>When</strong> When carga la página inicial;<br>
-        <strong>Then</strong> Then la interfaz resalta como botón principal (Call to Action) la tienda correspondiente al sistema operativo detectado (Android o iOS).
+        <strong>When</strong> carga la página inicial;<br>
+        <strong>Then</strong> la interfaz resalta como botón principal (Call to Action) la tienda correspondiente al sistema operativo detectado (Android o iOS).
       </td>
     </tr>
   </tbody>
@@ -1365,14 +1370,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Cambio exitoso de idioma</strong>
-        <strong>Given</strong> Given que el visitante se encuentra en la Landing Page;<br>
-        <strong>When</strong> selecciona la opción de cambiar idioma;<br>
-        <strong>Then</strong> la página cambia al nuevo idioma, traduciendo todos los textos.<br><br>
-        <strong>Escenario 2: Retorno al idioma anterior sin recargar página</strong>
-        <strong>Given</strong> Given que el visitante se encuentra en la Landing Page, en otro idioma;<br>
-        <strong>When</strong> selecciona la opción de cambiar idioma;<br>
-        <strong>Then</strong> la página regresa al idioma original, revirtiendo todos los textos.<br><br>
+        <strong>Escenario 1: Cambio exitoso de idioma</strong><br>
+        <strong>Given</strong> que el visitante se encuentra navegando en la Landing Page,<br>
+        <strong>When</strong> selecciona la opción de cambiar idioma en el menú superior,<br>
+        <strong>Then</strong> la página cambia de inmediato al nuevo idioma seleccionado, traduciendo todos los textos informativos.<br><br>
+        <strong>Escenario 2: Retorno al idioma anterior</strong><br>
+        <strong>Given</strong> que el visitante se encuentra en la Landing Page visualizándola en un idioma alternativo,<br>
+        <strong>When</strong> selecciona nuevamente la opción de idioma original,<br>
+        <strong>Then</strong> la página revierte la traducción y regresa al idioma por defecto de la interfaz.
       </td>
     </tr>
   </tbody>
@@ -1409,14 +1414,14 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     </tr>
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
-        <strong>Escenario 1: Adaptación en Android correcta</strong>
-        <strong>Given</strong> Given que el visitante se encuentra en su celular Android;<br>
-        <strong>When</strong> ingresa a la aplicación;<br>
-        <strong>Then</strong> la aplicación se adapta a un tamaño pequeño, acorde a un celular Android.<br><br>
-        <strong>Escenario 2: Adaptación en iOS correcta</strong>
-        <strong>Given</strong> Given que el visitante se encuentra en su celular iOS;<br>
-        <strong>When</strong> ingresa a la aplicación;<br>
-        <strong>Then</strong> la aplicación se adapta a un tamaño pequeño, acorde a un celular.<br><br>
+        <strong>Escenario 1: Adaptación responsiva en Android</strong><br>
+        <strong>Given</strong> que el usuario accede a la plataforma web desde un dispositivo móvil Android,<br>
+        <strong>When</strong> la página carga en el navegador móvil,<br>
+        <strong>Then</strong> el diseño de la interfaz se adapta de forma fluida a la resolución de pantalla del dispositivo.<br><br>
+        <strong>Escenario 2: Adaptación responsiva en iOS</strong><br>
+        <strong>Given</strong> que el usuario accede a la plataforma web desde un dispositivo móvil iOS,<br>
+        <strong>When</strong> la página carga en el navegador Safari del celular,<br>
+        <strong>Then</strong> el diseño reorganiza sus componentes visuales adaptándose correctamente al formato de pantalla.
       </td>
     </tr>
   </tbody>
@@ -1454,13 +1459,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Apertura de pasarela de pago nativa (Payment Sheet)</strong><br>
-        <strong>Given</strong> que el usuario Given que el usuario decide actualizar a Pro dentro de la app móvil;<br>
-        <strong>When</strong> el sistema procesa la solicitud de compra;<br>
+        <strong>Given</strong> que el usuario decide actualizar su cuenta a Miembro Pro dentro de la app móvil,<br>
+        <strong>When</strong> el sistema procesa la solicitud de compra inicial,<br>
         <strong>Then</strong> la aplicación despliega la ventana modal nativa de Stripe sobre la pantalla actual sin redirigir a un navegador web externo.<br><br>
         <strong>Escenario 2: Confirmación y actualización de plan</strong><br>
-        <strong>Given</strong>que la transacción en la pasarela de Stripe se completa exitosamente;<br>
-        <strong>When</strong>el sistema valida el pago con el Webhook;<br>
-        <strong>Then</strong> la app cierra el modal, actualiza la sesión del usuario y muestra la insignia de Miembro Pro en la cabecera de la cuenta.
+        <strong>Given</strong> que la transacción en la pasarela de Stripe se completa exitosamente,<br>
+        <strong>When</strong> el sistema valida el pago recibido a través del Webhook configurado,<br>
+        <strong>Then</strong> la app cierra el modal de pago, actualiza la sesión del usuario y muestra de inmediato la insignia de Miembro Pro en la cabecera de su cuenta.
       </td>
     </tr>
   </tbody>
@@ -1542,13 +1547,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Navegación exitosa</strong><br>
-        <strong>Given</strong> que el visitante se encuentra en el Landing Page;<br>
-        <strong>When</strong> selecciona una opción del menú de seccciones;<br>
-        <strong>Then</strong> el sistema desplaza la vista hacia la sección correspondiente.<br><br>
+        <strong>Given</strong> que el visitante se encuentra en la Landing Page,<br>
+        <strong>When</strong> selecciona una opción del menú de secciones,<br>
+        <strong>Then</strong> el sistema desplaza la vista de forma fluida hacia la sección correspondiente.<br><br>
         <strong>Escenario 2: Sección no encontrada</strong><br>
-        <strong>Given</strong> que selecciona en una opción inválida<br>
-        <strong>When</strong> el sistema no encuentra la sección<br>
-        <strong>Then</strong> mantiene la vista actual.
+        <strong>Given</strong> que se selecciona una opción de navegación inválida o inexistente,<br>
+        <strong>When</strong> el sistema intenta procesar el ancla,<br>
+        <strong>Then</strong> mantiene la vista actual sin generar errores en pantalla.
       </td>
     </tr>
   </tbody>
@@ -1586,13 +1591,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Visualización móvil</strong><br>
-        <strong>Given</strong> que el visitante accede a la Landing Page desde su smartphone;<br>
-        <strong>When</strong> carga la página;<br>
-        <strong>Then</strong> la interfaz se adapta correctamente.<br><br>
+        <strong>Given</strong> que el visitante accede a la Landing Page desde su smartphone,<br>
+        <strong>When</strong> carga la página en el navegador móvil,<br>
+        <strong>Then</strong> la interfaz se adapta correctamente a la pantalla táctil reduciendo elementos y ordenando el menú.<br><br>
         <strong>Escenario 2: Visualización escritorio</strong><br>
-        <strong>Given</strong> que el visitante accede a la Landing Page desde su computadora;<br>
-        <strong>When</strong> carga la página;<br>
-        <strong>Then</strong> muestra una distribución adecuada de los elementos.
+        <strong>Given</strong> que el visitante accede a la Landing Page desde su computadora,<br>
+        <strong>When</strong> carga la página en el navegador de escritorio,<br>
+        <strong>Then</strong> muestra una distribución amplia y adecuada de los elementos del grid.
       </td>
     </tr>
   </tbody>
@@ -1718,12 +1723,12 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Carga y renderizado de montos financieros</strong><br>
-        <strong>Given</strong> que el cliente ingresa a la pantalla principal de la app;<br>
-        <strong>When</strong> la aplicación procesa las facturas y saldos pendientes desde la API;<br>
-        <strong>Then</strong> la vista reemplaza el indicador de carga (Skeleton/Spinner) y muestra el monto formateado correctamente en moneda local (Soles) sin retrasar la navegación.<br><br>
-        <strong>Escenario 2: Tolerancia y normalización de estados de pago</strong><br>
-        <strong>Given</strong> Given que la base de datos retorna estados de facturación en diferentes formatos de texto;<br>
-        <strong>When</strong> la app procesa las métricas financieras;<br>
+        <strong>Given</strong> que el cliente ingresa a la pantalla principal de la app,<br>
+        <strong>When</strong> la aplicación procesa las facturas y saldos pendientes desde la API,<br>
+        <strong>Then</strong> la vista reemplaza el indicador de carga y muestra el monto formateado correctamente en moneda local (Soles) sin retrasar la navegación.<br><br>
+        <strong>Escenario 2: Normalización de formatos de pago</strong><br>
+        <strong>Given</strong> que la base de datos retorna estados de facturación en diferentes formatos de texto,<br>
+        <strong>When</strong> la app procesa las métricas financieras,<br>
         <strong>Then</strong> normaliza la información para reflejar el balance exacto sin dejar métricas en cero por errores de formato.
       </td>
     </tr>
@@ -1762,13 +1767,13 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Adjunto exitoso</strong><br>
-        <strong>Given</strong> que el usuario abre un chat<br>
-        <strong>When</strong> selecciona y envía un archivo<br>
-        <strong>Then</strong> el archivo aparece en el hilo para ambas partes.<br><br>
-        <strong>Escenario 2: Error al adjuntar</strong><br>
-        <strong>Given</strong> que ocurre un fallo<br>
-        <strong>When</strong> el usuario intenta enviar un mensaje por chat<br>
-        <strong>Then</strong> muestra un mensaje de error.
+        <strong>Given</strong> que el usuario abre un chat activo en la plataforma,<br>
+        <strong>When</strong> selecciona y envía un archivo comprimido o fotografía permitida,<br>
+        <strong>Then</strong> el archivo aparece renderizado en el hilo de conversación para ambas partes.<br><br>
+        <strong>Escenario 2: Archivo con formato no permitido o excedido (Edge Case)</strong><br>
+        <strong>Given</strong> que el usuario intenta adjuntar un archivo que supera el peso máximo o un formato no compatible,<br>
+        <strong>When</strong> confirma el envío del adjunto,<br>
+        <strong>Then</strong> el sistema bloquea la acción y muestra una alerta indicando que el archivo excede el límite permitido.
       </td>
     </tr>
   </tbody>
@@ -1938,13 +1943,17 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Envío de invitación por correo o enlace nativo</strong><br>
-        <strong>Given</strong> que el distribuidor ingresa el correo o teléfono de un nuevo productor;<br>
-        <strong>When</strong> selecciona la opción para enviar la invitación;<br>
+        <strong>Given</strong> que el distribuidor ingresa el correo o teléfono válido de un nuevo productor,<br>
+        <strong>When</strong> selecciona la opción para enviar la invitación,<br>
         <strong>Then</strong> el sistema envía el correo con el enlace o abre la hoja de navegación del smartphone (Share Sheet) para compartir el link por mensajería instantánea.<br><br>
-        <strong>Escenario 2: Validación de correo o teléfono</strong><br>
-        <strong>Given</strong> que el distribuidor ingresa un correo o número con formato incorrecto;<br>
-        <strong>When</strong> When intenta generar la invitación;<br>
-        <strong>Then</strong> la app detiene la acción y muestra un mensaje de error en la pantalla.
+        <strong>Escenario 2: Validación de formato incorrecto</strong><br>
+        <strong>Given</strong> que el distribuidor ingresa un correo o número con formato incorrecto,<br>
+        <strong>When</strong> intenta generar la invitación,<br>
+        <strong>Then</strong> la app detiene la acción y muestra un mensaje de error en pantalla especificando el formato requerido.<br><br>
+        <strong>Escenario 3: Correo ya registrado (Edge Case)</strong><br>
+        <strong>Given</strong> que el correo ingresado ya se encuentra asociado a un productor activo en la red,<br>
+        <strong>When</strong> intenta enviar la invitación,<br>
+        <strong>Then</strong> el sistema bloquea el envío y muestra una alerta indicando que el usuario ya forma parte de la plataforma.
       </td>
     </tr>
   </tbody>
@@ -2114,13 +2123,17 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Sensor dentro del umbral</strong><br>
-        <strong>Given</strong> que el sensor registra valores correctos<br>
-        <strong>When</strong> el distribuidor accede al módulo<br>
+        <strong>Given</strong> que el sensor registra valores correctos dentro de la tolerancia óptima,<br>
+        <strong>When</strong> el distribuidor accede al módulo de monitoreo IoT,<br>
         <strong>Then</strong> la aplicación conectada muestra indicadores en verde.<br><br>
-        <strong>Escenario 2: Sensor fuera del umbral</strong><br>
-        <strong>Given</strong> que el valor captado por el sensor supera el límite<br>
-        <strong>When</strong> el sistema lo detecta<br>
-        <strong>Then</strong> genera una alerta y resalta la lectura.
+        <strong>Escenario 2: Sensor fuera del umbral crítico</strong><br>
+        <strong>Given</strong> que el valor capturado por el sensor supera el límite superior establecido,<br>
+        <strong>When</strong> el sistema detecta la anomalía en tiempo real,<br>
+        <strong>Then</strong> genera una alerta push y resalta la lectura en color rojo.<br><br>
+        <strong>Escenario 3: Pérdida de comunicación con el dispositivo (Offline/Flaky Network)</strong><br>
+        <strong>Given</strong> que un sensor deja de emitir telemetría por falta de señal o batería crítica,<br>
+        <strong>When</strong> el sistema intenta refrescar los datos del módulo,<br>
+        <strong>Then</strong> cambia el estado del dispositivo a "Sin señal" y muestra la última lectura registrada acompañada de la estampa de tiempo.
       </td>
     </tr>
   </tbody>
@@ -2158,13 +2171,17 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Detalle disponible</strong><br>
-        <strong>Given</strong> que existen sensores activos<br>
-        <strong>When</strong> el distribuidor abre el detalle<br>
-        <strong>Then</strong> visualiza toda la telemetría en tiempo real.<br><br>
+        <strong>Given</strong> que existen sensores activos vinculados al despacho,<br>
+        <strong>When</strong> el distribuidor abre el detalle de la orden,<br>
+        <strong>Then</strong> visualiza toda la telemetría en tiempo real (temperatura, humedad, velocidad y ETA).<br><br>
         <strong>Escenario 2: Sensores inactivos</strong><br>
-        <strong>Given</strong> que no existen sensores<br>
-        <strong>When</strong> el distribuidor abre el detalle de sensores<br>
-        <strong>Then</strong> muestra mensaje informando que no hay sensores.
+        <strong>Given</strong> que no existen sensores vinculados al despacho activo,<br>
+        <strong>When</strong> el distribuidor abre el detalle de sensores,<br>
+        <strong>Then</strong> muestra un mensaje informativo indicando que no hay dispositivos asociados.<br><br>
+        <strong>Escenario 3: Error de enlace con la pasarela IoT (Edge Case)</strong><br>
+        <strong>Given</strong> que el servidor experimenta retrasos de red al consultar la telemetría en vivo,<br>
+        <strong>When</strong> el distribuidor intenta abrir el detalle del despacho,<br>
+        <strong>Then</strong> el sistema muestra la última telemetría almacenada en caché con una advertencia de "Sincronización pendiente".
       </td>
     </tr>
   </tbody>
@@ -2334,13 +2351,17 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Envío de inspección exitoso</strong><br>
-        <strong>Given</strong> que el productor completa la inspección y adjunta fotos;<br>
-        <strong>When</strong> selecciona la opción de enviar;<br>
-        <strong>Then</strong> el sistema envía la inspección al distribuidor y le manda una notificación.<br><br>
+        <strong>Given</strong> que el productor completa la inspección y adjunta fotografías probatorias,<br>
+        <strong>When</strong> selecciona la opción de enviar el reporte,<br>
+        <strong>Then</strong> el sistema transmite la inspección al distribuidor y le emite una notificación push de aviso.<br><br>
         <strong>Escenario 2: Envío de inspección sin fotos adjuntas</strong><br>
-        <strong>Given</strong> que el productor no adjunta fotos en la inspección;<br>
-        <strong>When</strong> intenta enviar la inspección;<br>
-        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que no hay fotos.
+        <strong>Given</strong> que el productor no adjunta fotografías en la inspección de calidad,<br>
+        <strong>When</strong> intenta enviar el reporte,<br>
+        <strong>Then</strong> el sistema permite continuar mostrando previamente una advertencia de que la falta de fotos reduce la confiabilidad del lote.<br><br>
+        <strong>Escenario 3: Envío sin conexión a red (Modo Offline)</strong><br>
+        <strong>Given</strong> que el productor se encuentra en zona de cultivo sin cobertura de datos móviles,<br>
+        <strong>When</strong> intenta enviar el reporte de calidad,<br>
+        <strong>Then</strong> la aplicación almacena la inspección en la base de datos local y agenda un reintento automático al recuperar la conexión.
       </td>
     </tr>
   </tbody>
@@ -3701,13 +3722,17 @@ A partir del análisis del dominio y los procesos clave de la cadena de suminist
     <tr>
       <td colspan="4" style="text-align: left; padding: 12px;">
         <strong>Escenario 1: Autenticación exitosa</strong><br>
-        <strong>Given</strong> que el usuario ingresa credenciales válidas registradas en el sistema<br>
-        <strong>When</strong> el servidor las valida<br>
-        <strong>Then</strong> retorna un token de acceso autorizado junto con los datos básicos del usuario<br><br>
+        <strong>Given</strong> que el usuario ingresa credenciales válidas registradas en el sistema,<br>
+        <strong>When</strong> el servidor valida los datos en la base de datos,<br>
+        <strong>Then</strong> retorna un token de acceso autorizado (JWT) junto con los datos básicos del usuario.<br><br>
         <strong>Escenario 2: Autenticación fallida</strong><br>
-        <strong>Given</strong> que el usuario ingresa credenciales incorrectas o inexistentes<br>
-        <strong>When</strong> el servidor las valida<br>
-        <strong>Then</strong> retorna un error de autorización sin revelar si el correo o la contraseña fue el dato incorrecto
+        <strong>Given</strong> que el usuario ingresa credenciales incorrectas o inexistentes,<br>
+        <strong>When</strong> el servidor valida las credenciales,<br>
+        <strong>Then</strong> retorna un error de autorización sin revelar si el correo o la contraseña fue el dato incorrecto.<br><br>
+        <strong>Escenario 3: Credenciales vacías o formato incorrecto (Edge Case)</strong><br>
+        <strong>Given</strong> que el usuario envía el payload de inicio de sesión con campos vacíos o un correo con formato inválido,<br>
+        <strong>When</strong> el middleware de validación procesa la solicitud,<br>
+        <strong>Then</strong> el sistema rechaza la petición de inmediato con un código 400 Bad Request detallando los campos obligatorios faltantes.
       </td>
     </tr>
   </tbody>

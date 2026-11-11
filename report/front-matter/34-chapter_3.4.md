@@ -232,3 +232,4 @@ La simulación considera principios de navegación consistentes: mantener accesi
 **Figma prototype:** https://www.figma.com/design/dk6coJvuEa9eGrT0lKQRv0/Fruitlogix-Mobile?node-id=109-3&t=8XPP5h9Cx4GX4pvo-1
 
 **Prototype demonstration video:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b761_upc_edu_pe/IQCTfbOr7XE9SInob6f6PuoJAd0fQjEL4ct2U-pS4Gz6Spk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=KolrJv
+

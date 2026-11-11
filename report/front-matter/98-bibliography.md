@@ -1,3 +1,4 @@
+
 # Bibliografía
 - Agraria.pe. (2019, 16 de octubre). Perú: Las mermas en productos frescos son las más grandes del mundo. Red de Comunicación Agraria. https://agraria.pe/noticias/peru-las-mermas-en-productos-frescos-son-las-mas-grandes-de-2292
 - Career Foundry. (s.f.). What are user flows in User Experience (UX) Design? CareerFoundry. https://careerfoundry.com/en/blog/ux-design/what-are-user-flows/

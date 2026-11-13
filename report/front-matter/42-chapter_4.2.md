@@ -376,7 +376,8 @@ Durante el Sprint 2 se concretó la integración entre los clientes móviles y l
 
 Para garantizar la interoperabilidad entre la aplicación nativa en Android (`Fruitlogix-AppMobile`) y la primera versión multiplataforma en Flutter (`Fruitlogix-Multiplatform`), los endpoints implementados fueron documentados formalmente bajo el estándar **OpenAPI (Swagger)**, detallando los esquemas de petición/respuesta en formato JSON, códigos de estado HTTP y políticas de autenticación mediante tokens JWT.
 
-- **URL de documentación interactiva (Swagger UI):** `https://rebootech-fruitlogix-api.onrender.com/swagger/index.html`
+- **URL de documentación interactiva (Swagger UI):** [https://rebootech-fruitlogix-api.onrender.com/swagger/index.html](https://rebootech-fruitlogix-api.onrender.com/swagger/index.html)
+
 
 #### 4.2.2.7. Software Deployment Evidence for Sprint Review.
 

@@ -21,14 +21,23 @@ El objetivo de estas entrevistas es probar las aplicaciones con personas pertene
 5.	Comparado con coordinar pedidos y recojos por llamadas o WhatsApp libre, ¿sientes que este flujo centralizado te ahorra tiempo o reduce confusiones de despacho?
 
 ### 4.3.2. Registro de entrevistas
+URL de las entrevistas: https://drive.google.com/file/d/1w0Mo4FoCXfyr-G8KAebsLMfk5TKq_PfO/view?usp=drive_link
 
 ### Segmento objetivo: Clientes Comerciales
 
 ### Segmento objetivo: Productores Agrícolas
 
-### Segmento objetivo: Distribuidores de frutas
+| Campo | ![Entrevista1](../assets/entrevistas/EntrevistaValidacion_Sheila.png) <br/>Entrevista 1 |  <br/>Entrevista 2 |  <br/>Entrevista 3 |
+|---|-----------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Nombre** | Sheila Rosales                                                             |                                                           |                                                                |
+| **Edad** | 42 años                                                                     |                                                                 |                                                                   |
+| **Distrito** | Trujillo                                                                       |                                                      |                                                                     |
+| **Duración** | 0:00 - 9:59                                                                |                                                           |                                                          |
 
-URL de las entrevistas: https://drive.google.com/file/d/1w0Mo4FoCXfyr-G8KAebsLMfk5TKq_PfO/view?usp=drive_link
+**Resumen – Sheila Rosales**
+
+Durante la entrevista realizada a Sheila Rosales, productora agrícola de 42 años, se validaron tanto la Landing Page de FruitLogix como la aplicación móvil orientada a productores. Respecto a la Landing Page, Sheila destacó que cuenta con una interfaz limpia y seria que transmite claramente la propuesta de valor de la plataforma, explicando de forma sencilla cómo conecta directamente a los fundos con los compradores y destacando la visibilidad de los botones para ingresar o registrarse. Posteriormente, al interactuar con la aplicación, indicó que el panel principal y el detalle de cada orden presentan de manera clara los datos operativos necesarios (kilos solicitados, calibres y notas de frío) para aceptar pedidos sin confusiones, valorando especialmente el canal de mensajería vinculado a cada orden frente a los chats sueltos de WhatsApp o llamadas tradicionales. Finalmente, dejó como sugerencia incorporar una opción para ajustar o contraofertar cantidades cuando el stock disponible en almacén sea menor al pedido solicitado, calificando tanto la claridad del flujo como la utilidad del chat logístico con el puntaje máximo (5/5).
+### Segmento objetivo: Distribuidores de frutas
 
 
 | Campo | ![Entrevista1](../assets/entrevistas/EntrevistaValidacion_Monica.png) <br/>Entrevista 1 |  <br/>Entrevista 2 |  <br/>Entrevista 3 |

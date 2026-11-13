@@ -149,6 +149,9 @@
 ##### 4.2.1.7. Services Documentation Evidence for Sprint Review
 ##### 4.2.1.8. Software Deployment Evidence for Sprint Review
 ##### 4.2.1.9. Team Collaboration Insights during Sprint
+### 4.3.   Validation Interviews
+#### 4.3.1. Diseño de entrevistas
+#### 4.3.2. Registro de entrevistas
 ### Conclusiones
 ### Bibliografía
 ### Anexos

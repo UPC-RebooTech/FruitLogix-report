@@ -19,3 +19,26 @@ El objetivo de estas entrevistas es probar las aplicaciones con personas pertene
 3.	Al interactuar con la app, ¿qué acción esperarías poder realizar si un pedido no se ajusta a tu stock disponible (por ejemplo, si te faltan kilos de mango), considerando que ahora la decisión principal es aceptar o coordinar?
 4.	¿Qué tan intuitivo te resulta acceder a conversar con el distribuidor desde la lista de mensajes o desde la misma orden para coordinar la llegada del camión y horarios de recojo?
 5.	Comparado con coordinar pedidos y recojos por llamadas o WhatsApp libre, ¿sientes que este flujo centralizado te ahorra tiempo o reduce confusiones de despacho?
+
+### 4.3.2. Registro de entrevistas
+
+### Segmento objetivo: Clientes Comerciales
+
+### Segmento objetivo: Productores Agrícolas
+
+### Segmento objetivo: Distribuidores de frutas
+
+URL de las entrevistas: https://drive.google.com/file/d/1w0Mo4FoCXfyr-G8KAebsLMfk5TKq_PfO/view?usp=drive_link
+
+
+| Campo | ![Entrevista1](../assets/entrevistas/EntrevistaValidacion_Monica.png) <br/>Entrevista 1 |  <br/>Entrevista 2 |  <br/>Entrevista 3 |
+|---|-----------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Nombre** | Monica Bustinza                                                             |                                                           |                                                                |
+| **Edad** | 32 años                                                                     |                                                                 |                                                                   |
+| **Distrito** | Lince                                                                       |                                                      |                                                                     |
+| **Duración** | 0:00 - 13:12                                                                |                                                           |                                                          |
+
+
+**Resumen – Monica Bustinza**
+
+Durante la entrevista a Monica Bustinza, distribuidora de frutas de 32 años, se pudo probar tanto la Landing Page de FruitLogix como la aplicación en Jetpack Compose orientada a distribuidores. Respecto a la Landing Page, a Monica le gustó el diseño, y consideró que la información era completa y explicaba adecuadamente lo necesario para operar como distribuidora. Posterior a ello, se mostró la aplicación, frente a la cual Monica respondió que proporciona un flujo claro y rápido, reduciendo errores frente al uso de papeles. Igualmente, dejó sugerencias como añadir un canal de comunicación directa con el productor para consultar detalles específicos por presentaciones de productos antes de seleccionar al proveedor, así como incluir información indispensable respecto al conductor como la configuración de temperatura, hora de llegada y datos personales antes de seleccionarlo.

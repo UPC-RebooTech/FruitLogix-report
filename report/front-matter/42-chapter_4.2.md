@@ -325,49 +325,49 @@ En esta sección se presentan evidencias de la ejecución de la nueva versión d
 **Figura 1. Sección principal de la landing page (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing1.png">
+  <img src="../assets/landingPage_v2/Landing1.png">
 </div>
 
 **Figura 2. Sección de solución (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing2.png">
+  <img src="../assets/landingPage_v2/Landing2.png">
 </div>
 
 **Figura 3. Sección de funcionalidades (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing3.png">
+  <img src="../assets/landingPage_v2/Landing3.png">
 </div>
 
 **Figura 4. Sección de segmentos (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing4.png">
+  <img src="../assets/landingPage_v2/Landing4.png">
 </div>
 
 **Figura 5. Sección de campo (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing5.png">
+  <img src="../assets/landingPage_v2/Landing5.png">
 </div>
 
 **Figura 6. Sección lo que viene (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing6.png">
+  <img src="../assets/landingPage_v2/Landing6.png">
 </div>
 
 **Figura 7. Sección del equipo (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing7.png">
+  <img src="../assets/landingPage_v2/Landing7.png">
 </div>
 
 **Figura 8. Sección final y llamado a la acción (v2)**
 
 <div align="center">
-  <img src="../assets/LandingPage_v2/Landing8.png">
+  <img src="../assets/landingPage_v2/Landing8.png">
 </div>
 
 #### 4.2.2.6 Services Documentation Evidence for Sprint Review

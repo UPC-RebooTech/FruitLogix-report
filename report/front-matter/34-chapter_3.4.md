@@ -233,3 +233,6 @@ La simulación considera principios de navegación consistentes: mantener accesi
 
 **Prototype demonstration video:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b761_upc_edu_pe/IQCTfbOr7XE9SInob6f6PuoJAd0fQjEL4ct2U-pS4Gz6Spk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=KolrJv
 
+
+El prototipo demuestra los recorridos principales de la aplicación y mantiene correspondencia con los Wireflow Diagrams y User Flow Diagrams definidos anteriormente.
+

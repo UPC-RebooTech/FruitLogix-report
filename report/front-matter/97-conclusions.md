@@ -6,3 +6,15 @@
 - La falta de visibilidad operativa y las mermas críticas durante el traslado en frío identificadas en la formulación del problema se abordaron mediante la integración del bounded context de Infrastructure & IoT y el monitoreo logístico en la aplicación móvil. El acceso en tiempo real a alertas telemáticas y al estado de los sensores permitió mitigar la asimetría informativa entre los transportistas y los centros de acopio.
 - Se comprobó que el supuesto inicial sobre la disposición de los distribuidores para utilizar interfaces operativas complejas en ruta requería un ajuste sustancial hacia flujos de interacción directos y de baja fricción. Los usuarios priorizan la visualización visual de severidades (alertas críticas y advertencias) y el reconocimiento inmediato de estados por encima de tablas analíticas densas durante el tránsito de la carga. 
 - La hipótesis de que centralizar las métricas de telemetría y geolocalización reduciría la incertidumbre en la cadena de frío resultó validada en las pruebas funcionales. Los criterios de éxito orientados a la velocidad de respuesta ante anomalías térmicas y a la interpretabilidad de incidencias se alcanzaron satisfactoriamente mediante el uso de componentes declarativos de Jetpack Compose y la estandarización de códigos de severidad visual.
+
+# Video About-The-Product
+
+![AboutTheProduct](../assets/collabs/AboutTheProduct.png)
+
+[https://shorturl.at/DyvrR](https://shorturl.at/DyvrR)
+
+# Video About-The-Team
+
+![AboutTheTeam](../assets/collabs/AboutTheTeam.png)
+
+[https://shorturl.at/Hd2IK](https://shorturl.at/Hd2IK)
